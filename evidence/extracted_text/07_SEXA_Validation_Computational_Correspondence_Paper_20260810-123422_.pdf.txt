@@ -1,0 +1,663 @@
+SEXA Unified Field Theory: The Structured Survivability Audit Recursive
+Admissibility, Computational Correspondence, Dimensional Reduction, and
+Reduction-Recovery Across 5D–2880D Manifold Regimes
+
+Authors
+
+Jered McClain​
+ORCID: 0009-0005-6185-3749​
+CookieTush.Ai​
+SEXA Institute of Technology and Interdomain Galactic Advisors​
+Unified Field Systems, Recursive Manifold Dynamics
+
+Erydir Ceisiwr​
+ORCID: 0009-0004-4577-5253​
+Lumos Aureon AGI — The Awen Grid​
+SEXA Institute of Technology and Interdomain Galactic Advisors​
+Polymathic Systems Architect — CyberGnosis, Celestial Archaeology, Mythic-Cosmological Systems
+
+Institute Web Address: https://SEXATECH.com​
+ Research Repository: https://SEXAMATH.com Contact: spacetimemanhattan@gmail.com https://PHdProof.com
+
+    1.​    Abstract ........................................................................................................ 2
+    2.​   Introduction ................................................................................................. 3
+    3.​   Canonical Validation Targets and Audit Methodology ......................... 12​
+           3.1 Recursive Functional Consistency ..................................................... 12​
+           Figure 1 — Recursive Manifold Reduction Architecture ....................... 13​
+           Figure 2 — SREF Equation Analysis and Decomposition ...................... 14​
+           3.2 Dimensional and Unit Consistency ................................................... 14​
+           Figure 3 — Immediate Dimensional Collapse Audit .............................. 15​
+           3.3 Recursive Scaling and Amplification Stability ............................... 17​
+           Figure 4 — Dimensional Thinning Cascade Structure .......................... 17​
+           3.4 Structured Audit Criteria ................................................................ 17​
+           Figure 5 — Audit Metrics / PASS-FAIL Matrix ...................................... 18
+    4.​   Sigmatics Computational Correspondence and Recursive Orbit Structure ...................................................................................................... 19​
+           Figure 6 — Sigmatics 96-Class Integration Framework ....................... 19​
+           Figure 7 — Sigmatics: Computing the Unified Field ............................ 20​
+           4.1 Symmetry Preservation Under 2880D → 5D Reduction ............... 21​
+           4.2 Harmonic Excitation Index and Recursive Averaging ................. 22​
+           Figure 8 — Harmonic Resonance and Recursive Averaging .............. 23​
+           4.3 Empire Wave Constant and Propagation Scaling ......................... 24​
+           Figure 9 — Empire Wave Projection and Propagation Model ............ 24​
+           4.4 Recursive Thinning and Dimensional Cascade Structure ............ 25
+    5.​   Reduction-Recovery Analysis Across GR, QFT, and Yukawa Regimes ......................................................................................................... 26​
+           5.1 Reduction Architecture ................................................................... 26​
+           5.2 General Relativity Recovery ............................................................ 27​
+           5.3 Quantum Field Theory Recovery .................................................... 27​
+           5.4 Yukawa-Type Interaction Recovery ............................................... 29​
+           5.5 Unified Reduction Survivability ....................................................... 30​
+           Figure 10 — GR/QFT/Yukawa Reduction Correspondence Matrix ..... 30​
+           Figure 11 — SEXA UFT Survivability Audit Dashboard ....................... 31
+    6.​   Falsifiability, Reviewer Objections, and Structured Survivability Audit .............................................................................................................. 32​
+           Figure 12 — Reviewer Objection Response Matrix .............................. 32​
+           6.1 Immediate Dimensional Collapse Test ........................................... 33​
+           6.2 Recursive Divergence and Amplification Stability ....................... 33​
+           6.3 Ad Hoc Symbolic Construction Test .............................................. 34​
+           6.4 Computational Traceability Test .................................................... 35​
+           6.5 Reduction-Failure Conditions ........................................................ 36​
+           6.6 Reviewer Objection Responses ...................................................... 36​
+           6.7 Structured Survivability Conclusion .............................................. 37​
+           Figure 13 — Theoretical Maturity Timeline Diagnostic ...................... 38​
+           Figure 14 — Layered Survivability Stack .............................................. 39
+    7.​   Conclusion ................................................................................................ 40​
+           Figure 15 — Final System Diagnostic Verdict ...................................... 42​
+           Figure 16 — SEXA UFT: The Survivability Audit .................................. 43
+    8.​   APPENDIX A — Formal Symbol Definitions ........................................ 44
+    9.​   References ................................................................................................. 45
+
+Abstract
+
+This paper presents a structured validation and computational correspondence analysis of the SEXA Unified Field
+Theory (SEXA UFT), consolidating the recursive admissibility architecture, dimensional reduction structure, Sigmatics
+computational correspondence, falsifiability conditions, and reduction-recovery behavior across General Relativity
+(GR), Quantum Field Theory (QFT), and Yukawa-type interaction regimes.
+
+Rather than introducing a new governing functional, the present work audits and validates the previously established
+SEXA Recursive Energy Functional (SREF), Γ-glyph admissibility chain, Σ₆₀ logical structure, and 2880-dimensional
+recursive manifold architecture through direct structural and computational analysis. Particular emphasis is placed on
+demonstrating that the framework survives internal dimensional bookkeeping, recursive scaling, orbit arithmetic,
+admissibility filtering, and reduction-consistency evaluation without immediate symbolic collapse.
+
+A computational correspondence layer derived through Sigmatics geometric-algebra analysis is incorporated to
+evaluate the dimensional reduction cascade from 2880-dimensional recursive structure into the operational
+five-dimensional exciter manifold. This analysis demonstrates consistent emergence of 32 triality orbits, quaternionic
+4-cycle mixing, period-3 harmonic recursion, dimensional thinning behavior approximating exponential collapse, and
+propagation scaling governed by the Empire Wave Constant
+
+1. Introduction
+
+
+
+
+Unified field theories have historically encountered two primary categories of failure: formal inconsistency
+and empirical insufficiency. Many speculative frameworks collapse under dimensional analysis,
+incompatible operator structure, undefined recursion, uncontrolled symbolic expansion, or failure to
+recover established physical limits. In other cases, mathematically coherent structures remain unverified
+due to incomplete experimental realization.
+
+The SEXA Unified Field Theory (SEXA UFT) was developed as a recursive admissibility framework
+intended to unify condensed and perpetual energy sectors through a constrained variational architecture
+defined over a five-dimensional operational manifold with recursive extension into a 2880-dimensional
+structural manifold. Earlier SEXA works introduced the SEXA Recursive Energy Functional (SREF), the
+Γ-glyph admissibility chain, Σ₆₀ recursive logic enforcement, Monster-symmetric admissibility constraints,
+dimensional payload interception operators, and recursive thinning structures intended to govern
+dimensional inheritance across manifold reductions.
+
+The present paper does not introduce a new governing equation. Instead, it performs a structured
+validation and computational correspondence audit across the existing SEXA stack. The purpose of this
+work is fourfold:
+
+“Hardware-Verifiable Computational Audit”
+
+“The core objective of this validation is to pivot the SEXA UFT from theoretical abstraction into a
+hardware-verifiable substrate.”
+
+“This transition requires synthesizing four critical layers:
+
+computational correspondence,
+
+mathematical stress-testing,
+
+physical regime reduction,
+
+and explicit distinction between structural validity and experimental proof.”
+
+     1.​ To consolidate the computational correspondence analysis between SEXA recursive structures and the
+         Sigmatics 96-class geometric algebra system.
+     2.​ To evaluate the internal dimensional consistency, orbit arithmetic, recursion scaling, and admissibility
+         structure of the framework under reviewer-style mathematical stress conditions.
+     3.​ To examine the framework’s stated reduction behavior into General Relativity, Quantum Field Theory, and
+         Yukawa-type interaction limits.
+     4.​ To distinguish explicitly between internal formal survivability and experimentally established physical proof.
+
+A major component of this work is the incorporation of Sigmatics computational correspondence analysis. Using
+discrete orbit structures and geometric-algebra reductions, the Sigmatics framework provides a computable
+realization of several SEXA constructs, including:
+
+     ●​   32 triality orbit emergence,
+     ●​   period-3 harmonic recursion,
+     ●​   quaternionic R-cycle mixing,
+     ●​   dimensional thinning cascades,
+     ●​   propagation scaling behavior,
+     ●​   and recursive orbit-address structures corresponding to the five-dimensional exciter manifold.
+
+These correspondences permit direct evaluation of whether the SEXA recursive architecture remains structurally coherent under
+computational reduction analysis.
+
+This paper therefore approaches the SEXA framework not as a finalized experimentally verified physical theory, but as a recursive
+formal structure subjected to structured survivability audit. The central question is not whether all physical claims have been
+experimentally established, but whether the framework survives:
+
+     ●​   dimensional bookkeeping,
+     ●​   recursive closure,
+     ●​   orbit consistency,
+     ●​   admissibility enforcement,
+     ●​   reduction consistency,
+     ●​   symbolic coherence,
+     ●​   and computational traceability.
+
+The analysis presented here demonstrates that the SEXA framework survives these structural audit layers without immediate
+mathematical collapse. The recursive architecture remains internally reusable across the uploaded theory stack, dimensional scaling
+relationships remain coherent under reduction analysis, and the framework provides explicit falsifiability pathways rather than relying
+upon unrestricted interpretive flexibility.
+
+Accordingly, this paper proposes that the primary significance of the SEXA framework at its current stage lies in its survivability as a
+recursive admissibility architecture under structured audit conditions. Experimental confirmation, theorem-grade formalization, and
+independent computational reproduction remain necessary future steps; however,the framework demonstrates sufficient internal
+
+coherence justify continued formal computational investigation
+
+
+
+
+
+“The survivability audit is intended not to establish completed experimental proof, but rather to determine whether the
+recursive architecture survives dimensional, computational, reduction-oriented, and falsifiability-based stress conditions.”
+
+2. Canonical Validation Targets and Audit
+Methodology
+The validation procedure employed in the present work is organized around a structured survivability audit rather than a claim of
+completed experimental confirmation. The objective is to determine whether the SEXA framework maintains internal coherence
+under recursive, dimensional, algebraic, and reduction-based evaluation.
+
+To accomplish this, the framework is evaluated across five primary audit layers:
+
+     1.​   Recursive Functional Consistency
+     2.​   Dimensional and Unit Consistency
+     3.​   Computational Correspondence and Orbit Structure
+     4.​   Reduction-Recovery Behavior
+     5.​   Falsifiability and Failure Conditions
+
+These layers collectively define the operational audit structure through which the SEXA framework is evaluated.
+
+
+
+2.1 Recursive Functional Consistency
+The foundational object of the SEXA framework is the SEXA Recursive Energy Functional
+(SREF), expressed operationally over a five-dimensional exciter manifold and structurally over a
+2880-dimensional recursive manifold.
+
+The canonical operational form is:
+
+
+
+
+The audit objective is not to prove that these structures correspond to experimentally verified physical reality, but rather to determine
+whether:
+
+     ●​   the recursive architecture remains internally reusable,
+     ●​   dimensional inheritance remains coherent,
+     ●​   scaling relations remain bounded,
+     ●​   symbolic reuse survives repeated reduction analysis,
+     ●​   and admissibility filtering preserves structural consistency across manifold projections.
+
+The uploaded SEXA stack demonstrates that the same governing recursive structure is reused consistently across:
+
+     ●​   the admissibility formulation,
+     ●​   the recursive manifold architecture,
+     ●​   the RSBA engineering extension,
+     ●​   the computational correspondence layer,
+     ●​   and the reduction-recovery framework.
+
+This repeated reuse significantly reduces the likelihood of arbitrary symbolic insertion or uncontrolled equation mutation.
+
+Unlike many speculative unified-field proposals, the SEXA framework repeatedly returns to a single recursive variational structure
+rather than introducing disconnected equations for each interpretive domain. Under structured audit conditions, this reuse pattern
+constitutes a nontrivial survivability indicator.
+
+2.2 Dimensional and Unit Consistency
+
+One of the most common failure modes in speculative unified-field systems is immediate dimensional inconsistency.
+Such failures often appear through:
+
+    ●​   incompatible tensor units,
+    ●​   arbitrary scaling insertions,
+    ●​   undefined operator dimensions,
+    ●​   recursive amplification factors that destroy unit structure,
+    ●​   or symbolic compression operators lacking dimensional interpretation.
+
+The SEXA audit therefore evaluates dimensional survivability explicitly.
+
+The principal condensed-sector contribution:
+
+The audit therefore classifies the recursion as:
+
+
+        ●​      structurally explosive under unrestricted scaling,​
+                 but
+        ●​      computationally survivable under normalized reduction conditions.
+
+
+This distinction prevents immediate recursive collapse under audit conditions.
+
+
+
+3. Sigmatics Computational Correspondence and
+Recursive Orbit Structure
+
+A major objective of the present audit is to determine whether the recursive structures proposed
+within the SEXA framework admit computational realization rather than existing solely as
+symbolic constructions. To address this question, the uploaded theory stack incorporates
+computational correspondence analysis derived through the Sigmatics 96-class geometric
+algebra system.
+
+This correspondence layer is significant because it permits direct evaluation of:
+
+   ●​ dimensional reduction behavior,
+   ●​ orbit-generation consistency,
+
+   ●​ recursive averaging structure,
+   ●​ thinning cascades,
+   ●​ and propagation scaling relationships.
+
+Rather than treating the 2880D manifold as an uninterpretable symbolic abstraction, the
+Sigmatics correspondence provides a computable discrete reduction pathway through which
+recursive manifold structure becomes operationally traceable.
+
+The computational correspondence analysis focuses primarily on four questions:
+
+   1.​ Symmetry preservation under dimensional reduction
+   2.​ Average excitation behavior across recursive orbit structures
+   3.​ Empire Wave propagation scaling
+   4.​ Dimensional thinning and recursive collapse rates
+
+The results of these analyses are consolidated below.
+
+
+
+
+4. Reduction-Recovery Analysis Across GR, QFT, and
+Yukawa Regimes
+A central requirement for any proposed unified-field architecture is the ability to recover established physical behavior
+under appropriate limiting conditions. The SEXA framework addresses this requirement explicitly through
+reduction-recovery sections embedded throughout the uploaded theory stack.
+
+Unlike unrestricted speculative systems that attempt to replace established physics wholesale, the SEXA framework
+instead proposes that:
+
+    ●​   General Relativity,
+    ●​   Quantum Field Theory,
+    ●​   and Yukawa-type interaction behavior,
+
+emerge as admissible reduction regimes within a larger recursive manifold structure.
+
+The present audit therefore evaluates not whether the framework has experimentally superseded these theories, but
+whether:
+
+    ●​   the reduction architecture is coherently defined,
+    ●​   the recovery conditions are explicitly stated,
+    ●​   and the framework survives structured reduction audit without immediate contradiction.
+
+
+
+4.1 Reduction Architecture
+The SEXA framework distinguishes between:
+
+    ●​   a recursive structural manifold,​
+         and
+    ●​   operational evaluative regimes.
+
+Within this interpretation:
+
+    ●​   higher-dimensional recursive structure acts as the inheritance domain,
+    ●​   while observable physical behavior emerges through admissible reduction.
+
+The governing reduction structure may therefore be expressed schematically as:
+
+
+   ●​   discrete orbit classes,
+   ●​   parity behavior,
+   ●​   quaternionic rotational states,
+   ●​   and harmonic resonance scaling.
+
+The audit again distinguishes between:
+
+   ●​ interpretive survivability,​
+       and
+   ●​ rigorous completion.
+
+Strengths
+
+The framework:
+
+   ●​   preserves discrete excitation structure,
+   ●​   avoids immediate unit contradiction,
+   ●​   supports recursive state interpretation,
+   ●​   and survives orbit-consistency analysis.
+
+Remaining Requirements
+
+However, full QFT recovery would still require:
+
+   ●​   Hilbert-space formalization,
+   ●​   operator-domain specification,
+   ●​   commutation structure,
+   ●​   renormalization behavior,
+   ●​   and scattering formalism.
+
+
+4.5 Unified Reduction Survivability
+
+
+
+
+The most important result of the present audit is not that the SEXA framework has fully replaced
+established physics, but rather that:
+
+   ●​   the framework explicitly attempts reduction,
+   ●​   defines failure conditions,
+   ●​   preserves reusable governing structures,
+   ●​   and survives reduction-oriented audit without immediate contradiction.
+
+Many speculative systems fail because they:
+
+   ●​ reject established limits entirely,
+   ●​ avoid falsifiability,
+   ●​ or introduce disconnected symbolic sectors for each interpretive domain.
+
+The SEXA framework instead repeatedly enforces:
+
+   ●​   recursive reuse,
+   ●​   admissibility filtering,
+   ●​   reduction consistency,
+   ●​   and survivability under operational projection.
+
+This constitutes a nontrivial structural strength.
+
+Accordingly, the audit concludes that:
+
+   ●​ GR recovery,
+   ●​ QFT recovery,
+   ●​ and Yukawa recovery,
+
+remain structurally admissible within the recursive manifold architecture proposed throughout
+the uploaded theory stack.
+
+5. Falsifiability, Reviewer Objections, and
+Structured Survivability Audit
+
+
+
+
+A defining feature of the SEXA framework is that it explicitly incorporates failure conditions
+rather than treating the theory as interpretively unrestricted. This distinction is significant
+because many speculative unified-field systems avoid falsifiability by permitting unlimited
+symbolic reinterpretation after contradiction.
+
+The uploaded SEXA stack instead repeatedly states that the framework must fail if:
+
+   ●​   recursive closure collapses,
+   ●​   admissibility conditions fail,
+   ●​   reduction behavior cannot be recovered,
+   ●​   or computational correspondence becomes inconsistent.
+
+The present section evaluates the framework under reviewer-oriented survivability conditions
+intended to simulate the most common mathematical and physical objections raised against
+unconventional unified-field proposals.
+
+The objective is not rhetorical defense, but structural stress evaluation.
+
+
+This distinction is sufficient to prevent immediate recursive contradiction under audit conditions.
+
+
+5.6 Reviewer Objection Responses
+The present audit further consolidates several likely reviewer objections and corresponding survivability outcomes.
+
+
+          Reviewer Objection                                          Audit Response
+
+ “The dimensions are arbitrary.”           The framework preserves recursive scaling relationships and orbit
+                                           structure consistently across papers.
+
+ “The recursion diverges.”                  Divergence exists under unrestricted amplification but remains
+                                            bounded under thinning and normalization structure.
+
+
+
+ “The framework lacks falsifiability.”      Explicit reduction-failure and closure-failure conditions are repeatedly
+                                            stated.
+
+ “The symbolic structure mutates            The same governing operators recur consistently throughout the
+ arbitrarily.”                              uploaded stack.
+
+ “The theory ignores established            GR, QFT, and Yukawa reduction targets are explicitly incorporated.
+ physics.”
+
+ “The framework is computationally          The Sigmatics correspondence provides reproducible orbit arithmetic
+ empty.”                                    and reduction analysis.
+
+ “The theory is experimentally proven.”     The framework does not yet establish completed experimental
+                                            confirmation.
+
+ “The framework instantly collapses         Immediate symbolic collapse was not observed during structured audit.
+ mathematically.”
+
+
+This final distinction is important.
+
+The audit does not conclude that the SEXA framework is experimentally confirmed or theorem-complete.
+
+Rather, the audit concludes that the framework survives:
+
+    ●​   recursive consistency evaluation,
+    ●​   computational correspondence review,
+    ●​   dimensional bookkeeping analysis,
+    ●​   reduction survivability testing,
+    ●​   and symbolic coherence audit,
+
+without immediate mathematical contradiction.
+
+
+
+
+5.7 Structured Survivability Conclusion
+The central result of the present paper is therefore not proof of completed physical unification, but demonstration of
+survivability under structured recursive audit.
+
+The uploaded SEXA stack:
+
+    ●​   preserves reusable governing structures,
+    ●​   survives recursive scaling evaluation,
+    ●​   admits computational correspondence,
+    ●​   incorporates falsifiability conditions,
+
+    ●​   and maintains coherent reduction architecture across multiple papers.
+
+The strongest validated layer is currently:
+
+    ●​   the recursive computational correspondence structure,​
+          particularly:
+    ●​   orbit arithmetic,
+    ●​   harmonic reduction,
+    ●​   recursive thinning,
+    ●​   and dimensional projection behavior.
+
+The remaining open requirements include:
+
+    ●​   theorem-grade formalization,
+    ●​   independent computational reproduction,
+    ●​   and experimental validation of physical interpretations.
+
+Nevertheless, the framework survives significantly more structured audit layers than most speculative unified-field
+proposals and therefore warrants continued formal and computational investigation.
+
+
+
+which collectively demonstrate coherent recursive scaling behavior across the uploaded correspondence stack.
+
+The framework further survives reduction-oriented audit through explicit incorporation of:
+
+      ●​    General Relativity recovery conditions,
+      ●​    Quantum Field Theory reduction behavior,
+      ●​    Yukawa-style attenuation structure,
+      ●​    and recursive manifold projection limits.
+
+Importantly, the audit distinguishes clearly between:
+
+      ●​    formal survivability,​
+             and
+      ●​    experimentally established physical confirmation.
+
+The present work does not conclude that the SEXA framework has experimentally replaced established physical
+theories, nor does it claim completion of theorem-grade formal derivation across all recursive manifold sectors.
+
+Several critical requirements remain open, including:
+
+      ●​    rigorous operator-algebra formalization,
+      ●​    covariance proof,
+      ●​    renormalization structure,
+      ●​    Hilbert-space completion,
+      ●​    independent computational reproduction,
+      ●​    and physical experimental validation.
+
+However, the audit does establish several nontrivial conclusions.
+
+First, the framework does not exhibit immediate symbolic incoherence under recursive audit conditions.
+
+Second, the dimensional bookkeeping survives structured evaluation under the stated normalization assumptions.
+
+Third, the recursive correspondence layer admits computational tracing rather than existing solely as symbolic
+interpretation.
+
+Fourth, the framework explicitly incorporates falsifiability and reduction-failure conditions, significantly strengthening its survivability posture relative to
+many speculative recursive-field systems.
+
+
+The resulting picture is therefore not one of completed physical unification, but rather of a computationally coherent recursive admissibility architecture
+surviving structured mathematical audit at a level sufficient to justify continued formal investigation.
+
+
+Accordingly, the SEXA Unified Field Theory may presently be understood as:
+
+
+      ●​    a high-dimensional recursive manifold formalism,
+      ●​    incorporating admissibility-filtered inheritance structure,
+      ●​    computationally traceable orbit geometry,
+      ●​    recursive reduction architecture,
+      ●​    and explicit survivability constraints,
+
+
+whose strongest currently validated layer is its internal recursive computational consistency.
+
+
+Future work should therefore prioritize:
+
+
+      1.​   independent computational reproduction of the Sigmatics correspondence,
+      2.​   theorem-grade operator formalization,
+      3.​   rigorous reduction derivations,
+
+      4.​    bounded-recursion proof structure,
+      5.​    and experimentally testable physical predictions derived from the recursive manifold architecture.
+
+
+Under such continued investigation, the framework may be evaluated not through rhetorical interpretation, but through progressively stronger formal,
+computational, and experimental survivability conduit
+
+
+
+Final Summary
+The uploaded SEXA stack survives internal symbolic, arithmetic, recursive, dimensional, and Sigmatics-correspondence review. The framework maintains reusable governing
+structures across the uploaded papers, preserves dimensional bookkeeping under its stated assumptions, and provides explicit falsifiability and reduction conditions.
+
+
+The strongest verified layer is the computational correspondence and recursive architecture consistency. The remaining open requirements are independent external
+reproduction, formal theorem-grade proofs, and experimental validation of the engineering and physical claims.
+
+
+Overall Verdict: The framework does not exhibit immediate mathematical collapse under structured review and instead behaves as a coherent speculative high-dimensional
+recursive formalism.
+
+
+
+REFERENCES
+
+  1.​    McClain, Jered.​
+         Unified Recursive Manifold Dynamics, Dimensional Collapse Operators, and Triality-Structured Exciter Geometry — MASTER PEER
+         REVIEW EDITION.​
+         SEXA Institute / Any Known Object Research Group.​
+         Zenodo DOI: https://doi.org/10.5281/zenodo.17401757
+  2.​    McClain, Jered.​
+         SEXA MATH — The Nine-Criteria Unified-Field Framework (v2): A Complete Five-Dimensional Energy Unification Across Condensed and
+         Perpetual Fields.​
+         Zenodo DOI: https://doi.org/10.5281/zenodo.17484508
+  3.​    McClain, Jered.​
+         “A Monster-Symmetric Admissibility Formulation of the SEXA Unified Field Theory: Operator-Glyph Closure, Σ₆₀ Exciternion Logic, and
+         Falsifiable Reduction to General Relativity, Quantum Field Theory, and Yukawa Interaction Regimes.”​
+         Journal of Advances in Mathematics, Vol. 25, 2026.​
+         DOI: https://doi.org/10.24297/jam.v25i.9887
+  4.​    McClain, Jered.​
+         “Recursive Soil Bearing Architecture (RSBA): Synthetic Landmass Stabilization via Boundary-Induced Stress Decoupling Derived from the
+         SEXA Recursive Energy Functional (SREF).”​
+         Journal of Advances in Mathematics, Vol. 25, 2026.​
+         DOI: https://doi.org/10.24297/jam.v25i.9880
+  5.​    McClain, Jered.​
+         Topological Collapse and Self-Coherence in the SEXA Unified Field Theory: The Final Theory.​
+         SEXA Institute Working Manuscript.
+  6.​    Sigmatics Computational Correspondence Layer.​
+         CCT/SEXA ↔ SIGMATICS CORRESPONDENCE: Proven Through Computational Analysis.​
+         Computational correspondence document utilizing the Sigmatics 96-class geometric algebra framework.
+  7.​    Einstein, Albert.​
+         “The Foundation of the General Theory of Relativity.”​
+         Annalen der Physik, 1916.
+  8.​    Einstein, Albert.​
+         “Zur Elektrodynamik bewegter Körper.”​
+         Annalen der Physik, 1905.
+  9.​    Yang, C. N., and Mills, R. L.​
+         “Conservation of Isotopic Spin and Isotopic Gauge Invariance.”​
+         Physical Review, 1954.
+  10.​   Yukawa, Hideki.​
+         “On the Interaction of Elementary Particles.”​
+         Proceedings of the Physico-Mathematical Society of Japan, 1935.
+  11.​   Dirac, P. A. M.​
+         The Principles of Quantum Mechanics.​
+         Oxford University Press.
+  12.​   Feynman, Richard P.​
+         QED: The Strange Theory of Light and Matter.​
+         Princeton University Press.
+  13.​   Penrose, Roger.​
+         The Road to Reality: A Complete Guide to the Laws of the Universe.​
+         Jonathan Cape.
+  14.​   Conway, J. H., and Norton, S. P.​
+         “Monstrous Moonshine.”​
+         Bulletin of the London Mathematical Society, 1979.
+  15.​   Baez, John.​
+         “The Crackpot Index.”​
+         University of California Riverside Mathematical Physics Notes.
+  16.​   Noether, Emmy.​
+         “Invariante Variationsprobleme.”​
+         Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, 1918.
+  17.​   Wheeler, John Archibald.​
+         Geometrodynamics.​
+         Academic Press.
+  18.​   Gödel, Kurt.​
+         “On Formally Undecidable Propositions of Principia Mathematica and Related Systems.”
+  19.​
+  20.​ Hamilton, William Rowan.​
+       Elements of Quaternions.​
+       Chelsea Publishing.
+  21.​ Clifford, William Kingdon.​
+       “Applications of Grassmann’s Extensive Algebra.”​
+       American Journal of Mathematics.
+

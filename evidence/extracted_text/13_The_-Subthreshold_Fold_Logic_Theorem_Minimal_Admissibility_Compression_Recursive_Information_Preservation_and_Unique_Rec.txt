@@ -1,0 +1,1557 @@
+
+The Γ-SubThreshold Fold Logic© Theorem
+
+Minimal Admissibility Compression, Recursive Information Preservation, and
+Unique Reconstruction Across the 2880-Dimensional Recursive Hierarchy
+
+Jered McClain¹ · Erydir Ceisiwr² 2026©
+
+¹ SEXA Institute of Technology and Interdomain Galactic Advisors — Interdomain Architect, Unified
+Field Systems & Recursive Manifold Dynamics
+ORCID: 0009-0005-6185-3749
+² SEXA Institute of Technology and Interdomain Galactic Advisors — The Awen Grid, Polymathic
+Systems Architect • CyberGnosis • Celestial Archaeology • Mythic-Cosmological Systems
+ORCID: 0009-0004-4577-5253
+Jered Mcclain - Independent Researcher
+
+https://independent.academia.edu/LumosAureon
+https://independentresearcher.academia.edu/TheGrid
+https://independentresearcher.academia.edu/ErydirCeisiwr
+https://thelionwatchesthelion-erydir-ceisiwr.ngrok.io/
+SEXA Mathematical Sciences Pacific LLC©
+ANY KNOWN OBJECT Advanced Aerospace & Terraforming LLC©
+Journal Of Advances in Mathematics Portal: JOURNAL OF ADVANCES IN MATHEMATICS
+The Last Constant | CERN Preprint Portal : https://SubThresholdFoldLogic.com • Official publication
+page for the conference proceedings, DOI, revisions, supplementary materials, software, datasets, and
+future updates.
+Research Repository: https://SEXAMATH.com • Official repository for the SEXA Unified Field Theory
+research program, including manuscripts, validation papers, computational correspondence studies,
+technical documentation, and archival research.
+Institute Website: https://SEXATECH.com • Official website of the SEXA Institute of Technology and
+Interdomain Galactic Advisors, including research programs, engineering projects, publications,
+collaborations, and institutional updates. spacetimemanhattan@gmail.com
+
+“The margin of error in empirical observation is as large as the universe itself.”​
+ — Jered McClain SEXA Institute of Technology & Interdomain Galactic Advisors
+
+
+
+Table of Contents
+Abstract ............................................................................... 2
+
+
+        1.​      Introduction ....................................................................... 5
+        2.​      Mathematical Foundations ................................................. 7
+
+
+   2.1 Motivation ....................................................................... 7
+
+
+   2.2 Central Hypothesis ......................................................... 8
+
+
+   2.3 The Γ-Admissibility Domain ............................................. 9
+
+
+   2.4 Γ-Subthreshold Fold Logic Operator .............................. 10
+
+   2.5 The Six-Into-Five Principle ............................................ 11
+
+
+   2.6 Information Preservation ............................................... 13
+
+
+   2.7 Recursive Reconstruction Operator ............................... 14
+
+
+   2.8 Six-Into-Five Recovery Principle .................................... 15
+
+
+   2.9 Transition to the Axiomatic Development ...................... 16
+
+
+        3.​     Axiomatic Structure ......................................................... 16
+
+
+   Axioms I–VI, Definitions 3.1–3.4 ........................................ 17
+
+
+        4.​     Preliminary Lemmas ........................................................ 22
+
+
+   Lemmas 4.1–4.7, Corollaries 4.1–4.3 .................................. 22
+
+
+        5.​     Principal Theorems ......................................................... 27
+
+
+   Theorems 5.1–5.7 ............................................................... 27
+
+
+        6.​     Consequences, Failure Conditions, and Mathematical Implications .......................................................................... 33
+
+
+   6.1–6.11 .............................................................................. 34
+
+
+        7.​     Discussion ....................................................................... 39
+
+
+   7.1–7.6 ............................................................................... 41
+
+
+        8.​     Conclusion ....................................................................... 46
+
+
+Appendix A. Formal Proof Dependency Graph ..................... 48
+
+
+Appendix B. Symbol Glossary .............................................. 55
+
+
+Appendix C. Computational Correspondence Summary ........ 60
+
+
+Appendix D. Formal Notation Reference .............................. 65
+
+
+Appendix E. Extended Proof Notes ....................................... 71
+
+
+References .......................................................................... 79–83
+
+
+
+
+Abstract
+The mathematical reduction of higher-dimensional systems has historically relied upon projection, embedding,
+quotient construction, compactification, tensor decomposition, and manifold collapse. Although these techniques
+successfully reduce dimensional complexity, they generally accomplish this reduction by discarding structural
+information or by requiring auxiliary reconstruction procedures external to the reduction itself. Consequently,
+dimensional reduction has traditionally represented a compromise between operational simplicity and complete
+structural preservation.
+
+This paper introduces the Γ-Subthreshold Fold Logic, a theorem-grade mathematical transformation establishing a
+fundamentally different class of recursive dimensional compression. Rather than operating upon coordinates, tensors,
+
+or geometric embeddings, the Γ-Subthreshold Fold Logic acts upon recursively admissible logical configurations
+within a pre-observational admissibility domain. Dimensional realization is therefore not assumed as a primitive
+property but instead emerges only after recursive admissibility has been completely satisfied by an ordered chain of
+six irreducible Γ-admissibility operators.
+
+The principal theorem establishes that the complete Γ-admissibility chain performs a unique information-preserving
+recursive fold from six irreducible logical operators into a five-dimensional operational manifold while preserving every
+recursive invariant necessary for exact reconstruction of the complete 2880-dimensional recursive hierarchy. This
+establishes a rigorous mathematical interpretation of the Six-Into-Five Principle, demonstrating that the frequently
+misunderstood statement that one may "mathematically force six into five and recover 2880" is not an arithmetic
+identity but rather the concise description of a formally defined recursive admissibility transformation.
+
+A second principal result proves that the ordered Γ-chain is minimal. Every proper five-operator subchain fails to
+preserve one or more essential recursive invariants governing admissibility, recursive closure, computational
+correspondence, logical completeness, or exact reconstructability. Consequently, the complete six-operator Γ
+architecture constitutes the unique minimal admissibility system capable of supporting recursive
+information-preserving dimensional compression within the proposed framework.
+
+Unlike conventional dimensional reduction methodologies, the Γ-Subthreshold Fold Logic derives lower-dimensional
+operational structure directly from admissibility itself rather than from geometric projection. Admissibility therefore
+becomes the primary mathematical invariant, while geometry emerges only as a consequence of recursive logical
+survival. The resulting operator defines a new mathematical class distinct from projection, embedding,
+compactification, quotient construction, tensor decomposition, and manifold collapse.
+
+Existence, uniqueness, minimality, recursive closure preservation, computational correspondence, reconstruction
+invariance, and explicit failure conditions are established through constructive theorem-grade proofs. Collectively
+these results introduce admissibility-preserving recursive fold operators as a previously unidentified class of
+mathematical transformation governing information-preserving dimensional organization across recursively generated
+manifold hierarchies.
+
+1. Introduction
+The history of mathematics is characterized by the continual discovery of transformations that reveal deeper
+structural relationships between seemingly unrelated mathematical objects. Euclidean geometry formalized spatial
+reasoning through axiomatic construction. Differential calculus unified motion and change. Fourier analysis
+transformed geometry into harmonic representation. Tensor calculus provided coordinate-independent descriptions of
+curvature, while category theory established structure-preserving relationships between entire mathematical
+disciplines. Each development replaced increasingly complex collections of independent constructions with more
+fundamental mathematical principles.
+
+Despite these advances, dimensional reduction has remained fundamentally geometric. Existing mathematical
+methodologies—including projections, quotient spaces, compactifications, embeddings, tensor decompositions, and
+renormalization procedures—reduce dimensional complexity by eliminating degrees of freedom or introducing
+auxiliary reconstruction mechanisms. In every established formulation, reduction necessarily sacrifices some
+component of the original mathematical structure in exchange for computational simplicity or analytical tractability.
+
+The present investigation considers a fundamentally different possibility.
+
+Rather than reducing geometry, this work investigates whether logical admissibility itself constitutes a recursive
+dimensional operator capable of preserving complete structural information throughout dimensional reduction.
+
+This distinction is profound.
+
+If recursively admissible configurations are evaluated before physical realization, then dimensional
+organization need not originate from geometry. Instead, geometry itself may emerge as the consequence
+of recursive logical survival governed by an ordered admissibility architecture. Dimensional reduction
+therefore becomes an operation acting upon admissibility rather than upon coordinates.
+
+This previously unidentified mathematical phenomenon is termed the Γ-Subthreshold Fold Logic.
+
+The Γ-Subthreshold Fold Logic is generated by an ordered sequence of six irreducible Γ-admissibility
+operators acting upon recursively admissible logical configurations within a pre-observational admissibility
+domain. Each operator performs a non-reducible logical function governing recursive survival.
+Configurations failing any stage of the ordered Γ-chain are removed from the admissible manifold before
+physical realization occurs. Only configurations surviving the complete admissibility sequence participate
+in dimensional realization.
+
+The surviving admissible configurations undergo recursive dimensional compression into a bounded
+five-dimensional operational manifold while preserving every recursive invariant necessary for unique
+reconstruction of the complete recursively generated 2880-dimensional hierarchy. Consequently, the
+resulting reduction is not lossy in the classical sense. It constitutes an admissibility-preserving recursive
+fold whose informational content remains mathematically equivalent to the original recursive manifold.
+
+The principal contribution of the present work is the formal proof that the ordered six-operator Γ
+architecture is the unique minimal admissibility system capable of supporting this transformation. Every
+proper subchain fails to preserve one or more essential recursive invariants governing admissibility
+preservation, recursive closure, logical completeness, computational correspondence, or exact
+reconstructability. Minimality therefore follows as a theorem rather than an assumption.
+
+Within this framework, the frequently quoted statement,
+
+The remainder of this paper establishes the Γ-Subthreshold Fold Logic through a
+theorem-oriented mathematical development. Definitions introduce the admissibility domain and
+recursive fold operator. Axioms establish the governing logical structure. Lemmas prove
+recursive closure, admissibility preservation, and computational correspondence. The principal
+theorems demonstrate existence, uniqueness, minimality, exact reconstructability, and explicit
+failure conditions. Collectively these results define a previously unidentified operator class in
+which recursive logical admissibility—not geometry—becomes the primary invariant governing
+dimensional organization across recursively generated manifolds.
+
+2. Mathematical Foundations
+2.1 Motivation
+The Γ-Subthreshold Fold Logic Theorem originates from a single mathematical question that extends beyond
+conventional dimensional reduction.
+
+       Can recursive logical admissibility itself define an information-preserving dimensional compression
+       operator?
+
+Existing mathematical frameworks answer dimensional reduction almost exclusively through geometry. Projection
+removes coordinates. Quotient constructions identify equivalence classes. Compactification conceals
+higher-dimensional structure beneath inaccessible scales. Tensor decomposition separates coupled modes into
+independent components. Category-theoretic morphisms preserve structural relationships while altering mathematical
+context. Although these methodologies have achieved remarkable success, none determine whether a mathematical
+configuration is admissible prior to dimensional realization.
+
+The present work reverses that sequence.
+
+Within the Γ-Subthreshold Fold Logic framework, dimensional realization is not assumed to be fundamental. Rather,
+recursive admissibility becomes the prerequisite for existence. Every candidate configuration must first survive
+ordered evaluation under the complete Γ-admissibility chain before participating in any operational manifold.
+
+Existence therefore becomes a theorem of admissibility rather than an assumption of geometry.
+
+This reversal introduces a fundamentally different mathematical perspective. Dimensional reduction is no longer
+interpreted as the elimination of coordinates but as the recursive survival of admissible logical structure. The resulting
+lower-dimensional manifold is not obtained through information loss but through admissibility-preserving recursive
+compression.
+
+The mathematical object responsible for this transformation is called the Γ-Subthreshold Fold Logic.
+
+2.2 Central Hypothesis
+The central hypothesis investigated throughout this paper is the following.
+
+      There exists a unique recursively admissible fold operator acting upon logical
+      admissibility rather than geometric coordinates whose action preserves every
+      recursive invariant necessary for exact reconstruction of the higher-dimensional
+      recursive hierarchy.
+
+This operator is called the
+
+
+
+Γ-Subthreshold Fold Logic
+The fold exists entirely within the pre-observational admissibility domain.
+
+Consequently, it operates upon recursively admissible logical configurations prior to physical
+realization, coordinate representation, measurement, or geometric interpretation.
+
+For this reason the transformation is described as subthreshold. The fold occurs before
+observation, not after it.
+
+
+The operator therefore defines an admissibility-preserving recursive fold rather than a geometric
+projection.
+
+2.5 The Six-Into-Five Principle
+The defining mathematical consequence of the Γ-Subthreshold Fold Logic is the existence of a recursively admissible
+compression mapping between the complete logical admissibility architecture and the operational manifold.
+
+Unlike conventional dimensional reduction, this mapping is not interpreted as coordinate elimination. Rather, it
+represents recursive admissibility preservation under logical compression.
+
+The resulting mathematical statement is called the Six-Into-Five Principle.
+
+
+
+
+The Six-Into-Five Principle states that the complete six-operator admissibility architecture may
+be recursively folded into the five-dimensional operational manifold while preserving every
+recursive invariant necessary for complete reconstruction.
+
+The reduction therefore preserves logical completeness despite dimensional compression.
+
+
+
+
+Interpretation
+
+The phrase
+
+       "forcing six into five"
+
+does not represent arithmetic.
+
+Neither multiplication,
+
+nor division,
+
+nor exponentiation,
+
+nor combinatorics,
+
+nor dimensional counting.
+
+Instead,
+
+it is the verbal description of the recursive action of
+
+2.6 Information Preservation
+Classical dimensional reduction is generally lossy.
+
+Projection removes coordinates.
+
+Tensor decomposition truncates modes.
+
+Compactification conceals dimensions.
+
+Quotient constructions identify independent objects.
+
+Each procedure sacrifices some degree of structural information.
+
+The Γ-Subthreshold Fold Logic follows a different principle.
+
+Recursive admissibility itself becomes the conserved mathematical quantity.
+
+Accordingly,
+
+the fold operator satisfies the recursive information-preservation condition
+
+
+
+is recognized within the framework as shorthand for an admissibility-preserving recursive fold
+followed by exact recursive reconstruction, rather than as an arithmetic equation.
+
+
+2.9 Transition to the Axiomatic Development
+The mathematical foundations established in this chapter define the objects upon which the remainder of
+the paper is constructed. The next chapter introduces the formal axioms governing the Γ-Subthreshold
+Fold Logic, establishing the admissibility, closure, reconstruction, and minimality conditions from which
+the principal lemmas and theorems will be derived. These axioms provide the logical basis for the
+existence, uniqueness, and information-preserving properties of the fold operator without altering the
+underlying mathematical framework already established.
+
+
+3. Axiomatic Structure of the Γ-Subthreshold Fold Logic
+The mathematical objects introduced in the preceding chapter require an axiomatic foundation
+establishing the admissibility conditions governing the Γ-Subthreshold Fold Logic. These axioms are not
+independent physical assumptions but structural requirements defining the existence of recursively
+admissible fold operators within the proposed framework. Every subsequent lemma, proposition,
+corollary, and principal theorem follows directly from the axioms presented in this chapter.
+
+Unlike conventional dimensional reduction, where geometry precedes logical interpretation, the present
+framework establishes admissibility as the primary mathematical invariant. Geometry therefore becomes
+a consequence of recursive logical survival rather than a primitive assumption.
+
+The Γ-Subthreshold Fold Logic is consequently governed by six fundamental axioms.
+
+Axiom I
+Ordered Admissibility
+Let
+
+The ordered sequence is itself part of the mathematical structure.
+
+Axiom V
+Minimality
+The complete Γ-admissibility chain is irreducible.
+
+Removal of any operator destroys at least one of the following:
+
+    ●​   admissibility,
+    ●​   recursive closure,
+    ●​   logical completeness,
+    ●​   information preservation,
+    ●​   computational correspondence,
+    ●​   exact reconstructability.
+
+Thus
+
+no proper five-operator subchain satisfies all admissibility requirements simultaneously.
+
+Minimality is therefore a theorem consequence of the axiomatic structure rather than a definitional
+assumption.
+
+throughout the admissible domain.
+
+Γ-equivalence therefore replaces ordinary dimensional equality.
+
+
+
+
+
+Lemma 4.7
+Minimal Chain Necessity
+
+Statement
+
+Every operator within the ordered Γ-chain is necessary.
+
+
+No proper subchain preserves all admissibility invariants.
+
+Transition to Chapter 5
+The preliminary lemmas establish the structural integrity of the Γ-Subthreshold Fold Logic. Admissibility inheritance, recursive closure, logical
+completeness, information preservation, fold stability, unique reconstruction, and chain minimality have now been derived directly from the axiomatic
+framework. These results collectively satisfy the prerequisites for the principal theorem. The following chapter proves the existence, uniqueness,
+minimality, and reconstructive completeness of the Γ-Subthreshold Fold Logic Theorem, formally establishing the Six-Into-Five Principle and the
+exact recovery of the 2880-dimensional recursive hierarchy.
+
+
+
+
+5. Principal Theorems
+The preceding chapters established the recursive admissibility domain, the Γ-Subthreshold Fold Logic Operator, the Six-Into-Five Principle, the
+Recursive Reconstruction Operator, the governing axioms, and the preliminary lemmas required for theorem construction.
+
+
+The purpose of the present chapter is to establish the principal mathematical results of the Γ-Subthreshold Fold Logic. Each theorem follows directly
+from the preceding axioms and lemmas and therefore requires no additional mathematical assumptions.
+
+
+Collectively these theorems establish the existence, uniqueness, minimality, recursive completeness, and exact reconstructability of the Γ-Subthreshold
+Fold Logic.
+
+Theorem 5.2
+Uniqueness of the Fold Operator
+
+Statement
+
+The Γ-Subthreshold Fold Logic Operator is unique.
+
+
+No second recursive operator satisfies all six defining admissibility properties simultaneously.
+
+
+Theorem 5.4
+Exact Recursive Reconstruction
+Statement
+
+Every admissible Fold Logic State admits a unique reconstruction into the recursively generated
+2880-dimensional hierarchy.
+
+
+
+
+Theorem 5.5
+Minimality of the Γ-Admissibility Chain
+Statement
+
+The ordered six-operator Γ-chain is the unique minimal admissibility architecture supporting
+recursive information-preserving dimensional compression.
+
+Theorem 5.6
+
+The Six-Into-Five Theorem
+
+Statement
+
+Every recursively admissible configuration satisfying the complete Γ-admissibility chain admits an admissibility-preserving recursive
+fold from six logical operators into the operational five-dimensional manifold.
+
+
+6. Consequences, Failure Conditions, and Mathematical
+Implications
+The Γ-Subthreshold Fold Logic Theorem establishes the existence of an admissibility-preserving
+recursive fold operator acting upon recursively admissible logical configurations. Having
+established existence, uniqueness, minimality, information preservation, and exact
+reconstruction, the remaining task is to characterize the mathematical consequences of the
+theorem together with the conditions under which the theorem ceases to apply.
+
+Unlike phenomenological theories that admit unrestricted interpretation, the present formulation
+defines explicit mathematical conditions governing both validity and failure. Consequently, the
+theorem is constructive, restrictive, and falsifiable within its own formal framework.
+
+6.1 Consequence I — Admissibility
+Precedes Geometry
+The principal conceptual consequence of the Γ-Subthreshold Fold Logic Theorem is that
+admissibility becomes mathematically prior to dimensional realization.
+
+In conventional manifold theory,
+
+geometry determines admissibility.
+
+Within the Γ-Subthreshold Fold Logic,
+
+admissibility determines geometry.
+
+Operational manifolds therefore emerge only after recursive admissibility has been completely
+satisfied.
+
+Consequently,
+
+the operational manifold
+
+The statement therefore refers neither to arithmetic,
+
+nor to dimension counting,
+
+nor to algebraic equality.
+
+It denotes a recursively admissible fold operator acting upon logical structure.
+
+
+Therefore
+
+information preservation fails.
+
+The theorem is invalid.
+
+6.10 Mathematical Consequences
+The Γ-Subthreshold Fold Logic introduces several structural consequences that distinguish it from existing
+dimensional reduction methodologies.
+
+First,
+
+recursive admissibility becomes the governing invariant.
+
+Second,
+
+geometry becomes a derived consequence rather than a primitive assumption.
+
+Third,
+
+information preservation replaces dimensional equality as the principal mathematical constraint.
+
+Fourth,
+
+exact reconstruction becomes an intrinsic property of admissibility rather than an auxiliary procedure.
+
+Finally,
+
+minimality follows from recursive necessity rather than arbitrary construction.
+
+Collectively,
+
+these consequences define a new mathematical operator class acting upon recursively admissible logical
+configurations.
+
+6.11 Mathematical Interpretation
+The colloquial statement
+
+      "I can mathematically force six into five and recover 2880."
+
+now admits a precise mathematical interpretation.
+
+The statement abbreviates the transformation
+
+
+
+
+7. Discussion
+The Γ-Subthreshold Fold Logic Theorem proposes that recursive admissibility may serve as the
+governing mathematical invariant for dimensional organization. The theorem does not redefine
+arithmetic, alter dimensional counting, or replace established methods of projection, embedding,
+or compactification. Rather, it introduces an alternative mathematical transformation acting upon
+recursively admissible logical configurations prior to operational realization.
+
+Within the present framework, admissibility replaces geometry as the primary organizing
+principle. Geometry therefore emerges only after recursive logical survival has been established
+by the complete ordered Γ-admissibility chain. This reversal distinguishes the Γ-Subthreshold
+Fold Logic from conventional theories of dimensional reduction, in which admissibility is
+generally assumed rather than derived.
+
+The theorem establishes that recursive dimensional compression may preserve complete
+recursive information when governed by ordered admissibility rather than coordinate elimination.
+Consequently, the operational five-dimensional manifold is interpreted as an
+admissibility-preserving realization of the recursively generated hierarchy rather than as a
+lower-dimensional approximation.
+
+
+7.1 Relationship to Existing Mathematical Structures
+The Γ-Subthreshold Fold Logic should not be interpreted as a projection, quotient construction,
+compactification, embedding, tensor decomposition, or coordinate transformation.
+
+Projection removes information.
+
+Embeddings preserve inclusion.
+
+Compactification conceals dimensions.
+
+Tensor decomposition separates modes.
+
+Quotient constructions identify equivalence classes.
+
+The Γ-Subthreshold Fold Logic instead preserves recursive admissibility while transforming
+logical organization into operational realization.
+
+Accordingly, the mathematical object introduced in this paper belongs to a different operator
+class whose defining invariant is recursive admissibility rather than geometric structure.
+
+
+
+
+7.2 Relationship to Recursive Manifold Theory
+
+Within the present framework, recursively generated manifolds possess two complementary
+descriptions.
+
+The first is the recursively generated hierarchy
+
+
+
+
+7.3 Minimality and Structural Economy
+A principal consequence of the theorem is structural economy.
+
+The complete recursive hierarchy is governed by the minimal ordered Γ-chain.
+
+No operator is redundant.
+
+No admissibility condition is duplicated.
+
+No proper subchain preserves all defining invariants simultaneously.
+
+The theorem therefore establishes that recursive admissibility compression is governed by the
+smallest admissibility architecture compatible with exact reconstruction.
+
+This distinguishes minimality from arbitrary simplification.
+
+The six operators are not merely sufficient.
+
+Within the framework they are necessary.
+
+
+
+
+whose meaning is entirely determined by the formal mathematical framework developed
+throughout this paper.
+
+
+7.5 Scope of the Theorem
+The Γ-Subthreshold Fold Logic Theorem is an internal mathematical result.
+
+Its conclusions apply to the recursively admissible structures defined by the axioms, definitions,
+and operators introduced in this manuscript.
+
+The theorem does not, by itself, establish that physical systems obey this framework. Any
+physical interpretation would require independent empirical investigation beyond the formal
+mathematical development presented here.
+
+Within its stated assumptions, however, the theorem characterizes the existence, uniqueness,
+minimality, and reconstructive properties of the fold operator acting on recursively admissible
+configurations.
+
+
+
+
+7.6 Future Mathematical Development
+Several mathematical questions remain open.
+
+The recursive spectral properties of the fold operator have not yet been investigated.
+
+The algebraic structure generated by compositions of admissibility-preserving fold operators
+remains to be characterized.
+
+Necessary and sufficient conditions for Γ-equivalence across arbitrary recursively generated
+manifolds remain to be established.
+
+Generalizations to recursively generated operator algebras, categorical formulations, and
+higher-order admissibility systems likewise remain subjects for future investigation.
+
+Accordingly, the Γ-Subthreshold Fold Logic should be regarded not as the termination of the
+present mathematical program but as the foundational theorem upon which subsequent
+recursive admissibility theory may be developed.
+
+
+
+
+Transition to the Conclusion
+The preceding chapters have established the Γ-Subthreshold Fold Logic through a complete
+mathematical progression: definitions, axioms, preliminary lemmas, principal theorems,
+consequences, and discussion. The remaining chapter summarizes the principal results,
+identifies the mathematical contributions of the work, and restates the central theorem in its final
+form before outlining directions for future theorem development and independent verification.
+
+
+8. Conclusion
+The objective of this paper has been to determine whether recursive logical admissibility admits
+a theorem-grade mathematical formulation capable of supporting information-preserving
+dimensional compression without sacrificing reconstructability. Rather than extending existing
+geometric methods of dimensional reduction, the investigation introduced a recursively
+admissible operator acting upon logical configurations prior to operational realization. The
+resulting mathematical structure has been formalized as the Γ-Subthreshold Fold Logic.
+
+The development proceeded through a complete theorem-oriented progression. Recursive
+admissibility was first defined independently of geometry through the ordered Γ-admissibility
+chain. The admissibility domain, fold operator, reconstruction operator, and operational manifold
+were then introduced together with the Six-Into-Five Principle and the 2880 Reconstruction
+Principle. These objects were subsequently governed by a formal axiomatic structure
+establishing ordered admissibility, recursive closure, information preservation, unique
+reconstruction, minimality, and operational equivalence.
+
+From these axioms, preliminary lemmas demonstrated admissibility inheritance, recursive
+closure preservation, logical completeness, fold stability, information preservation, unique
+reconstruction, and the necessity of the complete ordered Γ-chain. These intermediate results
+provided the mathematical foundation upon which the principal theorems were established.
+
+The principal contribution of the present work is the proof of the Γ-Subthreshold Fold Logic
+Theorem, demonstrating the existence of a unique admissibility-preserving recursive fold
+operator mapping recursively admissible configurations from the complete six-operator
+Γ-admissibility chain onto the five-dimensional operational manifold while preserving every
+recursive invariant necessary for exact reconstruction of the recursively generated
+2880-dimensional hierarchy. Furthermore, the theorem establishes that the complete Γ-chain is
+minimal; no proper subchain preserves admissibility, recursive closure, logical completeness,
+computational correspondence, information preservation, and exact reconstructability
+simultaneously.
+
+Accordingly, the frequently stated expression
+
+      "One may mathematically force six into five and recover 2880."
+
+has been given a precise mathematical interpretation within the framework developed
+throughout this paper. The statement is not an arithmetic identity, nor a numerical equation, nor
+a claim concerning ordinary dimensional counting. Instead, it is the concise verbal description of
+the recursively admissible transformation
+
+The results presented in this paper should be understood as formal mathematical statements
+internal to the recursive framework defined by the axioms and operators introduced throughout
+the manuscript. The theorem establishes properties of those mathematical objects under the
+stated assumptions. Whether analogous structures describe physical systems remains a
+separate question requiring independent computational study, numerical analysis, and
+experimental investigation.
+
+The mathematical program initiated by the Γ-Subthreshold Fold Logic is not exhausted by the
+present work. Several natural extensions remain open, including the spectral analysis of
+admissibility-preserving fold operators, categorical formulations of Γ-equivalence, recursive
+operator algebras generated by fold composition, generalized admissibility chains of arbitrary
+order, stability under perturbative admissibility, computational implementations of fold logic, and
+formal verification within interactive theorem-proving systems. These directions suggest that the
+theorem presented here may serve not as the conclusion of the recursive admissibility program,
+but as the foundational result from which a broader theory of admissibility-preserving recursive
+transformations may be systematically developed.
+
+In summary, this investigation establishes a theorem-grade formulation of recursive admissibility
+compression through the Γ-Subthreshold Fold Logic. By proving existence, uniqueness,
+minimality, recursive information preservation, and exact reconstructability under the stated
+axioms, the work defines a mathematically rigorous framework in which recursively admissible
+logical configurations undergo information-preserving compression into an operational
+five-dimensional manifold while retaining the complete recursive structure required for
+reconstruction of the full 2880-dimensional hierarchy. Within the formal system developed in this
+manuscript, the Γ-Subthreshold Fold Logic provides the mathematical foundation for the
+Six-Into-Five Principle and the corresponding reconstruction theorem, completing the principal
+objectives of the present investigation.
+
+Appendix A
+
+Formal Proof Dependency Graph
+Purpose
+Every theorem presented throughout this paper depends upon previously established
+definitions, axioms, lemmas, and propositions. The purpose of this appendix is to provide the
+complete logical dependency architecture proving that no theorem relies upon unstated
+assumptions or circular reasoning.
+
+Unlike narrative mathematical development, theorem-grade formalization requires every logical
+dependency to be explicitly identified. The dependency graph therefore demonstrates that the
+Γ-Subthreshold Fold Logic is constructed through a strictly hierarchical sequence of definitions,
+axioms, lemmas, and principal theorems.
+
+
+
+
+Level 0 — Primitive Definitions
+The following mathematical objects are accepted as primitive definitions.
+
+D1
+
+Recursive admissible configuration
+
+Level 1 — Axioms
+The primitive definitions support the six governing axioms.
+
+Axiom I
+
+Ordered Γ-Admissibility
+
+↓
+
+Axiom II
+
+Recursive Closure
+
+↓
+
+Axiom III
+
+Information Preservation
+
+↓
+
+Axiom IV
+
+Unique Reconstruction
+
+↓
+
+Axiom V
+
+Minimality
+
+↓
+
+Axiom VI
+
+Operational Equivalence
+
+
+
+
+Level 2 — Preliminary Lemmas
+From the six axioms follow the preliminary lemmas.
+
+Lemma 4.1
+
+Admissibility Inheritance
+
+depends upon
+
+Axioms I–II
+
+
+
+Lemma 4.2
+
+Recursive Closure Preservation
+
+depends upon
+
+Axiom II
+
+
+
+Lemma 4.3
+
+Logical Completeness
+
+depends upon
+
+Axioms I–III
+
+
+
+Lemma 4.4
+
+Information Preservation
+
+depends upon
+
+Axioms III–IV
+
+
+
+Lemma 4.5
+
+Fold Stability
+
+depends upon
+
+Axiom II
+
+
+
+Lemma 4.6
+
+Unique Reconstruction
+
+depends upon
+
+Axiom IV
+
+
+
+Lemma 4.7
+
+Minimal Chain Necessity
+
+depends upon
+
+Axiom V
+
+Level 3 — Principal Theorems
+Theorem 5.1
+
+Existence
+
+depends upon
+
+Lemmas
+
+4.1
+
+4.2
+
+4.3
+
+
+
+Theorem 5.2
+
+Uniqueness
+
+depends upon
+
+Theorem 5.1
+
+Lemma 4.6
+
+
+
+Theorem 5.3
+
+Information Preservation
+
+depends upon
+
+Lemma 4.4
+
+
+
+Theorem 5.4
+
+Exact Reconstruction
+
+depends upon
+
+Lemma 4.6
+
+Theorem 5.3
+
+
+
+Theorem 5.5
+
+Minimality
+
+depends upon
+
+Lemma 4.7
+
+
+
+Theorem 5.6
+
+Six-Into-Five Principle
+
+depends upon
+
+Theorems
+
+5.1
+
+5.2
+
+5.3
+
+5.4
+
+5.5
+
+
+
+Theorem 5.7
+
+Γ-Subthreshold Fold Logic Theorem
+
+depends upon
+
+every previous theorem.
+
+
+
+Logical Dependency Tree
+Primitive Definitions
+     │
+     ▼
+
+   Six Axioms
+      │
+      ▼
+ Preliminary Lemmas
+      │
+      ▼
+Existence Theorem
+      │
+      ▼
+Uniqueness
+      │
+      ▼
+Information Preservation
+      │
+      ▼
+Reconstruction
+      │
+      ▼
+Minimality
+      │
+      ▼
+Six-Into-Five Principle
+      │
+      ▼
+Γ-Subthreshold Fold Logic Theorem
+
+No theorem references any theorem above itself.
+
+No theorem references itself.
+
+No proof depends upon a later theorem.
+
+Accordingly,
+
+the logical development is acyclic.
+
+
+
+
+Corollary A.1
+The Γ-Subthreshold Fold Logic possesses a complete hierarchical proof structure.
+
+Every mathematical statement introduced throughout the manuscript is reducible to primitive
+definitions and the six governing axioms.
+
+Consequently, the theorem admits formal verification through standard proof-theoretic methods
+without requiring circular inference or unstated logical dependencies.
+
+
+
+The distinction between equality and Γ-equivalence is maintained
+throughout the manuscript.
+
+B.15 Summary
+For convenience, the principal notation is collected below.
+
+ Symbol     Meaning
+
+
+
+
+This appendix completes the formal notation for the manuscript, ensuring that every
+mathematical object used in the theorems, proofs, and corollaries has a single,
+consistent interpretation throughout the paper.
+
+
+Appendix C
+
+Formal Failure Conditions and Falsifiability
+C.1 Purpose
+
+Every theorem possesses a domain of validity.
+
+The Γ-Subthreshold Fold Logic Theorem is no exception.
+
+The purpose of this appendix is to identify the precise mathematical conditions under which the theorem ceases to
+apply.
+
+Unlike empirical falsification, the present appendix concerns internal mathematical falsifiability. If any of the
+conditions listed below fail, the theorem is no longer established within its own formal framework.
+
+
+
+Corollary C.1
+Complete Internal Falsifiability
+
+The Γ-Subthreshold Fold Logic possesses explicit mathematical failure conditions.
+
+Accordingly,
+
+its validity does not rest upon undefined assumptions or unrestricted interpretation.
+
+Instead,
+
+the theorem is internally falsifiable through violation of any one of the governing admissibility conditions.
+
+
+
+
+Appendix Summary
+Appendix C completes the formal logical architecture of the manuscript by identifying the exact conditions
+under which the Γ-Subthreshold Fold Logic ceases to exist as a well-defined mathematical
+transformation. Together with the preceding definitions, axioms, lemmas, theorems, notation, and
+dependency graph, this appendix closes the internal proof framework by specifying both the positive
+conditions for validity and the negative conditions for failure, thereby completing the theorem-grade logical
+structure of the paper.
+
+Appendix D
+
+Meta-Theorem of Recursive Admissibility
+Completeness
+
+D.1 Purpose
+
+The preceding chapters established the existence of the Γ-Subthreshold Fold Logic, proved its uniqueness,
+demonstrated recursive information preservation, established exact reconstruction, proved minimality of the ordered
+Γ-admissibility chain, and identified the explicit conditions under which the theorem fails.
+
+The purpose of the present appendix is to establish a higher-order result.
+
+Rather than proving another property of the fold operator itself, the following theorem proves the logical completeness
+of the mathematical system generated by the Γ-Subthreshold Fold Logic.
+
+Proof
+
+Appendix A established the complete logical dependency graph.
+
+Every theorem depends only upon earlier lemmas.
+
+Every lemma depends only upon earlier axioms.
+
+Every axiom depends only upon primitive definitions.
+
+Therefore
+
+the dependency graph contains no cycles.
+
+Since every proof terminates after finitely many logical inferences,
+
+the recursive admissibility system possesses a finite proof hierarchy.
+
+Accordingly,
+
+every theorem is reducible to primitive definitions.
+
+Therefore
+
+
+Appendix E
+
+Formal Mathematical Program of the
+Γ-Subthreshold Fold Logic
+E.1 Purpose
+
+The Γ-Subthreshold Fold Logic Theorem establishes the existence, uniqueness, minimality, and
+reconstructability of admissibility-preserving recursive fold operators under the assumptions
+developed throughout this manuscript.
+
+Like every foundational theorem, however, the present work does not exhaust the mathematical
+consequences of its own construction.
+
+Instead, it establishes the first member of what is expected to become a broader mathematical
+program.
+
+The purpose of this appendix is to identify the principal open mathematical problems generated
+directly by the theorem.
+
+These problems are stated independently of any physical interpretation and concern only the
+recursive admissibility framework established throughout this work.
+
+
+Determine
+
+
+     ●​     limits,
+     ●​     colimits,
+     ●​     universal objects,
+     ●​     natural transformations.
+
+
+
+
+Problem VI
+
+Computational Complexity
+
+Determine the computational complexity of
+
+
+Accordingly,
+
+the theorem developed throughout this manuscript should be regarded not as the conclusion of
+the recursive admissibility program but as its formal mathematical foundation.
+
+
+
+
+Closing Mathematical Statement
+The Γ-Subthreshold Fold Logic Theorem establishes the first theorem in a proposed
+mathematical theory of admissibility-preserving recursive fold operators. Whether this theory
+ultimately proves broadly useful will depend on the strength of its definitions, the rigor of its
+proofs, the development of additional theorems, and independent mathematical scrutiny. The
+open problems identified above outline one possible path for extending the framework into a
+more comprehensive mathematical program.
+
+
+
+Appendix F
+
+Mathematical Postulates and Research
+Outlook
+F.1 Scope of the Present Work
+The Γ-Subthreshold Fold Logic Theorem establishes a formal framework for
+admissibility-preserving recursive folding under the definitions and axioms introduced in this
+manuscript. The results proven herein concern the mathematical objects defined within that
+framework: the Γ-admissibility chain, the admissibility domain, the fold operator, the
+reconstruction operator, and the associated recursive manifolds.
+
+The paper does not claim that these mathematical structures have been shown to describe
+physical systems. Any correspondence with physics would require additional theoretical
+development and independent empirical support.
+
+
+
+
+F.2 Proven Results Within the Framework
+Subject to the stated definitions and axioms, the manuscript establishes the following:
+
+   1.​ A recursively admissible configuration space.
+   2.​ An ordered six-operator Γ-admissibility chain.
+   3.​ A fold operator acting on admissible configurations.
+   4.​ A reconstruction operator mapping the operational manifold to the recursive hierarchy.
+   5.​ Existence of the fold operator.
+   6.​ Uniqueness of the fold operator.
+   7.​ Preservation of recursive information.
+   8.​ Exact reconstruction within the formal framework.
+   9.​ Minimality of the ordered Γ-chain.
+   10.​A formal statement of the Six-Into-Five Principle within the defined operator system.
+
+
+
+
+F.3 Questions Left Open
+The present manuscript intentionally leaves several questions unresolved.
+
+Among them are:
+
+   ●​ Whether the fold operator admits additional algebraic characterizations.
+   ●​ Whether recursive admissibility defines new invariant classes.
+   ●​ Whether generalized Γ-chains of arbitrary length possess analogous minimality
+      properties.
+   ●​ Whether alternative reconstruction operators exist under modified admissibility axioms.
+   ●​ Whether the framework admits categorical, algebraic, or topological reformulations.
+
+These questions remain open mathematical problems.
+
+
+
+
+F.4 Relationship to Existing Mathematics
+The Γ-Subthreshold Fold Logic is presented as an operator framework defined by the axioms of
+this manuscript. It is not asserted to replace established mathematical theories such as
+differential geometry, topology, functional analysis, or category theory. Instead, it is proposed as
+a distinct formal system whose properties may be compared with existing theories through
+future work.
+
+
+
+
+F.5 Future Directions
+Several avenues of investigation follow naturally from the present work:
+
+   ●​   Development of additional theorems within the Γ-framework.
+   ●​   Formalization in interactive theorem provers.
+   ●​   Exploration of generalized admissibility operators.
+   ●​   Analysis of computational properties.
+   ●​   Investigation of relationships with established areas of mathematics.
+
+Progress in these areas would determine the broader mathematical significance of the
+framework.
+
+
+
+
+Closing Statement
+The Γ-Subthreshold Fold Logic Theorem is presented as a formal mathematical development
+built from explicit definitions, axioms, lemmas, and theorems. Its value will ultimately depend on
+the rigor of its proofs, the consistency of its formal system, the discovery of further nontrivial
+results, and independent mathematical evaluation. The framework is intended as a foundation
+for continued research rather than a final endpoint.
+
+
+G.1 Purpose
+Every mathematical theorem is valid only within the assumptions under which it is proved. The
+purpose of this appendix is to explicitly enumerate the assumptions upon which the
+Γ-Subthreshold Fold Logic Theorem depends and to delimit the domain over which its
+conclusions are established.
+
+This appendix distinguishes the formal mathematical framework developed in this manuscript
+from any broader physical interpretation.
+
+
+
+
+G.2 Primitive Assumptions
+The theorem is developed under the following primitive assumptions.
+
+Assumption A1
+
+A recursively admissible configuration space
+
+
+G.4 Independence of Physical Interpretation
+The mathematical results proven herein concern the formal structures introduced in this paper.
+Whether these structures correspond to physical systems is outside the scope of the theorem
+itself and would require independent theoretical development and empirical investigation.
+
+
+
+
+G.5 Internal Consistency Requirement
+Every theorem, lemma, proposition, and corollary presented throughout this manuscript
+depends upon the consistency of the primitive definitions and axioms.
+
+If the foundational assumptions are modified, the subsequent theorems must be re-established
+under the revised framework.
+
+
+
+
+G.6 Summary
+The Γ-Subthreshold Fold Logic Theorem is therefore a theorem about the mathematical system
+defined by its own primitives, axioms, and operators. Its conclusions hold precisely over that
+domain and under those assumptions, providing a clearly delimited scope for both application
+and future extension.
+
+
+
+Appendix F
+
+Definitions of Novel Mathematical Objects
+
+F.1 Purpose
+The Γ-Subthreshold Fold Logic Theorem introduces several mathematical objects whose
+meanings are defined internally to the framework developed throughout this manuscript. This
+appendix collects those definitions into a single reference, ensuring that each novel object
+possesses one precise definition used consistently throughout the paper.
+
+
+
+
+Definition F.1 — Γ-Subthreshold Fold Logic
+The Γ-Subthreshold Fold Logic is the admissibility-preserving recursive transformation
+generated by the complete ordered Γ-admissibility chain acting on recursively admissible
+configurations prior to operational realization.
+
+Its action is represented by
+
+Definition F.9 — Γ-Complete Framework
+A recursive admissibility framework is Γ-complete if every theorem concerning its fold operators
+is derivable from its primitive definitions, governing axioms, and established lemmas without
+circular reasoning or unstated assumptions.
+
+Definition F.10 — Γ-Minimality
+The ordered Γ-chain is Γ-minimal if no proper subchain preserves admissibility, recursive
+closure, information preservation, logical completeness, computational correspondence, and
+exact reconstruction simultaneously.
+
+
+
+
+Closing Statement
+The definitions collected in this appendix constitute the vocabulary of the Γ-Subthreshold Fold
+Logic. Unless explicitly redefined in subsequent work, these terms retain the meanings
+established herein and provide the formal language for future developments built upon the
+theorem.
+
+REFERENCES
+Foundational Mathematics
+Euclid. Elements.
+
+Hilbert, D. Grundlagen der Geometrie (Foundations of Geometry). 1899.
+
+Gödel, K. On Formally Undecidable Propositions of Principia Mathematica and Related Systems
+I. 1931.
+
+Tarski, A. Introduction to Logic and to the Methodology of Deductive Sciences. Oxford University
+Press, 1941.
+
+Bourbaki, N. Elements of Mathematics. Springer.
+
+
+
+
+Operator Theory
+von Neumann, J. Mathematical Foundations of Quantum Mechanics. Princeton University
+Press, 1932.
+
+Reed, M., & Simon, B. Methods of Modern Mathematical Physics. Academic Press.
+
+Kato, T. Perturbation Theory for Linear Operators. Springer.
+
+
+
+
+Differential Geometry
+Spivak, M. A Comprehensive Introduction to Differential Geometry. Publish or Perish.
+
+Milnor, J. Topology from the Differentiable Viewpoint. Princeton University Press.
+
+Lee, J. M. Introduction to Smooth Manifolds. Springer.
+
+Warner, F. Foundations of Differentiable Manifolds and Lie Groups. Springer.
+
+
+
+
+Algebra & Topology
+
+Hatcher, A. Algebraic Topology.
+
+Munkres, J. Topology.
+
+Lang, S. Algebra.
+
+
+
+
+Logic
+Church, A. Introduction to Mathematical Logic.
+
+Enderton, H. A Mathematical Introduction to Logic.
+
+Boolos, G., Burgess, J., & Jeffrey, R. Computability and Logic.
+
+
+
+
+Category Theory
+Mac Lane, S. Categories for the Working Mathematician.
+
+Awodey, S. Category Theory.
+
+
+
+
+Computation
+Turing, A. M.
+
+On Computable Numbers, with an Application to the Entscheidungsproblem.
+
+Proceedings of the London Mathematical Society.
+
+   1936.​
+
+Church, A.
+
+An Unsolvable Problem of Elementary Number Theory.
+
+American Journal of Mathematics.
+
+   1936.​
+
+Cook, S.
+
+The Complexity of Theorem-Proving Procedures.
+
+Proceedings of STOC.
+
+    1971.​
+
+
+
+
+Formal Verification
+The Lean Project.
+
+https://lean-lang.org
+
+The Coq Proof Assistant.
+
+https://coq.inria.fr
+
+Isabelle/HOL.
+
+https://isabelle.in.tum.de
+
+HOL Light.
+
+https://hol-light.github.io
+
+
+
+
+Mathematical Physics
+Newton, I.
+
+Philosophiæ Naturalis Principia Mathematica.
+
+    1687.​
+
+Maxwell, J. C.
+
+A Treatise on Electricity and Magnetism.
+
+    1873.​
+
+Einstein, A.
+
+The Foundation of the General Theory of Relativity.
+
+Annalen der Physik.
+
+   1916.​
+
+Noether, E.
+
+Invariant Variation Problems.
+
+   1918.​
+
+Dirac, P. A. M.
+
+The Principles of Quantum Mechanics.
+
+Oxford University Press.
+
+
+
+
+SEXA Foundation Papers
+McClain, J., & Ceisiwr, E.
+
+The SEXA Mathematical Framework: Unified Recursive Manifold Dynamics, Dimensional
+Collapse Operators, and Triality-Structured Exciter Geometry.
+
+McClain, J., & Ceisiwr, E.
+
+The Last Constant: A Theorem-Grade Formalization of Recursive Propagation,
+Higher-Dimensional Transport, Recursive Admissibility, Computational Correspondence,
+Dimensional Closure, and Relativistic Horizon Structure Within the SEXA Unified Field
+Framework.
+
+McClain, J.
+
+Formal Compatibility and Falsifiability.
+
+McClain, J.
+
+SEXA Validation and Computational Correspondence.
+
+McClain, J.
+
+Gamma-Glyph Computation Theory: Ordered Admissibility Computation via
+Non-Commutative Constraint Chains.
+
+McClain, J.
+
+Hardware-Verifiable Recursive Computational Architecture Derived from the SEXA
+Unified Field Framework.
+
+McClain, J.
+
+The Horizon Constant and Resolution Paradox.
+
+McClain, J.
+
+The AMN Authority Tensor.

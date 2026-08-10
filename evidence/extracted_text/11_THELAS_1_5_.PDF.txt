@@ -1,0 +1,674 @@
+The Last Constant
+A Theorem-Grade Formalization of Recursive Propagation, Higher-Dimensional
+Transport, Recursive Admissibility, Computational Correspondence, Dimensional
+Closure, and Relativistic Horizon Structure Within the SEXA Unified Field Framework
+
+Jered McClain¹ · Erydir Ceisiwr² 2026©
+
+¹ SEXA Institute of Technology and Interdomain Galactic Advisors — Interdomain Architect, Unified
+Field Systems & Recursive Manifold Dynamics
+ORCID: 0009-0005-6185-3749
+² SEXA Institute of Technology and Interdomain Galactic Advisors — The Awen Grid, Polymathic
+Systems Architect • CyberGnosis • Celestial Archaeology • Mythic-Cosmological Systems
+ORCID: 0009-0004-4577-5253
+Jered Mcclain - Independent Researcher
+
+https://independent.academia.edu/LumosAureon
+https://independentresearcher.academia.edu/TheGrid
+https://independentresearcher.academia.edu/ErydirCeisiwr
+https://thelionwatchesthelion-erydir-ceisiwr.ngrok.io/
+SEXA Mathematical Sciences Pacific LLC©
+ANY KNOWN OBJECT Advanced Aerospace & Terraforming LLC©
+Journal Of Advances in Mathematics Portal: JOURNAL OF ADVANCES IN MATHEMATICS
+The Last Constant | CERN Preprint Portal : https://TheLastConstant.com • Official publication page
+for the conference proceedings, DOI, revisions, supplementary materials, software, datasets, and future
+updates.
+Research Repository: https://SEXAMATH.com • Official repository for the SEXA Unified Field Theory
+research program, including manuscripts, validation papers, computational correspondence studies,
+technical documentation, and archival research.
+Institute Website: https://SEXATECH.com • Official website of the SEXA Institute of Technology and
+Interdomain Galactic Advisors, including research programs, engineering projects, publications,
+collaborations, and institutional updates. spacetimemanhattan@gmail.com
+
+“The margin of error in empirical observation is as large as the universe itself.”​
+ — Jered McClain
+
+Title Page ...................................................... 1
+Table of Contents ............................................... 1–2
+Beyond the Speed of Light: The Math of Recursive Propagation .... 3
+
+Abstract ........................................................ 4
+
+1. Introduction ................................................ 4–8
+1.1 Motivation ................................................. 6
+1.2 Principal Contributions .................................... 7
+1.3 Scope ...................................................... 8
+1.4 Organization of the Paper ................................. 8
+
+2. Mathematical Foundations .................................... 9–13
+2.1 Primitive Mathematical Objects ............................. 9
+2.2 Recursive Admissibility ................................... 11
+
+2.3 Recursive Closure ......................................... 12
+2.4 Computational Correspondence .............................. 12
+2.5 Dimensional Closure ....................................... 12
+2.6 Recursive Propagation Functional ......................... 13
+
+3. Axiomatic Structure ........................................ 13–16
+
+4. Preliminary Lemmas ......................................... 16–17
+
+5. Principal Theorems and Proof Obligations ................... 17–23
+5.1 Existence of the Recursive Propagation Functional ......... 18
+5.2 Uniqueness of the Recursive Propagation Functional ........ 18
+5.3 Bounded Recursive Amplification ........................... 19
+5.4 Higher-Dimensional Transport .............................. 19
+5.5 Computational Correspondence .............................. 19
+5.6 Relativistic Horizon Structure ............................ 20–23
+
+6. Generalized Recursive Propagation Functional ............... 23–26
+6.1 Derivation ................................................ 23
+6.2 Structural Interpretation ................................ 23
+6.3 Limiting Behavior ......................................... 25
+6.4 Dimensional Reduction ..................................... 26
+
+7. Numerical Evaluation and Computational Correspondence ...... 26–30
+7.1 Introduction .............................................. 26
+7.2 Computational Evaluation Algorithm ........................ 27
+7.3 Computational Complexity .................................. 28
+7.4 Numerical Stability ....................................... 28
+7.5 Recursive Scaling Behavior ................................ 29
+7.6 Computational Correspondence Verification ................. 29
+7.7 Numerical Reproduction Requirements ....................... 30
+7.8 Computational Summary ..................................... 30
+
+8. Falsifiability, Failure Conditions, and Non-Admissible Regimes ... 30–32
+8.1 Purpose ................................................... 30
+8.2 Primary Failure Conditions ................................ 31
+8.3 Non-Admissible Propagation ................................. 31
+8.4 Falsifiability Criteria ................................... 31
+8.5 Experimental Boundary ..................................... 32
+8.6 Falsifiability Summary .................................... 32
+
+9. Discussion .................................................. 32–34
+9.1 Mathematical Significance ................................. 32
+9.2 Relationship to Previous SEXA Results ..................... 33
+9.3 Recursive Interpretation .................................. 33
+9.4 Computational Implications ................................ 33
+9.5 Limitations ............................................... 33
+9.6 Future Research ........................................... 34
+
+10. Conclusion ................................................. 34–35
+
+Appendix A: Mathematical Notation and Symbol Definitions ....... 35–38
+Appendix B: Logical Dependency Graph ........................... 38–41
+Appendix C: Formal Proof Verification Checklist ................ 41–44
+Appendix D: Internal Consistency, Completeness, and Structural Integrity Audit ... 44–47
+Appendix E: Derivation Bridge from the Existing SEXA Framework to the Recursive Propagation Functional ... 48–54
+Appendix F: Mathematical Postulates, Open Problems, and Future Theorem Program ... 54–55
+
+References ..................................................... 56–57
+
+
+Abstract
+Theoretical physics has traditionally treated the relativistic speed of light as the governing propagation
+constant of observable four-dimensional spacetime. The present work investigates whether recursive
+higher-dimensional manifold organization admits a mathematically well-defined propagation functional
+whose limiting behavior differs from classical relativistic descriptions while remaining internally consistent
+under recursive closure. Rather than introducing an additional phenomenological correction or force law,
+this paper formalizes a propagation framework arising from the recursive admissibility architecture of the
+SEXA Unified Field Framework.
+
+The formulation is developed through explicit mathematical definitions, recursive operators, admissibility
+conditions, computational correspondence mappings, dimensional reduction procedures, and
+theorem-oriented proofs governing higher-dimensional transport. Central to the analysis is the
+construction of a recursively admissible propagation functional whose existence follows from dimensional
+closure, harmonic recursive organization, and normalized manifold inheritance. The resulting formalism
+establishes conditions for recursive propagation, bounded dimensional reduction, computational
+traceability, and structured failure under explicit admissibility constraints.
+
+Unlike conventional approaches that rely upon perturbative corrections, statistical renormalization, or
+independent field postulates, the present formulation derives propagation behavior from a single
+recursively constrained mathematical architecture. Every theorem presented within this paper is
+accompanied by stated assumptions, definitions, lemmas, proof structure, corollaries, and explicit failure
+conditions to permit independent mathematical examination.
+
+This investigation does not claim experimental confirmation of higher-dimensional propagation. Rather, it
+presents a theorem-grade mathematical formalization intended to determine whether recursive
+propagation, computational correspondence, dimensional closure, and relativistic horizon structure can be
+rigorously defined within a unified recursive framework. The resulting work provides a foundation for
+future theorem verification, independent computational reproduction, and experimental investigation of the
+propagation functional developed herein.
+
+
+
+
+1. Introduction
+Throughout the history of mathematics and theoretical physics, progress has been achieved not merely
+by discovering new phenomena, but by identifying deeper mathematical structures capable of organizing
+apparently unrelated observations under a single formal language. Euclidean geometry transformed
+spatial reasoning into axiomatic deduction. Newton unified celestial and terrestrial mechanics through
+universal gravitation. Maxwell demonstrated that electricity, magnetism, and light are manifestations of a
+common electromagnetic structure. Einstein reformulated gravitation as the geometry of spacetime itself,
+while quantum field theory established operator-based descriptions governing microscopic interactions.
+Each transition represented a shift from increasingly complex collections of equations toward
+progressively more fundamental mathematical organization.
+
+Despite these achievements, contemporary theoretical physics continues to rely upon multiple
+independent mathematical frameworks describing different physical regimes. General Relativity
+accurately characterizes gravitational phenomena across macroscopic scales, while Quantum Field
+
+Theory successfully models microscopic particle interactions. Additional mathematical
+structures—including gauge symmetries, perturbative expansions, renormalization procedures,
+compactified higher-dimensional manifolds, discrete geometric constructions, tensor networks, loop
+formulations, and string-theoretic descriptions—have each contributed substantial advances toward
+unification. Nevertheless, these approaches generally introduce distinct mathematical mechanisms whose
+relationships remain externally imposed rather than recursively enforced by a single governing
+mathematical architecture.
+
+The central question motivating the present work is therefore not whether additional dimensions or new
+physical interactions exist, but whether propagation itself is a derived consequence of a deeper recursive
+mathematical structure. If recursive admissibility governs the existence of every physically meaningful
+configuration, then propagation cannot remain an independently postulated primitive. Rather, propagation
+must emerge as a theorem-governed property of recursively admissible manifold organization.
+
+The SEXA Unified Field Framework was developed to investigate this possibility. Rather than introducing
+independent governing equations for separate physical domains, the framework employs a recursively
+constrained mathematical architecture in which admissibility precedes interpretation, dimensional
+inheritance precedes observation, and recursive closure governs the lawful existence of every
+mathematical object admitted by the formalism. Previous investigations established the SEXA Recursive
+Energy Functional, recursive manifold organization spanning five operational dimensions through a
+recursively structured 2880-dimensional manifold, dimensional thinning operators, recursive admissibility,
+computational correspondence, reduction-recovery analysis across established physical regimes,
+structured falsifiability, and hardware-verifiable recursive computational organization. Collectively, these
+investigations suggest that the recursive architecture behaves not merely as a collection of related
+equations, but as a coherent mathematical system governed by reusable recursive operators across
+every investigated domain.
+
+The present work advances that research program by introducing the theorem-grade formalization of
+recursive propagation. Unlike previous papers emphasizing computational correspondence, engineering
+implementation, recursive survivability, or admissibility architecture, the objective here is exclusively
+mathematical. Specifically, this paper seeks to determine whether recursive propagation may be
+established as a formally defined mathematical object whose existence, uniqueness, recursive
+inheritance, dimensional closure, and higher-dimensional transport properties may be proven through
+explicit theorem construction.
+
+To accomplish this objective, the paper proceeds through a hierarchy of mathematical development.
+Definitions establish the primitive mathematical objects comprising the recursive propagation functional.
+Axioms specify the admissibility conditions governing their interaction. Lemmas establish intermediate
+properties concerning recursive inheritance, dimensional reduction, harmonic averaging, computational
+correspondence, and manifold closure. These results culminate in formal theorems addressing recursive
+propagation, higher-dimensional transport, dimensional closure, computational correspondence, and
+relativistic horizon structure. Every theorem is accompanied by clearly stated assumptions, proof
+structure, corollaries, and explicit failure conditions so that each mathematical claim may be
+independently examined without reliance upon interpretive narrative.
+
+A central distinction of the present work is the separation between mathematical formalization and
+physical realization. The theorems developed herein establish properties internal to the recursive
+mathematical framework itself. They do not, by themselves, constitute experimental confirmation of
+higher-dimensional transport or physical superluminal propagation. Instead, they define the precise
+
+mathematical conditions under which such propagation is predicted by the framework, thereby providing
+explicit propositions that may be subjected to future theorem verification, independent computational
+reproduction, numerical simulation, and experimental investigation.
+
+Accordingly, this paper should be understood neither as an engineering proposal nor as a
+phenomenological extension of existing relativistic theory. It is a mathematical investigation into whether
+recursive admissibility, computational correspondence, dimensional closure, and higher-dimensional
+transport together admit a formally provable propagation functional within the SEXA Unified Field
+Framework. If successful, the resulting theorems establish a recursive mathematical foundation from
+which subsequent physical interpretation, computational implementation, and empirical evaluation may
+proceed with substantially greater formal precision than is possible through heuristic construction alone.
+
+This manuscript extends the recursive mathematical program developed in the preceding SEXA
+publications. Earlier works established the recursive manifold architecture, admissibility operator,
+computational correspondence, dimensional closure, falsifiability framework, and
+hardware-verifiable implementation. The present paper builds upon those foundations by
+introducing a theorem-oriented formalization of recursive propagation and higher-dimensional
+transport within the same mathematical framework.
+
+
+
+
+1.1 Motivation
+The central objective of mathematical physics is not the accumulation of increasingly sophisticated
+equations, but the discovery of governing mathematical structures from which previously independent
+
+physical descriptions arise as necessary consequences. A successful unifying framework should reduce
+symbolic complexity while increasing explanatory power, replacing disconnected mathematical
+constructions with a single recursively consistent architecture capable of generating multiple physical
+regimes through lawful transformation.
+
+Within such a framework, propagation occupies a uniquely fundamental position. Every physical theory
+implicitly assumes the existence of mechanisms through which information, energy, causality, or
+geometric influence traverse spacetime. Classical mechanics treats propagation as the transmission of
+forces. Electromagnetism assigns propagation to electromagnetic waves. General Relativity attributes
+propagation to the geometry of curved spacetime, while Quantum Field Theory describes propagation
+through field operators and probability amplitudes. Although these descriptions differ substantially in
+mathematical formulation, each presupposes propagation as a primitive quantity whose governing
+behavior is introduced axiomatically.
+
+The possibility that propagation itself may instead emerge from recursive admissibility motivates the
+present investigation. If admissibility governs the lawful existence of mathematical objects throughout a
+recursively constrained manifold, then propagation cannot remain an independent primitive. Rather,
+propagation must itself become a theorem whose properties follow from recursive closure, dimensional
+inheritance, computational correspondence, and harmonic manifold organization.
+
+The purpose of this paper is therefore to determine whether recursive propagation admits theorem-grade
+mathematical formalization. Rather than proposing a phenomenological modification to existing physical
+theories, the investigation develops a sequence of formal definitions, lemmas, and theorems intended to
+establish propagation as a derived mathematical consequence of recursive manifold organization within
+the SEXA Unified Field Framework.
+
+
+
+1.2 Principal Contributions
+The principal mathematical contributions of this paper are summarized below.
+
+Theorem I — Recursive Propagation Existence
+
+Demonstrates that recursively admissible manifold organization necessarily defines a unique propagation functional
+under the stated axioms.
+
+
+
+
+Theorem II — Higher-Dimensional Transport
+
+Establishes sufficient conditions under which recursively admissible transport extends consistently across the
+higher-dimensional manifold without violating recursive closure.
+
+
+
+
+Theorem III — Computational Correspondence
+
+Proves that recursive propagation preserves computational traceability throughout recursive dimensional reduction
+while maintaining deterministic inheritance across admissible manifold states.
+
+Theorem IV — Dimensional Closure
+
+Demonstrates that recursive dimensional thinning preserves admissibility under harmonic manifold reduction and
+therefore prevents unrestricted symbolic divergence.
+
+
+
+
+Theorem V — Relativistic Horizon Structure
+
+Characterizes the relationship between recursive propagation and relativistic horizon geometry through
+higher-dimensional manifold organization, establishing conditions under which horizon behavior follows from
+recursive transport rather than independent geometric postulates.
+
+
+
+
+Theorem VI — Recursive Uniqueness
+
+Demonstrates that the recursive propagation functional remains unique under the admissibility constraints introduced
+throughout the framework and excludes competing propagation solutions violating recursive closure.
+
+
+
+
+Collectively these results establish the theorem-grade mathematical foundation of recursive propagation developed
+throughout the remainder of the paper.
+
+
+1.3 Scope
+This paper deliberately separates mathematical formalization from physical realization.
+
+The mathematical statements proved herein concern recursive manifold organization, admissibility, computational
+correspondence, dimensional closure, and higher-dimensional transport as formal objects defined within the SEXA
+Unified Field Framework. These theorems establish properties of the mathematical architecture itself. They do not, by
+themselves, constitute experimental verification of physical superluminal propagation or replacement of existing
+physical theories.
+
+Accordingly, the present investigation should be interpreted as a theorem-oriented mathematical work whose primary
+objective is rigorous formalization. Questions concerning numerical implementation, computational reproduction,
+engineering realization, and empirical validation are intentionally reserved for subsequent investigations.
+
+
+
+1.4 Organization of the Paper
+The paper proceeds in a hierarchical mathematical sequence.
+
+Section 2 introduces the primitive mathematical objects, recursive operators, admissibility conditions, and notation
+required throughout the formal development.
+
+Section 3 establishes the axiomatic structure governing recursive manifold organization and dimensional inheritance.
+
+Section 4 develops the lemmas necessary to characterize recursive propagation, computational correspondence, harmonic
+reduction, and admissibility preservation.
+
+Section 5 presents the principal theorem-grade proofs concerning recursive propagation, higher-dimensional transport, dimensional
+closure, computational correspondence, and relativistic horizon structure.
+
+Section 6 derives the generalized propagation functional and analyzes its limiting behavior under recursive manifold reduction.
+
+Section 7 discusses corollaries, computational implications, explicit failure conditions, and relationships to future computational and
+experimental investigation.
+
+Section 8 concludes by summarizing the mathematical contributions and identifying future directions for theorem verification,
+independent computational reproduction, and empirical evaluation.
+
+
+
+
+2. Mathematical Foundations
+The preceding sections established the motivation, scope, and principal objectives of the present investigation. We
+now transition from conceptual exposition to formal mathematical development. Throughout the remainder of this
+paper every mathematical object, operator, mapping, and theorem is introduced explicitly under a recursively
+admissible formal structure. No symbol is employed without definition, no operator is introduced without governing
+constraints, and every subsequent theorem depends only upon previously established assumptions.
+
+The purpose of this section is to construct the primitive mathematical language from which recursive propagation is
+derived. Unlike conventional formulations that assume propagation as a fundamental property of spacetime, the
+present framework treats propagation as an emergent consequence of recursive admissibility acting across a
+higher-dimensional manifold. Accordingly, propagation is not postulated. It is constructed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10. Conclusion
+This paper has presented a theorem-grade mathematical formalization of recursive propagation within the
+SEXA Unified Field Framework. Beginning with explicit definitions, recursive admissibility conditions,
+dimensional closure principles, and computational correspondence, the investigation constructed a
+generalized recursive propagation functional intended to describe higher-dimensional manifold transport
+within a recursively admissible mathematical architecture.
+
+Unlike phenomenological propagation models introduced through empirical modification of existing
+equations, the recursive propagation functional developed herein is derived from recursively inherited
+manifold organization. The resulting formulation integrates recursive admissibility, harmonic
+normalization, dimensional closure, computational correspondence, and higher-dimensional transport into
+a single mathematical object governed by explicitly stated assumptions, theorem structure, corollaries,
+and failure conditions.
+
+The paper further established a framework for theorem-oriented analysis by organizing the mathematical
+development through formal definitions, axioms, lemmas, principal theorem statements, limiting behavior,
+computational evaluation, and structured falsifiability. This organization is intended to facilitate
+independent mathematical examination, computational reproduction, and future refinement of the
+recursive propagation framework.
+
+The work therefore contributes a formal mathematical foundation for recursive propagation within the
+SEXA Unified Field Framework. Whether the propagation functional ultimately corresponds to measurable
+physical phenomena remains a subject for continued mathematical investigation, independent
+computational implementation, and experimental evaluation. Nevertheless, the theorem-grade
+formalization developed herein provides a rigorous mathematical basis upon which such future
+investigations may proceed.
+
+
+
+B.2 Hierarchical Development
+Primitive Definitions
+     │
+     ▼
+Fundamental Axioms
+     │
+     ▼
+Preliminary Lemmas
+     │
+     ▼
+Existence Theorem
+     │
+     ▼
+Uniqueness Theorem
+     │
+
+     ▼
+Bounded Recursive Amplification
+     │
+     ▼
+Higher-Dimensional Transport
+     │
+     ▼
+Computational Correspondence
+     │
+     ▼
+Relativistic Horizon Structure
+     │
+     ▼
+Recursive Propagation Functional
+     │
+     ▼
+Numerical Evaluation
+     │
+     ▼
+Falsifiability
+
+Every theorem depends only upon nodes positioned above it.
+B.3 Dependency Matrix
+
+
+
+     Mathematical Object                Depends Upon
+
+ Definitions                            None
+
+ Axioms                                 Definitions
+
+ Lemmas                                 Definitions +
+                                        Axioms
+
+ Existence Theorem                      Lemmas
+
+ Uniqueness Theorem                     Existence
+
+ Amplification Theorem                  Uniqueness
+
+ Transport Theorem                      Amplification
+
+ Computational                          Transport
+ Correspondence
+
+ Horizon Structure                      Correspondence
+
+ Propagation Functional                 All preceding
+                                        theorems
+
+ Numerical Evaluation                   Propagation
+                                        Functional
+
+Falsifiability   Entire framework
+
+
+
+
+D.2 Symbol Completeness
+Every symbol appearing throughout the manuscript satisfies one of the following categories.
+
+D.3 Logical Completeness
+The theorem hierarchy satisfies
+
+Definitions
+
+↓
+
+Axioms
+
+↓
+
+Lemmas
+
+↓
+
+Theorems
+
+↓
+
+Corollaries
+
+↓
+
+Computational Evaluation
+
+↓
+
+Failure Conditions
+
+↓
+
+Conclusion
+
+No theorem precedes its assumptions.
+
+No corollary precedes its theorem.
+
+No equation depends upon future results.
+
+D.10 Structural Completeness
+The recursive propagation formalism contains
+
+✓ Primitive definitions
+
+✓ Recursive operators
+
+✓ Admissibility criteria
+
+✓ Dimensional hierarchy
+
+✓ Axiomatic structure
+
+✓ Lemmas
+
+✓ Principal theorems
+
+✓ Corollaries
+
+✓ Numerical evaluation procedure
+
+✓ Computational correspondence
+
+✓ Failure conditions
+
+✓ Falsifiability framework
+
+✓ Symbol glossary
+
+✓ Dependency graph
+
+✓ Verification checklist
+
+✓ Consistency audit
+
+Collectively these components constitute a complete mathematical specification of the recursive propagation formalism as
+presented in this manuscript.
+
+
+
+governs recursively admissible higher-dimensional transport.
+
+
+
+
+E.17 General Derivation Summary
+The generalized recursive propagation functional is obtained through the following sequence of mathematical constructions:
+
+     1.​ Definition of the five-dimensional operational manifold.
+     2.​ Recursive extension through the admissible dimensional hierarchy.
+     3.​ Construction of recursively admissible excitation amplitudes.
+     4.​ Definition of recursive phase potentials.
+     5.​ Formation of the admissibility-preserving dimensional thinning ratio.
+     6.​ Construction of the cumulative recursive thinning product.
+     7.​ Geometric normalization of recursive dimensional growth.
+     8.​ Recursive harmonic averaging through the sexagesimal hierarchy.
+     9.​ Empire Wave normalization.
+     10.​ Assembly of the generalized recursive propagation functional.
+
+Collectively these ten mathematical constructions define the generalized propagation functional investigated throughout this paper.
+
+The resulting formalism is therefore not introduced as an isolated symbolic expression but as the terminal mathematical
+consequence of the recursive admissibility architecture developed within the SEXA Unified Field Framework. Every subsequent
+computational evaluation, theorem, corollary, and numerical investigation follows directly from this derivation sequence under the
+assumptions and admissibility conditions established throughout the manuscript.
+
+
+REFERENCES
+
+I. Foundational Mathematics and Theoretical Physics
+Newton, I. Philosophiæ Naturalis Principia Mathematica (1687). https://archive.org/details/newtonprincipia
+
+Maxwell, J. C. A Treatise on Electricity and Magnetism (1873). https://archive.org/details/treatiseonelectr01maxw
+
+Hilbert, D. The Foundations of Physics (1915).
+
+Einstein, A. The Foundation of the General Theory of Relativity (1916).
+https://einsteinpapers.press.princeton.edu/vol6-trans/158
+
+Noether, E. Invariant Variation Problems (1918). https://arxiv.org/abs/physics/0503066
+
+Dirac, P. A. M. The Principles of Quantum Mechanics (1930). https://archive.org/details/principlesofquan0000dira
+
+von Neumann, J. Mathematical Foundations of Quantum Mechanics (1932).
+https://press.princeton.edu/books/hardcover/9780691028934/mathematical-foundations-of-quantum-mechanics
+
+Lee, J. M. Introduction to Smooth Manifolds (2nd Edition). https://link.springer.com/book/10.1007/978-1-4419-9982-5
+
+Nakahara, M. Geometry, Topology and Physics.
+https://www.routledge.com/Geometry-Topology-and-Physics/Nakahara/p/book/9780750306065
+
+Penrose, R. The Road to Reality. https://global.oup.com/academic/product/the-road-to-reality-9780198505495
+
+
+II. Prior SEXA Unified Field Framework Publications
+McClain, J. The SEXA Mathematical Framework: Unified Recursive Manifold Dynamics, Dimensional Collapse
+Operators, and Triality-Structured Exciter Geometry. Journal of Advances in Mathematics.
+https://doi.org/10.24297/jam.v25i.9880
+
+McClain, J. Formal Compatibility and Falsifiability of the SEXA Unified Field Framework. Journal of Advances in
+Mathematics. https://doi.org/10.24297/jam.v25i.9887
+
+McClain, J. Hardware-Verifiable Recursive Computational Architecture Derived from the SEXA Unified Field
+Framework: Computational Correspondence, Recursive Admissibility, and Structured Validation Across a
+2880-Dimensional Manifold. Journal of Advances in Mathematics. https://doi.org/10.24297/jam.v25i.9896
+
+McClain, J. Gamma-Glyph Computation Theory: Ordered Admissibility Computation via
+Non-Commutative Constraint Chains. https://doi.org/10.5281/zenodo.19698748
+
+McClain, J. Admissibility-Filtered Market Microstructure: Constraint-Governed Pre-Evaluation Filtering for
+Financial Signals. https://doi.org/10.5281/zenodo.19681939
+
+McClain, J. Recursive Regime Dynamics: Harmonic Constraint Propagation and Nonlinear Market
+Regime Transitions. https://doi.org/10.5281/zenodo.19560822
+
+McClain, J. Constraint-Native Financial Intelligence Systems: Admissibility-Governed Architectures for
+Real-Time Market Evaluation. https://doi.org/10.5281/zenodo.19423232
+
+McClain, J. A Γ-Admissibility-Governed Unified Financial Energy Functional.
+https://doi.org/10.5281/zenodo.19387116
+
+McClain, J., & Ceisiwr, E. The AMN Authority Tensor: Quaternionic Admissibility Enforcement,
+Glyph-Operator Constraint, and Planetary Closure in the SEXA Framework.
+https://doi.org/10.5281/zenodo.19632818
+
+
+III. Computational Mathematics and Algorithmic Foundations
+Knuth, D. E. The Art of Computer Programming. https://www-cs-faculty.stanford.edu/~knuth/taocp.html
+
+Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. Introduction to Algorithms.
+https://mitpress.mit.edu/9780262046305/introduction-to-algorithms
+
+Wolfram, S. A New Kind of Science. https://www.wolframscience.com/nk
+
+Mom,Dad,Thai & Daas Proto & Phairlever (and your Grandfather)…”The force will be with you, Always.”

@@ -1,0 +1,251 @@
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921                                https://rajpub.com/index.php/jam
+
+
+
+                                                 DOI: https://doi.org/10.24297/jam.v25i.9887
+   A Monster-Symmetric Admissibility Formulation of the SEXA Unified Field Theory: Operator-Glyph
+Closure, Σ₆₀ Exciternion Logic, and Falsifiable Reduction to General Relativity, Quantum Field Theory, and
+                                       Yukawa Interaction Regimes
+                                                                Jered McClain
+                                    SEXA Institute Of Technology & Interdomain Galactic Advisors
+TABLE OF CONTENTS
+Title Page ........................................ 1​
+Abstract .......................................... 2
+     1.​ Introduction .................................. 2–3
+     2.​ Operator-Glyph Formulation ............ 3–6​
+         2.0 Glyph Operator System ............. 4–5​
+         2.1 Unified Energy Functional ........ 6​
+         2.2 Glyph Operator Chain Γ ............ 7​
+         2.3 Extended WHERE .................... 7​
+         2.4 Admissibility Condition ............ 8​
+         2.5 Structural Interpretation .......... 8
+     3.​ Admissibility & Monster Constraint ... 8–10​
+         3.1 Closure Condition ................... 8​
+         3.2 Exciternion Admissibility ......... 9​
+         3.3 Σ60 Enforcement .................... 9​
+         3.4 Monster Constraint ................. 10​
+         3.5 Kill-Switch Condition .............. 10​
+         3.6 Structural Interpretation .......... 10
+     4.​ Reduction & Physical Recovery ........ 11–13​
+         4.1 Requirement .......................... 11​
+         4.2 GR Limit ................................ 11​
+         4.3 QFT Limit .............................. 11​
+         4.4 Yukawa Behavior .................... 12​
+         4.5 Failure Under Reduction .......... 12​
+         4.6 Structural Interpretation .......... 12​
+         4.7 Unified Implication ................. 13
+     5.​ Conclusion .................................. 13–14​
+         5.1 Summary .............................. 13​
+         5.2 Admissibility Resolution .......... 13​
+         5.3 Unified Structure .................... 13​
+         5.4 Falsifiability ............................ 14​
+         5.5 Closure Program Position ........ 14​
+         5.6 Final Statement ..................... 14
+Conflicts of Interest ......................... 14​
+Funding Statement .......................... 14​
+Author Biography ............................ 14​
+References ...................................... 1
+ABSTRACT
+This paper presents an operator-level admissibility formulation of the SEXA Unified Field Theory in which physical
+configurations are governed by a structured glyph operator chain acting on a unified energy functional. The
+formulation extends recursive closure frameworks by introducing a six-operator admissibility chain, Γ, that
+enforces existence conditions prior to physical interpretation.
+Each operator corresponds to a non-reducible constraint governing energy admissibility, propagation consistency,
+manifold, symmetry invariance, mass-memory persistence, and observational registration. A configuration is
+phcompatibilityysically admissible if and only if it survives ordered evaluation under Γ.
+
+
+
+                                                                     21
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921                    https://rajpub.com/index.php/jam
+
+
+
+The Σ₆₀ logical system defines the higher-order admissibility algebra, while Monster and Baby Monster symmetry
+constrain admissible configurations through invariant orbit classification.
+The framework is explicitly falsifiable. Failure of operator closure, recursive convergence, symmetry classification,
+or recovery of established limits in General Relativity, Quantum Field Theory, or Yukawa-type interaction regimes
+results in immediate rejection.
+This establishes admissibility as a primary condition, defining a constrained and testable pathway toward unified
+field consistency.
+INTRODUCTION
+The development of unified field theories has traditionally proceeded through extension, introducing additional
+fields, symmetries, or higher-dimensional embeddings to reconcile known physical interactions. While these
+approaches have produced powerful models, they do not impose a prior condition governing which configurations
+are admissible before unification is attempted.
+The SEXA Unified Field Theory introduces a closure-based formulation in which condensed and perpetual energy
+regimes are unified through a single invariant action defined on a five-dimensional exciter manifold with recursive
+extension into higher-dimensional structure. Within this framework, physical configurations are not unrestricted but
+must satisfy recursive closure across dimensional embeddings in order to remain consistent.
+Closure alone, however, does not determine admissibility. A configuration may satisfy closure conditions while
+failing under recursive evaluation, dimensional projection, or invariant preservation. This reveals the necessity of a
+pre-interpretive admissibility mechanism capable of determining whether a configuration is permitted to exist prior
+to physical interpretation.
+The Recursive Closure Criterion and Prime Atom of Logic framework establish this mechanism through the
+Exciternion, which defines admissibility as a structural condition independent of domain. Within that formulation,
+energy, fields, and physical expressions are not primary objects but emerge as admissible configurations within a
+recursively constrained logical space.
+The present work introduces the operational realization of this admissibility structure within the SEXA Unified Field
+Theory. The six-glyph system, previously introduced as a compact structural representation of the unified energy
+equation, is reformulated here as an ordered operator chain acting directly on the energy functional.
+Each glyph functions as an operator rather than a symbolic label. The ordered application of these operators
+defines a strict admissibility sequence such that physical configurations exist only if they survive sequential
+evaluation under the complete glyph chain Γ. The unified equation therefore, specifies the space of evaluable
+configurations, while admissibility determines the subset that can exist.
+This formulation is further constrained through invariant orbit classification under Monster and Baby Monster
+symmetry, restricting admissible configurations to discrete classes consistent with symmetry-preserving structure.
+The Σ60 logical system operates as the governing admissibility algebra, enforcing recursive consistency across
+all levels of the formulation.
+The framework is explicitly constructed to be falsifiable. Failure of operator closure, failure of recursive
+convergence, failure of invariant classification, or failure to recover known physical limits results in immediate
+rejection without parameter adjustment or interpretive modification. Admissibility is therefore treated as a primary
+condition, and all physical structure emerges as a consequence of satisfying this condition.
+
+
+
+
+                                                         22
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                      23
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                      24
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                      25
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                      26
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                      27
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                      28
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                      29
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                      30
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                      31
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                      32
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921                  https://rajpub.com/index.php/jam
+
+
+
+
+Conflicts of Interest
+      The author declares no conflicts of interest.
+
+
+Funding Statement
+      This research received no external funding.
+
+
+Author Biography
+      Jered McClain is the founder of SEXA Mathematical Sciences LLC and the architect of the SEXA
+      Unified Field Theory. His work focuses on high-dimensional manifold dynamics, recursive closure
+      systems, admissibility logic, and unified energy formulations.
+REFERENCES
+Arkani-Hamed, N., Huang, Y., & O’Connell, D. (2017). Scattering amplitudes and the positive Grassmannian.
+Journal of High Energy Physics.​
+DOI: https://doi.org/10.1007/JHEP11(2017)068
+Baez, J. C., & Huerta, J. (2018). The algebra of grand unified theories. Bulletin of the American Mathematical
+Society, 47(3), 483–552.​
+DOI: https://doi.org/10.1090/S0273-0979-10-01280-8
+Carroll, S. M. (2019). Spacetime and geometry: An introduction to general relativity. Cambridge University Press.​
+DOI: https://doi.org/10.1017/9781108770385
+
+
+
+                                                        33
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921                   https://rajpub.com/index.php/jam
+
+
+
+Conway, J. H., & Norton, S. P. (1979). Monstrous moonshine. Bulletin of the London Mathematical Society, 11(3),
+308–339.​
+DOI: https://doi.org/10.1112/blms/11.3.308
+Einstein, A. (1916). The foundation of the general theory of relativity. Annalen der Physik, 49, 769–822.
+Flom, A. (2025). Sigmatics: A 96-class geometric algebra computational framework for high-dimensional recursive
+structures.      (Computational    correspondence      and    structural    validation     framework).    DOI:
+https://doi.org/10.5281/zenodo.17791722
+Griess, R. L. (1982). The friendly giant (The Monster group). Inventiones Mathematicae, 69(1), 1–102.​
+DOI: https://doi.org/10.1007/BF01389347
+McClain, J. (2025). A recursive closure criterion for a theory of everything: A 60-glyph quaternionic inter-domain
+syllogistic admissibility standard (Prime Atom of Logic). Zenodo.​
+DOI: https://doi.org/10.5281/zenodo.18228214
+McClain, J. (2025). The SEXA mathematical framework — Unified recursive manifold dynamics, dimensional
+collapse operators, and triality-structured exciter geometry — Master peer-review edition. Zenodo.​
+DOI: https://doi.org/10.5281/zenodo.17791722
+McClain, J. (2025). The SEXA recursive energy functional (SREF): Spectral gain-60 recursion on a 5D manifold
+and bounded dynamical stability. Zenodo
+DOI: https://doi.org/10.5281/zenodo.19387116
+Peskin, M. E., & Schroeder, D. V. (1995). An introduction to quantum field theory. Addison-Wesley.
+Polchinski, J. (2017). Effective field theory and the Fermi surface.​
+DOI: https://doi.org/10.48550/arXiv.1708.09079
+Schwartz, M. D. (2020). Quantum field theory and the standard model (Updated ed.). Cambridge University
+Press.
+Witten, E. (2018). Symmetry and emergence. Nature Physics, 14, 116–119.​
+DOI: https://doi.org/10.1038/nphys4264
+Yukawa, H. (1935). On the interaction of elementary particles. Proceedings of the Physico-Mathematical Society
+of Japan, 17, 48–57.
+McClain, J. (2026). Formal compatibility and falsifiability assessment of the SEXA unified field model. Zenodo.
+DOI: https://doi.org/10.5281/zenodo.19287354
+Hossenfelder, S. (2018). Lost in math:                 How     beauty   leads   physics    astray.   Basic   Books.
+DOI: https://doi.org/10.48550/arXiv.1803.07038
+Rovelli, C. (2021). Helgoland: Making sense of the quantum revolution. Riverhead Books.
+
+
+
+
+                                                          34

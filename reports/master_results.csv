@@ -1,0 +1,80 @@
+id,domain,status,claim,observed,target,error,note
+CORE-001,Core,PASS,C_Omega = sqrt(2880/4),26.832815729997478,26.832815729997478,0.0,
+CORE-002,Core,PASS,2880/96 dimension ratio,30.0,30.0,0.0,
+CORE-003,Core,PASS,256/8 = 32,32.0,32.0,0.0,
+CORE-004,Core,PASS,log2(32) = 5,5.0,5.0,0.0,
+CORE-005,Core,PASS,2880 - 4 = 2876,2876,2876.0,0.0,
+CORE-006,Core,PASS,1/(2880-4),0.0003477051460361613,0.0003477051460361613,0.0,
+SEX-001,Sexagesimal,PASS,Direct 60^18.86 computation,3.4350461977321293e+33,3.4350461977321293e+33,0.0,This is the direct arithmetic result.
+SEX-002,Sexagesimal,FAIL,Source-stated 60^18.86 = 3.47e33 reproduces within ±3e31,3.4350461977321293e+33,3.47e+33,-3.4953802267870894e+31,Direct computation rounds to 3.44e33 at three significant figures.
+SEX-003,Sexagesimal,PASS,Normalized 60^(18.86/32),11.16857829780513,11.16857829780513,0.0,Source rounds this to about 11.2.
+SEX-004,Sexagesimal,PASS,2876*(18.86/32),1695.0425,1695.0425,0.0,Source rounds this to about 1695.
+SIG-CAS-01,Sigmatics,PASS,Cascade ratio 256→96,0.375,0.375,0.0,Tested against source's 3-decimal rounded value.
+SIG-CAS-02,Sigmatics,PASS,Cascade ratio 96→32,0.3333333333333333,0.333,0.0003333333333332966,Tested against source's 3-decimal rounded value.
+SIG-CAS-03,Sigmatics,PASS,Cascade ratio 32→7,0.21875,0.219,-0.0002500000000000002,Tested against source's 3-decimal rounded value.
+SIG-CAS-04,Sigmatics,PASS,Cascade ratio 7→3,0.42857142857142855,0.429,-0.0004285714285714448,Tested against source's 3-decimal rounded value.
+SIG-CAS-05,Sigmatics,PASS,Cascade ratio 3→1,0.3333333333333333,0.333,0.0003333333333332966,Tested against source's 3-decimal rounded value.
+SIG-CAS-06,Sigmatics,PASS,Geometric mean cascade reduction,0.32987697769322355,0.33,-0.00012302230677646575,
+SIG-CAS-07,Sigmatics,PASS,Overall cascade factor 256→1,256.0,256.0,0.0,
+SIG-CAS-08,Sigmatics,PASS,First reduction 256→96 = 3/8,0.375,0.375,0.0,
+SIG-CAS-09,Sigmatics,PASS,1/e comparison value,0.36787944117144233,0.36787944117144233,0.0,
+SIG-CAS-10,Sigmatics,PASS,1/phi^2 comparison value,0.38196601125010515,0.38196601125010515,0.0,
+SIG-INF-01,Sigmatics,PASS,632/2048 information retention,30.859375,30.859375,0.0,
+SIG-INF-02,Sigmatics,PASS,Information loss,69.140625,69.140625,0.0,
+SIG-INF-03,Sigmatics,PASS,Per-scale ratio for 256→1 over 2876 steps,0.9980737708320553,0.998073770832055,3.3306690738754696e-16,
+SIG-INF-04,Sigmatics,PASS,Natural-log per-scale exponent,-0.0019280867331292245,-0.00192808673312922,-4.553649124439119e-18,Source reports approximately -0.00193.
+SIG-RAT-01,Sigmatics,PASS,C_Omega / nbar,1.4227367831387847,1.422736783139844,-1.0593748100973244e-12,
+SIG-RAT-02,Sigmatics,PASS,C_Omega/nbar is within 1% of sqrt(2),1.4227367831387847,1.4142135623730951,,
+SIG-RAT-03,Sigmatics,PASS,C_Omega/6.77,3.963488290989288,3.963488290989287,1.3322676295501878e-15,
+SIG-RAT-04,Sigmatics,PASS,C_Omega/6.77 is within 1% of 4,3.963488290989288,4.0,,
+SIG-STR-01,Sigmatics,PASS,8 quaternionic cycles × 4 phases = 32,32,32,0,
+SIG-STR-02,Sigmatics,PASS,24 shift = 3×8,24,24,0,
+SIG-STR-03,Sigmatics,PASS,32 states addressable by five bits,32,32,0,
+SIG-STR-04,Sigmatics,PASS,Period-3 recursion order,3,3,0,
+SIG-STR-05,Sigmatics,PASS,R^4 cycle length arithmetic,4,4,0,
+SIG-REC-01,Sigmatics,PASS,All 32 five-bit states reconstruct exactly,32/32 exact,32/32 exact,,
+GAMMA-000,Gamma,PASS,Full six-gate chain admits all-true state,True,True,,
+GAMMA-KS01,Gamma,PASS,Kill-switch: removing gate 1 rejects state,False,False,,Executable Boolean model of the paper's stated all-stage admissibility semantics.
+GAMMA-KS02,Gamma,PASS,Kill-switch: removing gate 2 rejects state,False,False,,Executable Boolean model of the paper's stated all-stage admissibility semantics.
+GAMMA-KS03,Gamma,PASS,Kill-switch: removing gate 3 rejects state,False,False,,Executable Boolean model of the paper's stated all-stage admissibility semantics.
+GAMMA-KS04,Gamma,PASS,Kill-switch: removing gate 4 rejects state,False,False,,Executable Boolean model of the paper's stated all-stage admissibility semantics.
+GAMMA-KS05,Gamma,PASS,Kill-switch: removing gate 5 rejects state,False,False,,Executable Boolean model of the paper's stated all-stage admissibility semantics.
+GAMMA-KS06,Gamma,PASS,Kill-switch: removing gate 6 rejects state,False,False,,Executable Boolean model of the paper's stated all-stage admissibility semantics.
+HOR-001,Horizon,PASS,Regular-polygon radial approximation error decreases monotonically,"[0.2928932188134524, 0.07612046748871326, 0.01921471959676957, 0.004815273327803071, 0.001204543794827595, 0.00030118130379575003, 7.529816085549701e-05, 1.882471739889091e-05, 4.70619042380882e-06]",strictly decreasing,,
+HOR-002,Horizon,PASS,Radial error tends toward zero numerically,4.70619042380882e-06,< 2.9289321881345244e-05,,
+HOR-003,Horizon,PASS,Polygon radial error exhibits ~n^-2 asymptotic scaling,"[0.25000941262463433, 0.250002353112143, 0.25000058827369664]",~0.25,,
+GR-001,GR reference,PASS,Solar limb light bending,1.7512432813682448,1.75,0.0012432813682448085,Standard GR reference calculation; not an independent SEXA-specific prediction.
+GR-002,GR reference,PASS,Mercury anomalous perihelion precession,42.981975497467126,43.0,-0.018024502532874465,Standard GR reference calculation.
+GR-003,GR reference,PASS,Solar gravitational redshift,2.122566754396204e-06,2.1e-06,2.2566754396204214e-08,Weak-field standard GR reference calculation.
+GR-004,GR reference,PASS,Shapiro delay near solar conjunction (parameterized reference case),220.25081791725657,232.0,-11.749182082743431,Result depends on geometry; wide tolerance reflects source's unspecified conjunction geometry.
+GR-005,GR reference,PASS,GPS net relativistic clock correction,38.437153262839395,38.0,0.43715326283939504,Standard approximate GR+SR reference calculation.
+QFT-001,QFT reference,PASS,Electron g-2 leading-order Schwinger value,2.002322819465777,2.0023228,1.946577699030172e-08,Standard QED leading-order reference calculation.
+QFT-002,QFT reference,PASS,Casimir P∝1/a^4 doubling-gap scaling,16.0,16.0,0.0,Structural scaling check only.
+QFT-DISP-01,QFT reference,PASS,E^2=p^2+m^2 natural-unit case 1,1.0,1.0,0.0,
+QFT-DISP-02,QFT reference,PASS,E^2=p^2+m^2 natural-unit case 2,5.0,5.0,0.0,
+QFT-DISP-03,QFT reference,PASS,E^2=p^2+m^2 natural-unit case 3,25.0,25.0,0.0,
+ACT-001,Activation,PASS,chi=sigma/Sigma_c at hard-switch threshold,1.0,1.0,0.0,Definitional consistency check; does not establish physical activation.
+ACT-002,Activation,PASS,OFF below 1e8 Pa,99900000.0,100000000.0,,
+ACT-003,Activation,PASS,ON threshold condition at >=1e8 Pa,100000000.0,100000000.0,,
+COMP-001,Computational,PASS,Identical input produces identical 10k-step trace,"(9999, 2793649609, 9)","(9999, 2793649609, 9)",,
+COMP-002,Computational,PASS,Different seed produces different trace,"(9999, 2793649609, 9)","(9999, 4037776906, 10)",,
+COMP-003,Computational,PASS,Projection remains bounded in 32-state space,31,<32,,
+COMP-BOUND-01,Computational,PASS,Normalized recursion finite/bounded seed=-100,100.0,<= 100,,
+COMP-BOUND-02,Computational,PASS,Normalized recursion finite/bounded seed=-10,10.0,<= 10,,
+COMP-BOUND-03,Computational,PASS,Normalized recursion finite/bounded seed=-1,1.0,<= 1,,
+COMP-BOUND-04,Computational,PASS,Normalized recursion finite/bounded seed=0,0.0,<= 0,,
+COMP-BOUND-05,Computational,PASS,Normalized recursion finite/bounded seed=1,1.0,<= 1,,
+COMP-BOUND-06,Computational,PASS,Normalized recursion finite/bounded seed=10,10.0,<= 10,,
+COMP-BOUND-07,Computational,PASS,Normalized recursion finite/bounded seed=100,100.0,<= 100,,
+PROV-001,Provenance,PASS,Current master source document count,14,14,0,
+PROV-002,Provenance,PASS,Exact duplicate PDF groups detected,1,1,0,Duplicate documents are not counted as independent evidence.
+PROV-003,Provenance,PASS,Image/scan-only text-extraction sources,1,1,0,
+SIG-RAW-001,Sigmatics,NOT_INDEPENDENTLY_EXECUTABLE,"32 triality orbit statistics: arithmetic 47.50, geometric 35.97, harmonic 18.86, RMS 54.99.",not executable from supplied data,,,The supplied PDF reports aggregate statistics but does not embed the complete raw 96-class graph/orbit excitation vector needed to regenerate them independently.
+SIG-RAW-002,Sigmatics,NOT_INDEPENDENTLY_EXECUTABLE,"Reachability growth 1→4, 2→9, 3→16, 4→24, 5→32 classes.",not executable from supplied data,,,The raw transition graph / @uor-foundation/sigmatics package dataset is not embedded in the supplied material.
+SIG-RAW-003,Sigmatics,NOT_INDEPENDENTLY_EXECUTABLE,R transform yields 8 independent 4-cycles; T has period 3; M partially mixes orbits.,not executable from supplied data,,,These are reported graph properties; the complete machine-readable graph is absent from the supplied PDFs.
+GR-REF-007,GR/QFT compatibility,REFERENCE_REPRODUCTION,Binary inspiral decay reported ~-2.4e-12 s/s.,not executable from supplied data,,,"A specific binary-system parameter set is not supplied in the 4-page assessment, so this target is treated as a reported reference value rather than an independent SEXA derivation."
+EXP-001,Experimental,PENDING_EXPERIMENT,ON-state Yukawa deviation via torsion-balance protocol.,not executable from supplied data,,,The source explicitly states that no physical measurement has yet been performed.
+HW-001,Hardware,PENDING_IMPLEMENTATION,FPGA/ASIC/AI-accelerator realization.,not executable from supplied data,,,"The conference paper explicitly describes hardware realization as future work, not a completed benchmark."
+SCAN-001,Provenance,UNRESOLVED,SEXA_UFT_Structural_Audit(10).pdf equation-level extraction.,not executable from supplied data,,,The 13-page source is image/scan-only under text extraction. It is hashed and inventoried but equations are not invented from unavailable machine text.
+SIG-RAW-004,Sigmatics,UNRESOLVED,Source statement: each dimensional reduction loses ~1.42 bits per class.,not executable from supplied data,,,"The supplied text does not define the denominator or derivation for 1.42 bits/class. From the explicit 2048→632 figures, total loss is 1416 bits; 1416/96 = 14.75, so the 1.42 figure cannot be uniquely reconstructed from the stated quantities."
+GR-REF-005,GR/QFT compatibility,REFERENCE_REPRODUCTION,Frame dragging reported ~30 milliarcseconds/year.,not executable from supplied data,,,"The assessment does not specify the orbit, central-body angular momentum model, or measurement geometry required for an independent calculation."

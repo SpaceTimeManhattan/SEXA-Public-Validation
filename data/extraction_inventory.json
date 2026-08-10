@@ -1,0 +1,14 @@
+{
+  "source_documents": 14,
+  "numeric_context_lines": 1698,
+  "equation_like_lines": 227,
+  "exact_duplicate_groups": [
+    [
+      "SEXA Validation & Computational Correspondence Paper(20260810-123422).pdf",
+      "SEXA Validation & Computational Correspondence Paper (6)(9).pdf"
+    ]
+  ],
+  "scan_only_sources": [
+    "SEXA_UFT_Structural_Audit(10).pdf"
+  ]
+}

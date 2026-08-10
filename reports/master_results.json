@@ -1,0 +1,822 @@
+[
+  {
+    "id": "CORE-001",
+    "domain": "Core",
+    "status": "PASS",
+    "claim": "C_Omega = sqrt(2880/4)",
+    "observed": 26.832815729997478,
+    "target": 26.832815729997478,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "CORE-002",
+    "domain": "Core",
+    "status": "PASS",
+    "claim": "2880/96 dimension ratio",
+    "observed": 30.0,
+    "target": 30.0,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "CORE-003",
+    "domain": "Core",
+    "status": "PASS",
+    "claim": "256/8 = 32",
+    "observed": 32.0,
+    "target": 32.0,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "CORE-004",
+    "domain": "Core",
+    "status": "PASS",
+    "claim": "log2(32) = 5",
+    "observed": 5.0,
+    "target": 5.0,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "CORE-005",
+    "domain": "Core",
+    "status": "PASS",
+    "claim": "2880 - 4 = 2876",
+    "observed": 2876,
+    "target": 2876.0,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "CORE-006",
+    "domain": "Core",
+    "status": "PASS",
+    "claim": "1/(2880-4)",
+    "observed": 0.0003477051460361613,
+    "target": 0.0003477051460361613,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "SEX-001",
+    "domain": "Sexagesimal",
+    "status": "PASS",
+    "claim": "Direct 60^18.86 computation",
+    "observed": 3.4350461977321293e+33,
+    "target": 3.4350461977321293e+33,
+    "error": 0.0,
+    "note": "This is the direct arithmetic result."
+  },
+  {
+    "id": "SEX-002",
+    "domain": "Sexagesimal",
+    "status": "FAIL",
+    "claim": "Source-stated 60^18.86 = 3.47e33 reproduces within \u00b13e31",
+    "observed": 3.4350461977321293e+33,
+    "target": 3.47e+33,
+    "error": -3.4953802267870894e+31,
+    "note": "Direct computation rounds to 3.44e33 at three significant figures."
+  },
+  {
+    "id": "SEX-003",
+    "domain": "Sexagesimal",
+    "status": "PASS",
+    "claim": "Normalized 60^(18.86/32)",
+    "observed": 11.16857829780513,
+    "target": 11.16857829780513,
+    "error": 0.0,
+    "note": "Source rounds this to about 11.2."
+  },
+  {
+    "id": "SEX-004",
+    "domain": "Sexagesimal",
+    "status": "PASS",
+    "claim": "2876*(18.86/32)",
+    "observed": 1695.0425,
+    "target": 1695.0425,
+    "error": 0.0,
+    "note": "Source rounds this to about 1695."
+  },
+  {
+    "id": "SIG-CAS-01",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Cascade ratio 256\u219296",
+    "observed": 0.375,
+    "target": 0.375,
+    "error": 0.0,
+    "note": "Tested against source's 3-decimal rounded value."
+  },
+  {
+    "id": "SIG-CAS-02",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Cascade ratio 96\u219232",
+    "observed": 0.3333333333333333,
+    "target": 0.333,
+    "error": 0.0003333333333332966,
+    "note": "Tested against source's 3-decimal rounded value."
+  },
+  {
+    "id": "SIG-CAS-03",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Cascade ratio 32\u21927",
+    "observed": 0.21875,
+    "target": 0.219,
+    "error": -0.0002500000000000002,
+    "note": "Tested against source's 3-decimal rounded value."
+  },
+  {
+    "id": "SIG-CAS-04",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Cascade ratio 7\u21923",
+    "observed": 0.42857142857142855,
+    "target": 0.429,
+    "error": -0.0004285714285714448,
+    "note": "Tested against source's 3-decimal rounded value."
+  },
+  {
+    "id": "SIG-CAS-05",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Cascade ratio 3\u21921",
+    "observed": 0.3333333333333333,
+    "target": 0.333,
+    "error": 0.0003333333333332966,
+    "note": "Tested against source's 3-decimal rounded value."
+  },
+  {
+    "id": "SIG-CAS-06",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Geometric mean cascade reduction",
+    "observed": 0.32987697769322355,
+    "target": 0.33,
+    "error": -0.00012302230677646575,
+    "note": ""
+  },
+  {
+    "id": "SIG-CAS-07",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Overall cascade factor 256\u21921",
+    "observed": 256.0,
+    "target": 256.0,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "SIG-CAS-08",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "First reduction 256\u219296 = 3/8",
+    "observed": 0.375,
+    "target": 0.375,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "SIG-CAS-09",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "1/e comparison value",
+    "observed": 0.36787944117144233,
+    "target": 0.36787944117144233,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "SIG-CAS-10",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "1/phi^2 comparison value",
+    "observed": 0.38196601125010515,
+    "target": 0.38196601125010515,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "SIG-INF-01",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "632/2048 information retention",
+    "observed": 30.859375,
+    "target": 30.859375,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "SIG-INF-02",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Information loss",
+    "observed": 69.140625,
+    "target": 69.140625,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "SIG-INF-03",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Per-scale ratio for 256\u21921 over 2876 steps",
+    "observed": 0.9980737708320553,
+    "target": 0.998073770832055,
+    "error": 3.3306690738754696e-16,
+    "note": ""
+  },
+  {
+    "id": "SIG-INF-04",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Natural-log per-scale exponent",
+    "observed": -0.0019280867331292245,
+    "target": -0.00192808673312922,
+    "error": -4.553649124439119e-18,
+    "note": "Source reports approximately -0.00193."
+  },
+  {
+    "id": "SIG-RAT-01",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "C_Omega / nbar",
+    "observed": 1.4227367831387847,
+    "target": 1.422736783139844,
+    "error": -1.0593748100973244e-12,
+    "note": ""
+  },
+  {
+    "id": "SIG-RAT-02",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "C_Omega/nbar is within 1% of sqrt(2)",
+    "observed": 1.4227367831387847,
+    "target": 1.4142135623730951,
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "SIG-RAT-03",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "C_Omega/6.77",
+    "observed": 3.963488290989288,
+    "target": 3.963488290989287,
+    "error": 1.3322676295501878e-15,
+    "note": ""
+  },
+  {
+    "id": "SIG-RAT-04",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "C_Omega/6.77 is within 1% of 4",
+    "observed": 3.963488290989288,
+    "target": 4.0,
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "SIG-STR-01",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "8 quaternionic cycles \u00d7 4 phases = 32",
+    "observed": 32,
+    "target": 32,
+    "error": 0,
+    "note": ""
+  },
+  {
+    "id": "SIG-STR-02",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "24 shift = 3\u00d78",
+    "observed": 24,
+    "target": 24,
+    "error": 0,
+    "note": ""
+  },
+  {
+    "id": "SIG-STR-03",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "32 states addressable by five bits",
+    "observed": 32,
+    "target": 32,
+    "error": 0,
+    "note": ""
+  },
+  {
+    "id": "SIG-STR-04",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "Period-3 recursion order",
+    "observed": 3,
+    "target": 3,
+    "error": 0,
+    "note": ""
+  },
+  {
+    "id": "SIG-STR-05",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "R^4 cycle length arithmetic",
+    "observed": 4,
+    "target": 4,
+    "error": 0,
+    "note": ""
+  },
+  {
+    "id": "SIG-REC-01",
+    "domain": "Sigmatics",
+    "status": "PASS",
+    "claim": "All 32 five-bit states reconstruct exactly",
+    "observed": "32/32 exact",
+    "target": "32/32 exact",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "GAMMA-000",
+    "domain": "Gamma",
+    "status": "PASS",
+    "claim": "Full six-gate chain admits all-true state",
+    "observed": true,
+    "target": true,
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "GAMMA-KS01",
+    "domain": "Gamma",
+    "status": "PASS",
+    "claim": "Kill-switch: removing gate 1 rejects state",
+    "observed": false,
+    "target": false,
+    "error": null,
+    "note": "Executable Boolean model of the paper's stated all-stage admissibility semantics."
+  },
+  {
+    "id": "GAMMA-KS02",
+    "domain": "Gamma",
+    "status": "PASS",
+    "claim": "Kill-switch: removing gate 2 rejects state",
+    "observed": false,
+    "target": false,
+    "error": null,
+    "note": "Executable Boolean model of the paper's stated all-stage admissibility semantics."
+  },
+  {
+    "id": "GAMMA-KS03",
+    "domain": "Gamma",
+    "status": "PASS",
+    "claim": "Kill-switch: removing gate 3 rejects state",
+    "observed": false,
+    "target": false,
+    "error": null,
+    "note": "Executable Boolean model of the paper's stated all-stage admissibility semantics."
+  },
+  {
+    "id": "GAMMA-KS04",
+    "domain": "Gamma",
+    "status": "PASS",
+    "claim": "Kill-switch: removing gate 4 rejects state",
+    "observed": false,
+    "target": false,
+    "error": null,
+    "note": "Executable Boolean model of the paper's stated all-stage admissibility semantics."
+  },
+  {
+    "id": "GAMMA-KS05",
+    "domain": "Gamma",
+    "status": "PASS",
+    "claim": "Kill-switch: removing gate 5 rejects state",
+    "observed": false,
+    "target": false,
+    "error": null,
+    "note": "Executable Boolean model of the paper's stated all-stage admissibility semantics."
+  },
+  {
+    "id": "GAMMA-KS06",
+    "domain": "Gamma",
+    "status": "PASS",
+    "claim": "Kill-switch: removing gate 6 rejects state",
+    "observed": false,
+    "target": false,
+    "error": null,
+    "note": "Executable Boolean model of the paper's stated all-stage admissibility semantics."
+  },
+  {
+    "id": "HOR-001",
+    "domain": "Horizon",
+    "status": "PASS",
+    "claim": "Regular-polygon radial approximation error decreases monotonically",
+    "observed": [
+      0.2928932188134524,
+      0.07612046748871326,
+      0.01921471959676957,
+      0.004815273327803071,
+      0.001204543794827595,
+      0.00030118130379575003,
+      7.529816085549701e-05,
+      1.882471739889091e-05,
+      4.70619042380882e-06
+    ],
+    "target": "strictly decreasing",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "HOR-002",
+    "domain": "Horizon",
+    "status": "PASS",
+    "claim": "Radial error tends toward zero numerically",
+    "observed": 4.70619042380882e-06,
+    "target": "< 2.9289321881345244e-05",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "HOR-003",
+    "domain": "Horizon",
+    "status": "PASS",
+    "claim": "Polygon radial error exhibits ~n^-2 asymptotic scaling",
+    "observed": [
+      0.25000941262463433,
+      0.250002353112143,
+      0.25000058827369664
+    ],
+    "target": "~0.25",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "GR-001",
+    "domain": "GR reference",
+    "status": "PASS",
+    "claim": "Solar limb light bending",
+    "observed": 1.7512432813682448,
+    "target": 1.75,
+    "error": 0.0012432813682448085,
+    "note": "Standard GR reference calculation; not an independent SEXA-specific prediction."
+  },
+  {
+    "id": "GR-002",
+    "domain": "GR reference",
+    "status": "PASS",
+    "claim": "Mercury anomalous perihelion precession",
+    "observed": 42.981975497467126,
+    "target": 43.0,
+    "error": -0.018024502532874465,
+    "note": "Standard GR reference calculation."
+  },
+  {
+    "id": "GR-003",
+    "domain": "GR reference",
+    "status": "PASS",
+    "claim": "Solar gravitational redshift",
+    "observed": 2.122566754396204e-06,
+    "target": 2.1e-06,
+    "error": 2.2566754396204214e-08,
+    "note": "Weak-field standard GR reference calculation."
+  },
+  {
+    "id": "GR-004",
+    "domain": "GR reference",
+    "status": "PASS",
+    "claim": "Shapiro delay near solar conjunction (parameterized reference case)",
+    "observed": 220.25081791725657,
+    "target": 232.0,
+    "error": -11.749182082743431,
+    "note": "Result depends on geometry; wide tolerance reflects source's unspecified conjunction geometry."
+  },
+  {
+    "id": "GR-005",
+    "domain": "GR reference",
+    "status": "PASS",
+    "claim": "GPS net relativistic clock correction",
+    "observed": 38.437153262839395,
+    "target": 38.0,
+    "error": 0.43715326283939504,
+    "note": "Standard approximate GR+SR reference calculation."
+  },
+  {
+    "id": "QFT-001",
+    "domain": "QFT reference",
+    "status": "PASS",
+    "claim": "Electron g-2 leading-order Schwinger value",
+    "observed": 2.002322819465777,
+    "target": 2.0023228,
+    "error": 1.946577699030172e-08,
+    "note": "Standard QED leading-order reference calculation."
+  },
+  {
+    "id": "QFT-002",
+    "domain": "QFT reference",
+    "status": "PASS",
+    "claim": "Casimir P\u221d1/a^4 doubling-gap scaling",
+    "observed": 16.0,
+    "target": 16.0,
+    "error": 0.0,
+    "note": "Structural scaling check only."
+  },
+  {
+    "id": "QFT-DISP-01",
+    "domain": "QFT reference",
+    "status": "PASS",
+    "claim": "E^2=p^2+m^2 natural-unit case 1",
+    "observed": 1.0,
+    "target": 1.0,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "QFT-DISP-02",
+    "domain": "QFT reference",
+    "status": "PASS",
+    "claim": "E^2=p^2+m^2 natural-unit case 2",
+    "observed": 5.0,
+    "target": 5.0,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "QFT-DISP-03",
+    "domain": "QFT reference",
+    "status": "PASS",
+    "claim": "E^2=p^2+m^2 natural-unit case 3",
+    "observed": 25.0,
+    "target": 25.0,
+    "error": 0.0,
+    "note": ""
+  },
+  {
+    "id": "ACT-001",
+    "domain": "Activation",
+    "status": "PASS",
+    "claim": "chi=sigma/Sigma_c at hard-switch threshold",
+    "observed": 1.0,
+    "target": 1.0,
+    "error": 0.0,
+    "note": "Definitional consistency check; does not establish physical activation."
+  },
+  {
+    "id": "ACT-002",
+    "domain": "Activation",
+    "status": "PASS",
+    "claim": "OFF below 1e8 Pa",
+    "observed": 99900000.0,
+    "target": 100000000.0,
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "ACT-003",
+    "domain": "Activation",
+    "status": "PASS",
+    "claim": "ON threshold condition at >=1e8 Pa",
+    "observed": 100000000.0,
+    "target": 100000000.0,
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "COMP-001",
+    "domain": "Computational",
+    "status": "PASS",
+    "claim": "Identical input produces identical 10k-step trace",
+    "observed": [
+      9999,
+      2793649609,
+      9
+    ],
+    "target": [
+      9999,
+      2793649609,
+      9
+    ],
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "COMP-002",
+    "domain": "Computational",
+    "status": "PASS",
+    "claim": "Different seed produces different trace",
+    "observed": [
+      9999,
+      2793649609,
+      9
+    ],
+    "target": [
+      9999,
+      4037776906,
+      10
+    ],
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "COMP-003",
+    "domain": "Computational",
+    "status": "PASS",
+    "claim": "Projection remains bounded in 32-state space",
+    "observed": 31,
+    "target": "<32",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "COMP-BOUND-01",
+    "domain": "Computational",
+    "status": "PASS",
+    "claim": "Normalized recursion finite/bounded seed=-100",
+    "observed": 100.0,
+    "target": "<= 100",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "COMP-BOUND-02",
+    "domain": "Computational",
+    "status": "PASS",
+    "claim": "Normalized recursion finite/bounded seed=-10",
+    "observed": 10.0,
+    "target": "<= 10",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "COMP-BOUND-03",
+    "domain": "Computational",
+    "status": "PASS",
+    "claim": "Normalized recursion finite/bounded seed=-1",
+    "observed": 1.0,
+    "target": "<= 1",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "COMP-BOUND-04",
+    "domain": "Computational",
+    "status": "PASS",
+    "claim": "Normalized recursion finite/bounded seed=0",
+    "observed": 0.0,
+    "target": "<= 0",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "COMP-BOUND-05",
+    "domain": "Computational",
+    "status": "PASS",
+    "claim": "Normalized recursion finite/bounded seed=1",
+    "observed": 1.0,
+    "target": "<= 1",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "COMP-BOUND-06",
+    "domain": "Computational",
+    "status": "PASS",
+    "claim": "Normalized recursion finite/bounded seed=10",
+    "observed": 10.0,
+    "target": "<= 10",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "COMP-BOUND-07",
+    "domain": "Computational",
+    "status": "PASS",
+    "claim": "Normalized recursion finite/bounded seed=100",
+    "observed": 100.0,
+    "target": "<= 100",
+    "error": null,
+    "note": ""
+  },
+  {
+    "id": "PROV-001",
+    "domain": "Provenance",
+    "status": "PASS",
+    "claim": "Current master source document count",
+    "observed": 14,
+    "target": 14,
+    "error": 0,
+    "note": ""
+  },
+  {
+    "id": "PROV-002",
+    "domain": "Provenance",
+    "status": "PASS",
+    "claim": "Exact duplicate PDF groups detected",
+    "observed": 1,
+    "target": 1,
+    "error": 0,
+    "note": "Duplicate documents are not counted as independent evidence."
+  },
+  {
+    "id": "PROV-003",
+    "domain": "Provenance",
+    "status": "PASS",
+    "claim": "Image/scan-only text-extraction sources",
+    "observed": 1,
+    "target": 1,
+    "error": 0,
+    "note": ""
+  },
+  {
+    "id": "SIG-RAW-001",
+    "domain": "Sigmatics",
+    "status": "NOT_INDEPENDENTLY_EXECUTABLE",
+    "claim": "32 triality orbit statistics: arithmetic 47.50, geometric 35.97, harmonic 18.86, RMS 54.99.",
+    "observed": "not executable from supplied data",
+    "target": null,
+    "error": null,
+    "note": "The supplied PDF reports aggregate statistics but does not embed the complete raw 96-class graph/orbit excitation vector needed to regenerate them independently."
+  },
+  {
+    "id": "SIG-RAW-002",
+    "domain": "Sigmatics",
+    "status": "NOT_INDEPENDENTLY_EXECUTABLE",
+    "claim": "Reachability growth 1\u21924, 2\u21929, 3\u219216, 4\u219224, 5\u219232 classes.",
+    "observed": "not executable from supplied data",
+    "target": null,
+    "error": null,
+    "note": "The raw transition graph / @uor-foundation/sigmatics package dataset is not embedded in the supplied material."
+  },
+  {
+    "id": "SIG-RAW-003",
+    "domain": "Sigmatics",
+    "status": "NOT_INDEPENDENTLY_EXECUTABLE",
+    "claim": "R transform yields 8 independent 4-cycles; T has period 3; M partially mixes orbits.",
+    "observed": "not executable from supplied data",
+    "target": null,
+    "error": null,
+    "note": "These are reported graph properties; the complete machine-readable graph is absent from the supplied PDFs."
+  },
+  {
+    "id": "GR-REF-007",
+    "domain": "GR/QFT compatibility",
+    "status": "REFERENCE_REPRODUCTION",
+    "claim": "Binary inspiral decay reported ~-2.4e-12 s/s.",
+    "observed": "not executable from supplied data",
+    "target": null,
+    "error": null,
+    "note": "A specific binary-system parameter set is not supplied in the 4-page assessment, so this target is treated as a reported reference value rather than an independent SEXA derivation."
+  },
+  {
+    "id": "EXP-001",
+    "domain": "Experimental",
+    "status": "PENDING_EXPERIMENT",
+    "claim": "ON-state Yukawa deviation via torsion-balance protocol.",
+    "observed": "not executable from supplied data",
+    "target": null,
+    "error": null,
+    "note": "The source explicitly states that no physical measurement has yet been performed."
+  },
+  {
+    "id": "HW-001",
+    "domain": "Hardware",
+    "status": "PENDING_IMPLEMENTATION",
+    "claim": "FPGA/ASIC/AI-accelerator realization.",
+    "observed": "not executable from supplied data",
+    "target": null,
+    "error": null,
+    "note": "The conference paper explicitly describes hardware realization as future work, not a completed benchmark."
+  },
+  {
+    "id": "SCAN-001",
+    "domain": "Provenance",
+    "status": "UNRESOLVED",
+    "claim": "SEXA_UFT_Structural_Audit(10).pdf equation-level extraction.",
+    "observed": "not executable from supplied data",
+    "target": null,
+    "error": null,
+    "note": "The 13-page source is image/scan-only under text extraction. It is hashed and inventoried but equations are not invented from unavailable machine text."
+  },
+  {
+    "id": "SIG-RAW-004",
+    "domain": "Sigmatics",
+    "status": "UNRESOLVED",
+    "claim": "Source statement: each dimensional reduction loses ~1.42 bits per class.",
+    "observed": "not executable from supplied data",
+    "target": null,
+    "error": null,
+    "note": "The supplied text does not define the denominator or derivation for 1.42 bits/class. From the explicit 2048\u2192632 figures, total loss is 1416 bits; 1416/96 = 14.75, so the 1.42 figure cannot be uniquely reconstructed from the stated quantities."
+  },
+  {
+    "id": "GR-REF-005",
+    "domain": "GR/QFT compatibility",
+    "status": "REFERENCE_REPRODUCTION",
+    "claim": "Frame dragging reported ~30 milliarcseconds/year.",
+    "observed": "not executable from supplied data",
+    "target": null,
+    "error": null,
+    "note": "The assessment does not specify the orbit, central-body angular momentum model, or measurement geometry required for an independent calculation."
+  }
+]

@@ -1,0 +1,291 @@
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921                               https://rajpub.com/index.php/jam
+
+
+
+                                                DOI: https://doi.org/10.24297/jam.v25i.9880
+   Recursive Soil Bearing Architecture (RSBA): Synthetic Landmass Stabilization via Boundary-Induced
+             Stress Decoupling Derived from the SEXA Recursive Energy Functional (SREF)
+                                                                       Jered McClain
+                                                 SEXA Mathematical Sciences, SEXA Institute
+                                           SyntheticLand.com, spacetimemanhattan@gmail.com
+Abstract
+This paper presents a unified engineering framework for synthetic landmass stabilization derived from the SEXA
+Recursive Energy Functional (SREF) and implemented through Recursive Soil Bearing Architecture (RSBA).
+Within this formulation, soil is modeled as a boundary-conditioned stress topology whose admissible bearing
+states emerge from recursive energy minimization rather than purely mechanical confinement.
+A Boundary-Induced Stress Decoupling (BISD) mechanism is introduced, modifying classical effective stress
+relations by incorporating a boundary-field energy term capable of redistributing gravitational load across the soil
+manifold. The framework is operationalized through a Negentropic Boundary-Field Reactor (NBFR), which
+maintains a persistent structured boundary-energy envelope via recursive electromagnetic feedback.
+Higher-dimensional contributions are incorporated through a 2880-dimensional payload interception product,
+while stabilization is achieved through quaternionic boundary-field rotation operating in the Einstein-Overclock
+regime, where field circulation exceeds gravitational response timescales.
+A prototype geometry based on the Hess Triangle defines the minimum manufacturable land unit. Analytical
+results demonstrate compatibility with General Relativity and Quantum Field Theory under reduction limits.
+The framework establishes a physically admissible pathway for engineered land stabilization via boundary-field
+energy systems.
+Table of Contents
+Abstract ......................................................... 1
+     1.​ Introduction .................................................. 3
+     2.​ The SEXA Recursive Energy Functional (SREF) ................. 4​
+           2.1 Recursive Energy Functional ................................ 4​
+           2.2 Dimensional Payload Interception ........................... 5​
+           2.3 Recursive Logic Amplification .............................. 6​
+           2.4 Boundary Field Contribution ................................ 6​
+           2.5 Dimensional Limitation ..................................... 6​
+           2.6 Role in Platform Stabilization ............................. 7
+     3.​ Recursive Soil Bearing Architecture (RSBA) ................. 7​
+           3.1 Boundary-Induced Stress Decoupling ......................... 8​
+           3.2 RSBA Stabilization Condition ............................... 8​
+           3.3 Hess-Triangle Application ................................. 9
+     4.​ Negentropic Boundary-Field Reactor (NBFR) ................. 9​
+           4.1 Reactor Ignition ........................................... 9​
+           4.2 Oscillator Injection Layer ................................ 10​
+           4.3 Graphene Macro-Inductive Shell ............................ 10​
+           4.4 Dipole Separation and Recapture ........................... 10​
+           4.5 Boundary-Field Generation ................................ 11​
+           4.6 Reactor Role ............................................. 11
+     5.​ 2880-Dimensional Interception and Amplification ........... 11
+     6.​ Quaternion Rotation & Einstein-Overclock Regime .......... 12
+     7.​ Hess-Triangle Manufactured Land Standard ................. 13
+
+
+
+
+                                                                                       2
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921                    https://rajpub.com/index.php/jam
+
+
+
+    8.​ Stabilization Condition and System Limits ................ 14
+    9.​ Conclusion .................................................. 14
+Appendix A — GR/QFT Compatibility Data ....................... 15​
+Appendix B — Sigmatics Verification Data ..................... 18
+    10.​ References ................................................ 19
+1. Introduction
+The stability of soil structures has traditionally been treated as a problem of mechanical load transfer governed by
+classical soil mechanics relations such as effective stress, bearing capacity, and settlement theory. In these
+models, soil is treated primarily as a granular material whose load-bearing capability is determined by density,
+frictional resistance, and confinement. While these approaches have proven effective for conventional civil
+engineering applications, they assume that gravitational loading must always be resisted through static
+mechanical stress within the soil mass.
+Recent developments in recursive field theory suggest that soil stability may instead be interpreted through a
+broader energetic framework in which the stress state of a granular medium can be modified by
+boundary-conditioned energy fields. Within the SEXA mathematical framework, the Recursive Energy
+Functional (SREF) provides a variational formulation in which condensed and perpetual energy sectors interact
+through recursive manifold dynamics. When applied to soil systems, this formulation gives rise to Recursive Soil
+Bearing Architecture (RSBA), in which the admissible bearing state of a soil mass emerges from energy
+minimization rather than purely mechanical confinement.
+A central consequence of the RSBA formulation is the emergence of Boundary-Induced Stress Decoupling
+(BISD). This mechanism introduces a boundary energy term into the effective stress relations governing the soil
+manifold, allowing gravitational loads to be redistributed across the boundary field rather than resisted solely
+through internal soil stress. Under appropriate boundary conditions, the resulting stress topology permits
+stabilized configurations that would otherwise be mechanically inadmissible within classical soil mechanics.
+To convert this theoretical framework into an engineering system, the present work introduces the concept of a
+manufactured land standard. The prototype geometry is defined using the Hess Triangle footprint as the
+minimum geometric identity of land. Rather than representing a ground parcel alone, the prototype land cell is
+interpreted as a bounded air-rights prism extending eight feet above the triangular footprint. This eight-foot
+Hess-Triangle prism defines the smallest engineered spatial unit capable of representing stabilized land volume
+within the RSBA framework.
+Maintaining the boundary conditions required for such stabilization demands a persistent energy architecture. For
+this reason the present framework introduces the Negentropic Boundary-Field Reactor (NBFR), a recursive
+energy system derived from Anti-Direct-Short topology. The NBFR preserves source-dipole separation while
+recursively reintegrating intercepted electromagnetic flux, allowing energy normally lost to dissipation to be
+redirected into a structured boundary field surrounding the stabilized land cell.
+Within the SEXA dimensional framework, contributions from higher-dimensional sectors are incorporated through
+a payload interception product spanning dimensions five through 2880. When combined with quaternion recursive
+logic rotation and fourth-field circulation, this structure produces a rotating boundary-support shell surrounding the
+stabilized land prism.
+In this interpretation, apparent lift does not arise from a static upward force vector but from the time-averaged
+effect of a rapidly circulating exciternion phase field. When the rotational frequency of this circulation exceeds the
+gravitational response timescale of the eight-foot Hess-Triangle land cell, the system enters the regime defined
+here as the Einstein Overclock. In this state, recursive field rotation effectively outruns gravitational settlement
+dynamics, producing the macroscopic appearance of stabilized elevation.
+The remainder of this paper develops this framework by deriving the RSBA stress relations from the SREF
+functional, introducing the boundary-field reactor architecture, and modeling the quaternion rotation mechanism
+responsible for Einstein-Overclock stabilization of manufactured land structures within the SEXA dimensional
+regime below the Sarfatti 2881D boundary.
+
+
+
+
+                                                                           3
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921       https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  4
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921       https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  5
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921       https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  6
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921       https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  7
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921       https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  8
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921       https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  9
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921        https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  10
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921        https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  11
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921        https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  12
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921        https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  13
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921        https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  14
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921        https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  15
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921        https://rajpub.com/index.php/jam
+
+
+
+
+                                                                  16
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921        https://rajpub.com/index.php/jam
+
+
+
+
+ Requirement                   Result
+
+ Mathematical consistency      PASS
+
+ Reduction to GR               PASS
+
+ Reduction to QFT              PASS
+
+ Predictive deviation          PASS
+
+
+
+
+                                                                  17
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921        https://rajpub.com/index.php/jam
+
+
+
+ Experimental activation       Pending
+
+
+
+
+                                                                  18
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921        https://rajpub.com/index.php/jam
+
+
+
+
+2880-D SEXA manifold
+↓
+8-D spinor basis
+↓
+5-D exciter coordinates
+↓
+32 triality orbit classes
+↓
+3 operational transforms (R,T,M)
+↓
+1 computational result
+
+    Quantity                       Value
+
+    Average excitation             n̄ ≈ 18.86
+
+    Empire wave constant           CΩ ≈ 26.83
+
+    Thinning ratio                 ≈ 0.375
+
+    Propagation/resonance ratio    ≈ √2
+
+
+
+
+                                                                  19
+
+Journal of Advances in Mathematics Vol 25(2026) ISSN: 2347-1921                  https://rajpub.com/index.php/jam
+
+
+
+
+References
+Biot, M. A. (1941). General theory of three-dimensional consolidation. Journal of Applied Physics.
+Einstein, A. (1915). The field equations of gravitation.
+Dirac, P. A. M. (1928). The quantum theory of the electron.
+Terzaghi, K. (1943). Theoretical soil mechanics.
+Peskin, M. E., & Schroeder, D. V. (1995). An introduction to quantum field theory.
+Misner, C. W., Thorne, K. S., & Wheeler, J. A. (1973). Gravitation.
+Casimir, H. B. G. (1948). On the attraction between two plates.
+McClain, J. (2026). SEXA Recursive Energy Functional (SREF).
+Conflict of Interest
+The author declares no conflict of interest.
+Author Biography
+Jered McClain is the founder of the SEXA Institute and developer of the SEXA mathematical framework.
+
+
+
+
+                                                                      20

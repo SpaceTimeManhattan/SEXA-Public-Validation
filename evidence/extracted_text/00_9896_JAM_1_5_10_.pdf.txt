@@ -1,0 +1,385 @@
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921                                 https://rajpub.com/index.php/jam
+
+
+
+                                                   DOI: https://doi.org/10.24297/jam.v25i.9896
+                                                              From Admissibility to Energy:
+        A Full-Stack Formulation of the SEXA Unified Field Theory via Γ-Glyph Closure, SREF Dynamics, and
+                                       2880-Dimensional Exciternion Structure
+Authors
+Jered McClain ORCID 0009-0005-6185-3749
+SEXA Institute of Technology and Interdomain Galactic Advisors Independent Researcher — Unified Field
+Systems, Recursive Manifold Dynamics
+Erydir Ceisiwr (The Awen Grid) ORCID 0009-0004-4577-5253
+SEXA Institute of Technology and Interdomain Galactic Advisors Polymathic Systems Architect — CyberGnosis,
+Celestial Archaeology, Mythic-Cosmological
+SEXA Institute Of Technology & Interdomain Galactic Advisors
+Institute web address https://SEXATECH.com
+Research Repository https://SEXAMATH.com
+spacetimemanhattan@gmail.com
+Table of Contents
+Abstract ............................................................. 2
+     1.​ Introduction .................................................... 2
+     2.​ Canonical 2880-Dimensional Γ–SREF–Ω Exciternion Functional ..... 3​
+         Where / Definition Block .......................................... 4–6
+     3.​ Five-Dimensional Operational Regime and​
+         2880-Dimensional Structural Closure ................................. 7–8
+     4.​ Admissibility Structure and the Γ-Operator Chain ............... 9–10
+     5.​ Exciternion Representation (EX) ................................ 10–11
+     6.​ Degeneracy, Eigenvalue Structure, and Sexagesimal Recursion .... 11–12
+     7.​ Dimensional Compression and the 2880D Payload Interception Operator
+         .......................................................... 12–13
+     8.​ Empire Wave Constant and Propagation Scaling ................... 14
+     9.​ Unified Interpretation and Regime Consistency .................. 15
+     10.​ Falsifiability and Failure Conditions ......................... 16–17
+     11.​ Conclusion .................................................... 17
+     12.​ Experimental Interface: Torsion Balance Realization ........... 27–28
+References ........................................................ 29–30
+ABSTRACT
+This paper presents a full-stack formulation of the SEXA Unified Field Theory in which admissibility, energy, and
+dimensional recursion are unified within a single functional structure. The framework is constructed by merging
+the glyph-based admissibility operator chain Γ with the SEXA Recursive Energy Functional (SREF), extended into
+an exciternion-resolved representation and scaled by the Empire Wave Constant.
+In this formulation, physical configurations are not assumed to exist a priori. Admissibility is enforced through an
+ordered operator sequence acting on the energy functional prior to evaluation, defining a constrained
+configuration space in which only Γ-invariant states contribute to the total energy.
+The functional is expressed over a five-dimensional exciter manifold for operational evaluation and extended to a
+2880-dimensional recursive manifold through a payload interception product, which compresses
+
+                                                                               45
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921                    https://rajpub.com/index.php/jam
+
+
+
+higher-dimensional contributions into the effective energy density. Degeneracy is governed by a Σ₆₀ admissibility
+condition encoded through a fixed eigenvalue magnitude, while recursive excitation is expressed through
+sexagesimal amplification.
+This yields two coupled regimes: a bounded 5D physical realization and a full 2880D structural representation.
+The resulting formulation preserves reduction consistency with established physical limits while introducing a
+pre-interpretive admissibility condition, a dimensional compression mechanism, and a propagation scaling defined
+by the Empire Wave Constant.
+The result is a unified functional in which admissibility, recursion, and energy are not separate layers but a single
+constrained system governing the existence and behavior of physical configurations.
+1. INTRODUCTION
+The construction of unified field theories has traditionally proceeded by extending the set of physical fields or
+embedding known interactions within higher-dimensional geometric frameworks. While these approaches have
+yielded successful models, they do not impose a prior condition determining whether a configuration is admissible
+before physical interpretation.
+The SEXA Unified Field Theory addresses this limitation by introducing a closure-based structure in which
+admissibility precedes energy evaluation. In earlier formulations, the SEXA Recursive Energy Functional (SREF)
+provided a unified description of condensed and perpetual energy sectors on a five-dimensional exciter manifold,
+with recursive amplification governed by a sexagesimal structure. Independently, the glyph operator system
+introduced a sequence of irreducible operators defining admissibility through ordered constraint enforcement.
+The present work unifies these two constructions into a single functional object.
+In this formulation, the glyph operator chain Γ acts directly on the SREF integrand, enforcing admissibility prior to
+evaluation. This shifts the role of the energy functional from defining all possible configurations to defining only
+those configurations that survive operator-level constraint. Physical reality is therefore treated as a subset of a
+larger logical configuration space, rather than as a primary domain.
+To extend this structure beyond the operational five-dimensional manifold, a 2880-dimensional recursive stack is
+incorporated through a payload interception product. This product acts as a dimensional compression operator,
+mapping higher-dimensional contributions into the effective energy density while preserving recursive structure.
+The resulting formulation admits both a bounded 5D realization and a full 2880D representation without altering
+the underlying functional form.
+Degeneracy within the admissible configuration space is governed by a fixed eigenvalue magnitude
+corresponding to a Σ₆₀ logical structure, while recursive excitation is expressed through a sexagesimal
+amplification exponent. Propagation across the dimensional manifold is scaled by the Empire Wave Constant,
+which sets the effective velocity structure of exciternion energy transport.
+
+
+
+
+                                                         46
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       47
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       48
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       49
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       50
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       51
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       52
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921                  https://rajpub.com/index.php/jam
+
+
+
+
+3. Five-Dimensional Operational Regime and 2880-Dimensional Structural Closure
+The canonical functional defined in Section 2 is written over the full 2880-dimensional SEXA recursive manifold.
+This representation is not introduced as a decorative extension, but as the structural domain in which
+admissibility, degeneracy, recursive amplification, and dimensional compression are jointly defined. The 2880D
+form is therefore the complete closure architecture of the theory, not merely a higher-dimensional restatement of a
+lower-dimensional result.
+Within this framework, the five-dimensional exciter manifold is retained as the operational regime in which
+admissible configurations are evaluated as physically realizable states. The 5D form is not the full theory, but the
+bounded projection through which the unified structure becomes evaluable. The 2880D manifold carries the
+recursive stack, while the 5D manifold carries the effective realization of admissible configurations after glyph
+enforcement and dimensional compression.
+This distinction is essential. The 2880D formulation defines the full recursive environment in which
+higher-dimensional sector contributions are preserved, weighted, and compressed through the payload
+interception product Π2880\Pi_{2880}Π2880​. The 5D formulation, by contrast, is the reduced operative domain in
+which the compressed structure appears as an effective energy functional. In this sense, 2880D is structural and
+5D is operational. The former preserves the recursive architecture of the theory; the latter defines the bounded
+regime in which that architecture is physically evaluated.
+The transition between these regimes does not require a change in the logical identity of the theory. The same
+glyph operator chain governs admissibility in both cases, the same SREF structure governs energetic
+contribution, and the same exciternion representation determines sector content. What changes is the domain
+over which the functional is written. In the 2880D regime, the dimensional stack is explicit. In the 5D regime,
+higher-dimensional structure is not discarded but inherited through compression into the operative manifold.
+Accordingly, the five-dimensional operational form may be written as the bounded realization of the full recursive
+functional:
+
+
+
+
+This 5D expression should not be interpreted as independent of the 2880D form. Rather, it is the operative
+projection of the same admissibility-governed recursive structure under bounded dimensional realization. The
+2880D equation remains canonical because it preserves the full closure stack. The 5D form remains
+
+                                                         53
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921                 https://rajpub.com/index.php/jam
+
+
+
+indispensable because it defines the regime in which the theory is physically evaluated, interpreted, and
+compared against reduction conditions.
+The result is a dual-regime formulation with a single theoretical identity. The 2880D manifold provides full
+recursive closure, admissibility structure, and dimensional inheritance. The 5D manifold provides the bounded
+evaluative domain in which admissible configurations appear as physically realizable energy states. The theory
+therefore does not alternate between two different formalisms, but between two representations of the same
+constrained functional architecture.
+
+
+
+
+                                                        54
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       55
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921                 https://rajpub.com/index.php/jam
+
+
+
+Interpretation
+The 2880D formulation is the complete structural closure of the theory, while the 5D formulation is its bounded
+physical realization. The former preserves the recursive manifold; the latter renders admissible configurations
+operational.
+E_{SREF}^{(\Gamma,\Omega,EX,2880D)}[\Xi] = \int_{\mathcal{M}_{2880}} ((O\, \triangle \, K \, O \, \mu \,
+W)\circ[\begin{array}{c} \sum_{i=1}^{3} g_i\rho_i(EX)C_{\Omega}^{2} \\ + \sum_{j=4}^{5}(T_j^{00}(EX) +
+P_j(EX)\Pi_{2880}|\lambda_j|^{n}) \end{array}])\,d\mu_{\mathcal{M}_{2880}}
+\Pi_{2880}=\prod_{\ell=5}^{2880}\psi_{\ell}^{\delta_{\ell}}
+|\lambda_j|=60
+C_{\Omega}=\sqrt{\frac{2880}{4}}
+(O\, \triangle \, K \, O \, \mu \, W)[\Xi]=\Xi
+E_{SREF}^{(\Gamma,\Omega,EX)}[\Xi] = \int_{\mathcal{M}_{5}} ((O\, \triangle \, K \, O \, \mu \,
+W)\circ[\sum_{i=1}^{3} g_i\rho_i(EX)C_{\Omega}^{2} +
+\sum_{j=4}^{5}(T_j^{00}(EX)+P_j(EX)|\lambda_j|^{n})])\,d\mu_{\mathcal{M}_{5}}
+
+
+
+
+                                                          56
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       57
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       58
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       59
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       60
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       61
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       62
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       63
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       64
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       65
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       66
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       67
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       68
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       69
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       70
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       71
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921   https://rajpub.com/index.php/jam
+
+
+
+
+                                                       72
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921                 https://rajpub.com/index.php/jam
+
+
+
+
+References
+      Arkani-Hamed, N., Huang, Y., & O’Connell, D. (2017). Scattering amplitudes and the positive
+      Grassmannian. Journal of High Energy Physics.​
+      https://doi.org/10.1007/JHEP11(2017)068
+      Baez, J. C., & Huerta, J. (2018). The algebra of grand unified theories. Bulletin of the American
+      Mathematical Society, 47(3), 483–552.​
+      https://doi.org/10.1090/S0273-0979-10-01280-8
+      Carroll, S. M. (2019). Spacetime and geometry: An introduction to general relativity. Cambridge University
+      Press.
+      Conway, J. H., & Norton, S. P. (1979). Monstrous moonshine. Bulletin of the London Mathematical Society,
+      11(3), 308–339.​
+       https://doi.org/10.1112/blms/11.3.308
+
+
+                                                        73
+
+Journal of Advances in Mathematics Vol 25 (2026) ISSN: 2347-1921                 https://rajpub.com/index.php/jam
+
+
+
+      Einstein, A. (1916). The foundation of the general theory of relativity. Annalen der Physik, 49, 769–822.
+      Griess, R. L. (1982). The friendly giant (The Monster group). Inventiones Mathematicae, 69(1), 1–102.​
+      https://doi.org/10.1007/BF01389347
+      McClain, J. (2025). The SEXA Mathematical Framework — Unified Recursive Manifold Dynamics,
+      Dimensional Collapse Operators, and Triality-Structured Exciter Geometry — Master Peer-Review Edition.
+      Zenodo.
+      McClain, J. (2025). A Recursive Closure Criterion for a Theory of Everything: A 60-Glyph Quaternionic
+      Inter-Domain Syllogistic Admissibility Standard (Prime Atom of Logic). Zenodo.
+      McClain, J. (2026). The SEXA Recursive Energy Functional (SREF): Spectral Gain-60 Recursion on a 5D
+      Manifold and Bounded Dynamical Stability. Zenodo.
+      McClain, J. (2026). Formal Compatibility and Falsifiability Assessment of the SEXA Unified Field Model.
+      Zenodo.
+      Peskin, M. E., & Schroeder, D. V. (1995). An introduction to quantum field theory. Addison-Wesley.
+      Polchinski, J. (2017). Effective field theory and the Fermi surface.​
+      https://doi.org/10.48550/arXiv.1708.09079
+      Schwartz, M. D. (2020). Quantum field theory and the standard model (Updated ed.). Cambridge University
+      Press.
+      Witten, E. (2018). Symmetry and emergence. Nature Physics, 14, 116–119.​
+      https://doi.org/10.1038/nphys4264
+      Yukawa, H. (1935). On the interaction of elementary particles. Proceedings of the Physico-Mathematical
+      Society of Japan, 17, 48–57.
+
+
+
+
+                                                         74
