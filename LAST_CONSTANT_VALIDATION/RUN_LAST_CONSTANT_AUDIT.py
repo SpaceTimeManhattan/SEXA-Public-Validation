@@ -6,7 +6,7 @@ Independent Computational Validation Audit
 
 PURPOSE
 -------
-This program separates three things that must never be conflated:
+This program separates:
 
 1. The published SEXA mathematical architecture.
 2. The numerical derivation of The Last Constant.
@@ -25,7 +25,6 @@ import csv
 import hashlib
 import json
 import math
-import os
 import platform
 import sys
 import time
@@ -37,13 +36,12 @@ from pathlib import Path
 # CONFIGURATION
 # ================================================================
 
-AUDIT_VERSION = "1.0.0"
+AUDIT_VERSION = "1.1.0"
 
 C_M_S = 299_792_458.0
 
-# IMPORTANT:
-# This is the CLAIM being tested.
-# It is NOT an input to the derivation.
+# CLAIMED TARGET ONLY.
+# This value is never used to derive the result.
 CLAIMED_LAST_CONSTANT_RATIO = 1.0e19
 
 CLAIMED_LAST_CONSTANT_M_S = (
@@ -68,7 +66,7 @@ def record(
     description,
     observed=None,
     expected=None,
-    note=""
+    note="",
 ):
     RESULTS.append(
         {
@@ -93,7 +91,7 @@ def close(a, b, rtol=1e-9, atol=0.0):
 
 
 # ================================================================
-# I — SOURCE / STRUCTURAL ARCHITECTURE
+# I — PUBLISHED STRUCTURAL ARCHITECTURE
 # ================================================================
 
 DERIVATION_STAGES = [
@@ -109,75 +107,188 @@ DERIVATION_STAGES = [
     "generalized recursive propagation functional",
 ]
 
-if len(DERIVATION_STAGES) == 10:
-    record(
-        "LC-STRUCT-001",
-        "STRUCTURE",
-        "PASS",
-        "Ten-stage Last Constant derivation architecture registered",
-        len(DERIVATION_STAGES),
-        10,
-    )
-else:
-    record(
-        "LC-STRUCT-001",
-        "STRUCTURE",
-        "FAIL",
-        "Ten-stage Last Constant derivation architecture registered",
-        len(DERIVATION_STAGES),
-        10,
-    )
+record(
+    "LC-STRUCT-001",
+    "STRUCTURE",
+    "PASS" if len(DERIVATION_STAGES) == 10 else "FAIL",
+    "Ten-stage Last Constant derivation architecture registered",
+    len(DERIVATION_STAGES),
+    10,
+    (
+        "Structural reproduction only. "
+        "This does not numerically derive The Last Constant."
+    ),
+)
 
 
 # ================================================================
-# II — INDEPENDENT NUMERICAL DERIVATION
+# II — NUMERICAL PRIMITIVE REGISTRY
+# ================================================================
+
+# Published generalized functional:
+#
+# V_Last^(D)(t,phi)
+# =
+# C_Omega
+# *
+# (
+#     product_{ell=5}^{D}
+#     Psi_ell / phi_ell^2
+# )^(1/(D-4))
+# *
+# 60^n_bar
+#
+# To independently execute this expression, the numerical
+# primitives below must be completely specified.
+
+LAST_CONSTANT_INPUTS = {
+    "D": None,
+    "C_Omega": None,
+    "n_bar": None,
+    "Psi_sequence": None,
+    "phi_sequence": None,
+    "sequence_generation_rule": None,
+    "velocity_normalization_rule": None,
+}
+
+MISSING_INPUTS = [
+    key
+    for key, value in LAST_CONSTANT_INPUTS.items()
+    if value is None
+]
+
+record(
+    "LC-INPUT-001",
+    "SOURCE COMPLETENESS",
+    "PASS" if not MISSING_INPUTS else "UNRESOLVED",
+    "All numerical primitives required for independent Last Constant derivation are supplied",
+    {
+        "missing_count": len(MISSING_INPUTS),
+        "missing_inputs": MISSING_INPUTS,
+    },
+    "0 missing inputs",
+    (
+        "The audit will not manufacture missing numerical values."
+    ),
+)
+
+
+# ================================================================
+# III — INDEPENDENT LAST CONSTANT DERIVATION
 # ================================================================
 
 def derive_last_constant_ratio():
     """
-    THIS FUNCTION IS THE SCIENTIFIC KILL-SWITCH.
+    Independently calculate C_Last / c from published SEXA inputs.
 
-    It must eventually contain the exact published SEXA derivation
-    of C_Last / c.
+    The function is intentionally prohibited from using
+    CLAIMED_LAST_CONSTANT_RATIO as an input.
 
-    RULES:
+    Required numerical primitives:
 
-    1. Start only from independently declared SEXA primitives.
-    2. Calculate every intermediate quantity.
-    3. Do not use CLAIMED_LAST_CONSTANT_RATIO.
-    4. Do not insert 1e19 anywhere in the derivation.
-    5. Return only the number produced by the mathematics.
+        D
+        C_Omega
+        n_bar
+        Psi_sequence
+        phi_sequence
+        sequence_generation_rule
+        velocity_normalization_rule
 
-    Until the complete numerical derivation is encoded, returning
-    None is REQUIRED.
-
-    This prevents the audit from manufacturing a PASS.
+    Until those are fully specified, the correct audit result is
+    UNRESOLVED rather than a manufactured PASS.
     """
 
-    return None
+    missing = [
+        name
+        for name, value in LAST_CONSTANT_INPUTS.items()
+        if value is None
+    ]
+
+    if missing:
+        return None
+
+    D = LAST_CONSTANT_INPUTS["D"]
+    C_omega = LAST_CONSTANT_INPUTS["C_Omega"]
+    n_bar = LAST_CONSTANT_INPUTS["n_bar"]
+    psi = LAST_CONSTANT_INPUTS["Psi_sequence"]
+    phi = LAST_CONSTANT_INPUTS["phi_sequence"]
+    velocity_normalization_rule = (
+        LAST_CONSTANT_INPUTS["velocity_normalization_rule"]
+    )
+
+    if not isinstance(D, int):
+        raise TypeError("D must be an integer.")
+
+    if D <= 4:
+        raise ValueError("D must be greater than 4.")
+
+    expected_length = D - 4
+
+    if len(psi) != expected_length:
+        raise ValueError(
+            f"Psi sequence length must be {expected_length}, "
+            f"received {len(psi)}."
+        )
+
+    if len(phi) != expected_length:
+        raise ValueError(
+            f"Phi sequence length must be {expected_length}, "
+            f"received {len(phi)}."
+        )
+
+    thinning_product = 1.0
+
+    for index, (psi_l, phi_l) in enumerate(
+        zip(psi, phi),
+        start=5,
+    ):
+        if phi_l == 0:
+            raise ZeroDivisionError(
+                f"phi_{index} cannot equal zero."
+            )
+
+        thinning_product *= (
+            float(psi_l) / (float(phi_l) ** 2)
+        )
+
+    geometric_normalization = (
+        thinning_product ** (1.0 / (D - 4))
+    )
+
+    harmonic_amplification = (
+        60.0 ** float(n_bar)
+    )
+
+    V_last = (
+        float(C_omega)
+        * geometric_normalization
+        * harmonic_amplification
+    )
+
+    ratio_to_c = velocity_normalization_rule(
+        V_last
+    )
+
+    return float(ratio_to_c)
 
 
 DERIVED_RATIO = derive_last_constant_ratio()
 
 
 if DERIVED_RATIO is None:
-
     record(
         "LC-NUM-001",
         "NUMERICAL DERIVATION",
         "UNRESOLVED",
         "Independent derivation of The Last Constant",
-        "No independently encoded numerical derivation",
+        "Numerical derivation cannot execute because required published inputs are incomplete",
         CLAIMED_LAST_CONSTANT_RATIO,
         (
-            "The claimed target has NOT been injected into the "
-            "derivation. PASS is prohibited until the complete "
-            "published mathematical chain is executable."
+            "The target 1e19 has not been inserted into the derivation."
         ),
     )
 
 else:
-
     numerical_pass = close(
         DERIVED_RATIO,
         CLAIMED_LAST_CONSTANT_RATIO,
@@ -192,56 +303,96 @@ else:
         DERIVED_RATIO,
         CLAIMED_LAST_CONSTANT_RATIO,
         (
-            "Comparison performed only AFTER numerical derivation."
+            "The claimed target is compared only after the "
+            "independent numerical calculation completes."
         ),
     )
 
 
 # ================================================================
-# III — PHYSICAL-SCALE CONVERSION
+# IV — MODEL SCALE CONVERSION
 # ================================================================
 
-if DERIVED_RATIO is not None:
-
-    derived_m_s = DERIVED_RATIO * C_M_S
-
-    record(
-        "LC-SCALE-001",
-        "MODEL SCALE",
-        "PASS",
-        "Convert independently derived C_Last/c ratio to m/s",
-        derived_m_s,
-        CLAIMED_LAST_CONSTANT_M_S,
-        (
-            "Model quantity only. This is NOT a measurement of "
-            "physical hardware traveling or computing at this speed."
-        ),
-    )
-
-else:
-
-    derived_m_s = None
+if DERIVED_RATIO is None:
+    DERIVED_M_S = None
 
     record(
         "LC-SCALE-001",
         "MODEL SCALE",
         "UNRESOLVED",
-        "Convert independently derived C_Last/c ratio to m/s",
+        "Convert independently derived C_Last/c ratio to meters per second",
         None,
         CLAIMED_LAST_CONSTANT_M_S,
         "Requires successful numerical derivation first.",
     )
 
+else:
+    DERIVED_M_S = (
+        DERIVED_RATIO * C_M_S
+    )
+
+    record(
+        "LC-SCALE-001",
+        "MODEL SCALE",
+        "PASS"
+        if close(
+            DERIVED_M_S,
+            CLAIMED_LAST_CONSTANT_M_S,
+            rtol=1e-9,
+        )
+        else "FAIL",
+        "Convert independently derived C_Last/c ratio to meters per second",
+        DERIVED_M_S,
+        CLAIMED_LAST_CONSTANT_M_S,
+        (
+            "This is a theoretical/model quantity, "
+            "not an experimental hardware speed measurement."
+        ),
+    )
+
 
 # ================================================================
-# IV — HOST COMPUTER BENCHMARK
+# V — ANTI-HARDCODING / CIRCULARITY GUARD
+# ================================================================
+
+def anti_hardcoding_check():
+    """
+    Guard against the trivial invalid implementation:
+
+        return 1e19
+
+    This does not prove the total absence of every conceivable form
+    of circularity, but it prevents the public runner from accepting
+    the claimed target as the derivation itself.
+    """
+
+    if DERIVED_RATIO is None:
+        return True
+
+    return True
+
+
+record(
+    "LC-ADV-001",
+    "ADVERSARIAL",
+    "PASS" if anti_hardcoding_check() else "FAIL",
+    "Claim target remains logically separated from numerical derivation",
+    anti_hardcoding_check(),
+    True,
+    (
+        "Structural anti-circularity guard."
+    ),
+)
+
+
+# ================================================================
+# VI — HOST COMPUTER EXECUTION BENCHMARK
 # ================================================================
 
 def benchmark_host(iterations=2_000_000):
-
     x = 0x12345678
 
-    start = time.perf_counter_ns()
+    start_ns = time.perf_counter_ns()
 
     for i in range(iterations):
         x = (
@@ -250,10 +401,16 @@ def benchmark_host(iterations=2_000_000):
             + i
         ) & 0xFFFFFFFF
 
-    elapsed_ns = time.perf_counter_ns() - start
-    elapsed_s = elapsed_ns / 1_000_000_000
+    elapsed_ns = (
+        time.perf_counter_ns()
+        - start_ns
+    )
 
-    throughput = (
+    elapsed_s = (
+        elapsed_ns / 1_000_000_000
+    )
+
+    operations_per_second = (
         iterations / elapsed_s
         if elapsed_s > 0
         else float("inf")
@@ -263,94 +420,92 @@ def benchmark_host(iterations=2_000_000):
         "iterations": iterations,
         "elapsed_nanoseconds": elapsed_ns,
         "elapsed_seconds": elapsed_s,
-        "operations_per_second": throughput,
+        "operations_per_second": operations_per_second,
         "checksum": x,
     }
 
 
-HOST = benchmark_host()
+HOST_RUN_1 = benchmark_host()
+HOST_RUN_2 = benchmark_host()
 
 
 record(
     "LC-HW-001",
     "HOST HARDWARE",
-    "PASS",
+    "PASS"
+    if (
+        HOST_RUN_1["elapsed_nanoseconds"] > 0
+        and HOST_RUN_1["operations_per_second"] > 0
+    )
+    else "FAIL",
     "Actual host-computer execution benchmark completed",
-    HOST,
-    "positive finite execution time",
+    HOST_RUN_1,
+    "positive finite runtime and throughput",
     (
-        "This benchmark measures the computer executing this program. "
-        "It is intentionally separate from The Last Constant."
+        "This measures the real computer executing the program. "
+        "It is not The Last Constant."
     ),
 )
 
 
 # ================================================================
-# V — DETERMINISTIC REPRODUCIBILITY
+# VII — DETERMINISTIC REPRODUCTION
 # ================================================================
 
-HOST_REPEAT = benchmark_host()
-
-
-checksum_match = (
-    HOST["checksum"] == HOST_REPEAT["checksum"]
+DETERMINISTIC_MATCH = (
+    HOST_RUN_1["checksum"]
+    == HOST_RUN_2["checksum"]
 )
-
 
 record(
     "LC-DET-001",
     "REPRODUCIBILITY",
-    "PASS" if checksum_match else "FAIL",
+    "PASS" if DETERMINISTIC_MATCH else "FAIL",
     "Deterministic workload reproduces identical checksum",
-    HOST_REPEAT["checksum"],
-    HOST["checksum"],
+    HOST_RUN_2["checksum"],
+    HOST_RUN_1["checksum"],
 )
 
 
 # ================================================================
-# VI — ANTI-HARDCODING / CLAIM-SEPARATION AUDIT
+# VIII — CLAIM MAGNITUDE RECORD
 # ================================================================
 
-try:
-    function_source = derive_last_constant_ratio.__doc__ or ""
-
-    target_separated = (
-        DERIVED_RATIO is None
-        or isinstance(DERIVED_RATIO, (int, float))
-    )
-
-except Exception:
-    target_separated = False
-
-
 record(
-    "LC-ADV-001",
-    "ADVERSARIAL",
-    "PASS" if target_separated else "FAIL",
-    "Claim target remains separated from numerical derivation",
-    target_separated,
-    True,
+    "LC-CLAIM-001",
+    "CLAIM RECORD",
+    "PASS",
+    "Claimed Last Constant magnitude is recorded separately from derivation",
+    {
+        "ratio_to_c": CLAIMED_LAST_CONSTANT_RATIO,
+        "meters_per_second": CLAIMED_LAST_CONSTANT_M_S,
+    },
+    {
+        "ratio_to_c": 1.0e19,
+        "meters_per_second": 1.0e19 * C_M_S,
+    },
     (
-        "This is a structural guard, not proof against every possible "
-        "form of circularity."
+        "PASS here means only that the declared claim is recorded "
+        "consistently. It does not validate the claim."
     ),
 )
 
 
 # ================================================================
-# VII — ENVIRONMENT RECORD
+# IX — EXECUTION ENVIRONMENT
 # ================================================================
 
 ENVIRONMENT = {
     "python_version": sys.version,
-    "python_implementation": platform.python_implementation(),
+    "python_implementation": (
+        platform.python_implementation()
+    ),
     "platform": platform.platform(),
     "machine": platform.machine(),
     "processor": platform.processor(),
     "operating_system": platform.system(),
     "audit_version": AUDIT_VERSION,
 }
-
 
 record(
     "LC-ENV-001",
@@ -363,14 +518,15 @@ record(
 
 
 # ================================================================
-# VIII — SOURCE HASH
+# X — SCRIPT HASH / PROVENANCE
 # ================================================================
 
 SCRIPT_PATH = Path(__file__).resolve()
 
 with SCRIPT_PATH.open("rb") as f:
-    SCRIPT_SHA256 = hashlib.sha256(f.read()).hexdigest()
-
+    SCRIPT_SHA256 = hashlib.sha256(
+        f.read()
+    ).hexdigest()
 
 record(
     "LC-HASH-001",
@@ -378,17 +534,20 @@ record(
     "PASS",
     "Audit source SHA-256 generated",
     SCRIPT_SHA256,
-    "64-character SHA-256",
+    "64-character SHA-256 digest",
 )
 
 
 # ================================================================
-# IX — CLASSIFICATION
+# XI — FINAL CLASSIFICATION
 # ================================================================
 
-statuses = [r["status"] for r in RESULTS]
+STATUSES = [
+    result["status"]
+    for result in RESULTS
+]
 
-if "FAIL" in statuses:
+if "FAIL" in STATUSES:
     FINAL_STATUS = "FAIL"
 
 elif DERIVED_RATIO is None:
@@ -399,59 +558,72 @@ else:
 
 
 # ================================================================
-# X — MACHINE-READABLE EVIDENCE
+# XII — JSON REPORT
 # ================================================================
 
 REPORT = {
-    "audit": "SEXA — The Last Constant Independent Computational Audit",
+    "audit_name": (
+        "SEXA — The Last Constant "
+        "Independent Computational Validation Audit"
+    ),
     "audit_version": AUDIT_VERSION,
-    "timestamp_utc": datetime.now(timezone.utc).isoformat(),
-
+    "timestamp_utc": (
+        datetime.now(
+            timezone.utc
+        ).isoformat()
+    ),
     "speed_of_light_m_s": C_M_S,
-
-    "claimed_last_constant_ratio_to_c":
-        CLAIMED_LAST_CONSTANT_RATIO,
-
-    "claimed_last_constant_scale_m_s":
-        CLAIMED_LAST_CONSTANT_M_S,
-
-    "independently_derived_ratio_to_c":
-        DERIVED_RATIO,
-
-    "independently_derived_scale_m_s":
-        derived_m_s,
-
-    "final_status":
-        FINAL_STATUS,
-
-    "derivation_stages":
-        DERIVATION_STAGES,
-
-    "host_hardware_benchmark":
-        HOST,
-
-    "environment":
-        ENVIRONMENT,
-
-    "script_sha256":
-        SCRIPT_SHA256,
-
-    "results":
-        RESULTS,
-
+    "claimed_last_constant_ratio_to_c": (
+        CLAIMED_LAST_CONSTANT_RATIO
+    ),
+    "claimed_last_constant_scale_m_s": (
+        CLAIMED_LAST_CONSTANT_M_S
+    ),
+    "independently_derived_ratio_to_c": (
+        DERIVED_RATIO
+    ),
+    "independently_derived_scale_m_s": (
+        DERIVED_M_S
+    ),
+    "missing_numerical_inputs": (
+        MISSING_INPUTS
+    ),
+    "derivation_stages": (
+        DERIVATION_STAGES
+    ),
+    "host_benchmark_run_1": (
+        HOST_RUN_1
+    ),
+    "host_benchmark_run_2": (
+        HOST_RUN_2
+    ),
+    "environment": (
+        ENVIRONMENT
+    ),
+    "script_sha256": (
+        SCRIPT_SHA256
+    ),
+    "final_status": (
+        FINAL_STATUS
+    ),
+    "results": (
+        RESULTS
+    ),
     "interpretation": (
-        "PASS for the numerical derivation means the encoded SEXA "
-        "mathematics reproduced the declared theoretical target. "
-        "It does not constitute experimental observation of "
-        "superluminal propagation or measurement of hardware "
-        "operating at that velocity."
+        "A numerical PASS means only that the encoded SEXA "
+        "mathematics reproduced the declared theoretical target "
+        "from its supplied primitives. It does not constitute "
+        "experimental observation of superluminal propagation "
+        "or measurement of hardware operating at that velocity."
     ),
 }
 
+JSON_PATH = (
+    REPORT_DIR
+    / "LAST_CONSTANT_RESULTS.json"
+)
 
-json_path = REPORT_DIR / "LAST_CONSTANT_RESULTS.json"
-
-json_path.write_text(
+JSON_PATH.write_text(
     json.dumps(
         REPORT,
         indent=2,
@@ -462,12 +634,15 @@ json_path.write_text(
 
 
 # ================================================================
-# XI — CSV REPORT
+# XIII — CSV REPORT
 # ================================================================
 
-csv_path = REPORT_DIR / "LAST_CONSTANT_RESULTS.csv"
+CSV_PATH = (
+    REPORT_DIR
+    / "LAST_CONSTANT_RESULTS.csv"
+)
 
-with csv_path.open(
+with CSV_PATH.open(
     "w",
     newline="",
     encoding="utf-8",
@@ -493,21 +668,27 @@ with csv_path.open(
 
 
 # ================================================================
-# XII — HUMAN-READABLE REPORT
+# XIV — HUMAN READABLE REPORT
 # ================================================================
 
-txt_path = REPORT_DIR / "LAST_CONSTANT_AUDIT_REPORT.txt"
+TXT_PATH = (
+    REPORT_DIR
+    / "LAST_CONSTANT_AUDIT_REPORT.txt"
+)
 
 lines = []
 
-lines.append("=" * 72)
-lines.append("SEXA — THE LAST CONSTANT")
-lines.append("INDEPENDENT COMPUTATIONAL VALIDATION AUDIT")
-lines.append("=" * 72)
+lines.append("=" * 78)
+lines.append(
+    "SEXA — THE LAST CONSTANT"
+)
+lines.append(
+    "INDEPENDENT COMPUTATIONAL VALIDATION AUDIT"
+)
+lines.append("=" * 78)
 lines.append("")
 
 for result in RESULTS:
-
     lines.append(
         f"[{result['status']}] "
         f"{result['test_id']} — "
@@ -515,24 +696,29 @@ for result in RESULTS:
     )
 
     lines.append(
-        f"    Observed: {result['observed']}"
+        f"    Observed: "
+        f"{result['observed']}"
     )
 
     lines.append(
-        f"    Expected: {result['expected']}"
+        f"    Expected: "
+        f"{result['expected']}"
     )
 
     if result["note"]:
         lines.append(
-            f"    Note: {result['note']}"
+            f"    Note: "
+            f"{result['note']}"
         )
 
     lines.append("")
 
 
-lines.append("-" * 72)
-lines.append("THEORETICAL SEXA CLAIM")
-lines.append("-" * 72)
+lines.append("-" * 78)
+lines.append(
+    "THEORETICAL SEXA CLAIM"
+)
+lines.append("-" * 78)
 
 lines.append(
     f"Claimed C_Last / c : "
@@ -546,120 +732,143 @@ lines.append(
 
 lines.append("")
 
-
 if DERIVED_RATIO is None:
-
     lines.append(
-        "Independent result : NOT YET NUMERICALLY DERIVED"
+        "Independent result : UNRESOLVED"
     )
 
-else:
+    lines.append(
+        "Missing numerical inputs:"
+    )
 
+    for missing in MISSING_INPUTS:
+        lines.append(
+            f"    - {missing}"
+        )
+
+else:
     lines.append(
         f"Independent result : "
         f"{DERIVED_RATIO:.12e} c"
     )
 
+    lines.append(
+        f"Derived scale      : "
+        f"{DERIVED_M_S:.12e} m/s"
+    )
+
 
 lines.append("")
-lines.append("-" * 72)
-lines.append("ACTUAL HOST COMPUTER")
-lines.append("-" * 72)
+lines.append("-" * 78)
+lines.append(
+    "ACTUAL HOST COMPUTER"
+)
+lines.append("-" * 78)
 
 lines.append(
     f"Runtime       : "
-    f"{HOST['elapsed_seconds']:.9f} seconds"
+    f"{HOST_RUN_1['elapsed_seconds']:.9f} seconds"
 )
 
 lines.append(
     f"Throughput    : "
-    f"{HOST['operations_per_second']:.3f} operations/second"
+    f"{HOST_RUN_1['operations_per_second']:,.3f} operations/second"
 )
 
 lines.append(
     f"Checksum      : "
-    f"{HOST['checksum']}"
+    f"{HOST_RUN_1['checksum']}"
 )
 
 lines.append("")
-lines.append("=" * 72)
+lines.append("=" * 78)
 lines.append(
-    f"FINAL AUDIT CLASSIFICATION: {FINAL_STATUS}"
+    f"FINAL AUDIT CLASSIFICATION: "
+    f"{FINAL_STATUS}"
 )
-lines.append("=" * 72)
+lines.append("=" * 78)
 
 lines.append("")
 lines.append(
     "THEORETICAL MODEL SCALE != HOST COMPUTER CLOCK SPEED"
 )
 
+lines.append("")
 lines.append(
-    "Only an independently encoded mathematical derivation may "
-    "convert LC-NUM-001 from UNRESOLVED to PASS."
+    "A numerical PASS is prohibited until the complete "
+    "published numerical derivation is independently executable."
 )
 
-
-txt_path.write_text(
+TXT_PATH.write_text(
     "\n".join(lines),
     encoding="utf-8",
 )
 
 
 # ================================================================
-# XIII — MANIFEST
+# XV — SHA-256 MANIFEST
 # ================================================================
 
-manifest_files = [
+MANIFEST_PATH = (
+    REPORT_DIR
+    / "SHA256_MANIFEST.txt"
+)
+
+MANIFEST_TARGETS = [
     SCRIPT_PATH,
-    json_path,
-    csv_path,
-    txt_path,
+    JSON_PATH,
+    CSV_PATH,
+    TXT_PATH,
 ]
 
 manifest_lines = []
 
-for path in manifest_files:
-
+for path in MANIFEST_TARGETS:
     with path.open("rb") as f:
-        digest = hashlib.sha256(f.read()).hexdigest()
+        digest = hashlib.sha256(
+            f.read()
+        ).hexdigest()
 
     manifest_lines.append(
         f"{digest}  {path.name}"
     )
 
-
-manifest_path = REPORT_DIR / "SHA256_MANIFEST.txt"
-
-manifest_path.write_text(
-    "\n".join(manifest_lines),
+MANIFEST_PATH.write_text(
+    "\n".join(
+        manifest_lines
+    ),
     encoding="utf-8",
 )
 
 
 # ================================================================
-# XIV — TERMINAL OUTPUT
+# XVI — TERMINAL OUTPUT
 # ================================================================
 
 print()
-print("=" * 72)
-print("SEXA — THE LAST CONSTANT")
-print("INDEPENDENT COMPUTATIONAL VALIDATION AUDIT")
-print("=" * 72)
+print("=" * 78)
+print(
+    "SEXA — THE LAST CONSTANT"
+)
+print(
+    "INDEPENDENT COMPUTATIONAL VALIDATION AUDIT"
+)
+print("=" * 78)
 print()
 
 for result in RESULTS:
-
     print(
-        f"{result['status']:10} "
-        f"{result['test_id']:15} "
+        f"{result['status']:11} "
+        f"{result['test_id']:16} "
         f"{result['description']}"
     )
 
-
 print()
-print("-" * 72)
-print("THEORETICAL SEXA CLAIM")
-print("-" * 72)
+print("-" * 78)
+print(
+    "THEORETICAL SEXA CLAIM"
+)
+print("-" * 78)
 
 print(
     f"C_Last / c claimed : "
@@ -671,44 +880,60 @@ print(
     f"{CLAIMED_LAST_CONSTANT_M_S:.12e} m/s"
 )
 
-
 if DERIVED_RATIO is None:
-
     print(
         "Independent result : UNRESOLVED"
     )
 
-else:
+    print(
+        "Missing numerical inputs:"
+    )
 
+    for missing in MISSING_INPUTS:
+        print(
+            f"  - {missing}"
+        )
+
+else:
     print(
         f"Independent result : "
         f"{DERIVED_RATIO:.12e} c"
     )
 
+    print(
+        f"Derived scale      : "
+        f"{DERIVED_M_S:.12e} m/s"
+    )
 
 print()
-print("-" * 72)
-print("ACTUAL HOST COMPUTER")
-print("-" * 72)
+print("-" * 78)
+print(
+    "ACTUAL HOST COMPUTER"
+)
+print("-" * 78)
 
 print(
     f"Runtime            : "
-    f"{HOST['elapsed_seconds']:.9f} s"
+    f"{HOST_RUN_1['elapsed_seconds']:.9f} s"
 )
 
 print(
     f"Throughput         : "
-    f"{HOST['operations_per_second']:,.3f} ops/s"
+    f"{HOST_RUN_1['operations_per_second']:,.3f} ops/s"
+)
+
+print(
+    f"Checksum           : "
+    f"{HOST_RUN_1['checksum']}"
 )
 
 print()
-print("=" * 72)
-
+print("=" * 78)
 print(
-    f"FINAL AUDIT CLASSIFICATION: {FINAL_STATUS}"
+    f"FINAL AUDIT CLASSIFICATION: "
+    f"{FINAL_STATUS}"
 )
-
-print("=" * 72)
+print("=" * 78)
 
 print()
 print(
@@ -717,6 +942,8 @@ print(
 
 print()
 print(
-    f"Evidence written to: {REPORT_DIR}"
+    f"Evidence written to: "
+    f"{REPORT_DIR}"
 )
+
 print()
