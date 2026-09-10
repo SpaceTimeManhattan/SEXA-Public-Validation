@@ -1,0 +1,3 @@
+{"type":"manifest","label":"REAL","claim":"COMPUTATIONAL prototype","e_fin":"NOT_EVALUATED","note":"Append one JSON object per REAL Gamma kill. Never write PHANTOM here. Never invent a kill on a timer.","frozen_unique_tape_kills":110,"frozen_job_kills_with_reruns":200,"frozen_window":"2026-09-01","updated":"2026-09-10T04:04:00-04:00"}
+{"type":"seed","ts":"2026-09-01T21:31:00-04:00","venue":"Bybit spot L2 BTCUSDT","day":"2026-08-31","killed_at":"AGGREGATE","kills":56,"admitted":1027,"n":1083,"source":"bybit_spot_l2_2026-08-31.json"}
+{"type":"seed","ts":"2026-09-01T21:41:00-04:00","venue":"Bybit spot L2 multi","killed_at":"AGGREGATE","kills":73,"tapes":["BTC-08-28","BTC-08-29","BTC-08-30","BTC-08-31","ETH-08-30","SOL-08-31"],"source":"full_l2_battery.json depth5"}
