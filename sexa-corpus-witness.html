@@ -276,6 +276,11 @@ const START_MEAP = Date.parse("2026-09-01T00:00:00-04:00");
 const TICK=80, C_OMEGA=Math.sqrt(2880/4);
 function ticks(from){return Math.max(0,Math.floor((Date.now()-from)/TICK));}
 function daySpan(iso){return Math.ceil((Date.parse(iso)-Date.now())/86400000);}
+function span(iso){
+  var ms=Math.abs(Date.parse(iso)-Date.now());
+  var d=Math.floor(ms/86400000), h=Math.floor((ms%86400000)/3600000), m=Math.floor((ms%3600000)/60000), s=Math.floor((ms%60000)/1000);
+  return d+"d "+h+"h "+m+"m "+s+"s";
+}
 function orbit(k){return ((k%4)+4*(Math.floor(k/4)%3)+12*(Math.floor(k/12)%2))%32;}
 function civil(from){
   const ms=Math.max(0,Date.now()-from), days=Math.floor(ms/86400000);
@@ -303,13 +308,13 @@ const PAPERS=[
  {id:"16",title:"Artificial Rest",venue:"Institute addendum",eq:"High-dimensional restorative regime named from the UFT. No clinical protocol encoded here."},
  {id:"17",title:"Lightning midair termination / ZeroReactor",venue:"Institute addendum",eq:"High-dimensional regime language for lightning termination. Experimental. Not a device schematic on this page."},
  {id:"18",title:"Axiomatic closure framework — exciternion evaluation",venue:"Institute addendum",eq:"Exciternion as lowest evaluation operator; dimensional collapse; cross-domain constructibility. Definitional, not a new runner module."},
- {id:"20",title:"MEAP 2026 — Hardware-verifiable recursive admissibility for autonomous aerospace and mechanical systems",venue:"Virtual · 30–31 Oct 2026 · IJMECH ISSN 2200-5854 · camera-ready",eq:"Held-out twin: 1,230,000 evaluations. Accuracy 97.57%. False admission 4.30% vs 85.55%. Moving number is the MEAP clock from 1 Sep 2026."},
- {id:"21",title:"ISTECH 2026 — Recursive information admissibility",venue:"Melbourne, Australia · 14–15 Nov 2026 · camera-ready",eq:"Controlled false admission 35.08% vs LOF 42.75%. Public suite 78.61% vs Isolation Forest 73.61%. Days-out counts to Melbourne."},
- {id:"22",title:"ACMAE 2026 — SEXA-CAT / RIA-HITL",venue:"Phuket, Thailand · 2–4 Dec 2026 · on the schedule",eq:"Human-in-the-loop H on the gate. H has not been run with people. Days-out counts to Phuket."},
- {id:"23",title:"ICMMAP-2026 — SREF-EX9D",venue:"Nuuk, Greenland · 19–20 Dec 2026 · accepted IARF-10-4-0099625",eq:"Nine-dimensional energy functional. Accepted for presentation. Days-out counts to Nuuk."},
- {id:"24",title:"CCWC 2027 — Quaternion phase-order processing",venue:"Las Vegas, USA · 4–6 Jan 2027 · not accepted · double-blind",eq:"Archived audit 83,550 checks, 0 failures. Full paper due 6 Nov 2026. Named copy is not on this page."},
- {id:"25",title:"NFM 2027 — Γ-gated quaternion routing",venue:"Houston, USA · 11–13 May 2027 · submitted · Paper ID 2",eq:"13 properties. Bound T+8. 57 of 64 masks. Notification 26 Feb 2027. Not accepted."},
- {id:"26",title:"IJPLA — The Γ-Spine Fold Theorem",venue:"ISSN 1839-6291 · submitted 8 Oct 2026 · not accepted",eq:"Six glyphs type five equations. Width 2,880. Days-since is the submission date."}
+ {id:"20",title:"MEAP 2026 — Hardware-verifiable recursive admissibility for autonomous aerospace and mechanical systems",venue:"Virtual · 30–31 Oct 2026 · IJMECH ISSN 2200-5854 · camera-ready",eq:"Held-out result stays put: 1,230,000 evaluations, accuracy 97.57%, false admission 4.30% vs 85.55%. The moving counts are the MEAP clock from 1 Sep 2026, the paper\u2019s 6 \u0393-stages, and its 10 state variables."},
+ {id:"21",title:"ISTECH 2026 — Recursive information admissibility",venue:"Melbourne, Australia · 14–15 Nov 2026 · camera-ready",eq:"Reported rates stay put: controlled false admission 35.08% vs LOF 42.75%; public suite 78.61% vs Isolation Forest 73.61%. The clock counts down to Melbourne. No second score is invented."},
+ {id:"22",title:"ACMAE 2026 — SEXA-CAT / RIA-HITL",venue:"Phuket, Thailand · 2–4 Dec 2026 · on the schedule",eq:"\u03c4 stays 0.75. H has not been run with people, so that cell stays \"not run\". The clock counts down to Phuket."},
+ {id:"23",title:"ICMMAP-2026 — SREF-EX9D",venue:"Nuuk, Greenland · 19–20 Dec 2026 · accepted IARF-10-4-0099625",eq:"Accepted IARF-10-4-0099625. Moving counts are the public depth n = k/60, the paper\u2019s 9 dimensions, and the sigmatics constant C\u03a9\u00b2 = 720. The functional value is not filled in."},
+ {id:"24",title:"CCWC 2027 — Quaternion phase-order processing",venue:"Las Vegas, USA · 4–6 Jan 2027 · not accepted · double-blind",eq:"Archived audit stays 83,550 checks, 0 failures. Phase is the quaternion index 1\u20134. Clock counts to the 6 Nov 2026 full-paper due date. Named copy is not on this page."},
+ {id:"25",title:"NFM 2027 — Γ-gated quaternion routing",venue:"Houston, USA · 11–13 May 2027 · submitted · Paper ID 2",eq:"Recorded result stays 57 of 64 masks, bound T+8, 13 properties. The moving cells index those 13 and those 64. Not accepted. Notification 26 Feb 2027."},
+ {id:"26",title:"IJPLA — The Γ-Spine Fold Theorem",venue:"ISSN 1839-6291 · submitted 8 Oct 2026 · not accepted",eq:"The theorem\u2019s own sizes: glyph 1\u20136, equation 1\u20135, reconstruction index 1\u20132,880. Submitted 8 Oct 2026. Not accepted."}
 ];
 const LIVE_BY_ID={
   "01":function(k,n,o){return [["steps",k],["60-ch",k+60],["orbit",o]];},
@@ -330,13 +335,13 @@ const LIVE_BY_ID={
   "16":function(k,n,o){return [["steps",k],["rest-ch",k+16],["orbit",o]];},
   "17":function(k,n,o){return [["steps",k],["ZR-ch",k+17],["orbit",o]];},
   "18":function(k,n,o){return [["steps",k],["EX-ch",k+18],["orbit",o]];},
-  "20":function(k,n,o){return [["meap-steps",k],["twin",k],["A",1]];},
-  "21":function(){return [["days out",daySpan("2026-11-14T09:00:00+11:00")],["ctrl FA","35.08%"],["public FA","78.61%"]];},
-  "22":function(){return [["days out",daySpan("2026-12-02T09:00:00+07:00")],["H-run","not run"],["τ","0.75"]];},
-  "23":function(){return [["days out",daySpan("2026-12-19T10:00:00-03:00")],["dims",9],["id","0099625"]];},
-  "24":function(){return [["days to due",daySpan("2026-11-06T23:59:00-08:00")],["audit","83550"],["fails",0]];},
-  "25":function(){return [["days out",daySpan("2027-05-11T09:00:00-05:00")],["props",13],["masks","57/64"]];},
-  "26":function(){return [["days since",-daySpan("2026-10-08T08:20:00-04:00")],["glyphs",6],["width",2880]];}
+  "20":function(k){return [["meap-steps",k],["Γ-stage",(k%6)+1],["state",(k%10)+1]];},
+  "21":function(){return [["to Melbourne",span("2026-11-14T09:00:00+11:00")],["ctrl FA","35.08%"],["public","78.61%"]];},
+  "22":function(){return [["to Phuket",span("2026-12-02T09:00:00+07:00")],["τ",0.75],["H","not run"]];},
+  "23":function(k){return [["n = k/60",k/60],["dim",(k%9)+1],["CΩ²",720]];},
+  "24":function(k){return [["to due",span("2026-11-06T23:59:00-08:00")],["phase",(k%4)+1],["fails",0]];},
+  "25":function(k){return [["to Houston",span("2027-05-11T09:00:00-05:00")],["prop",(k%13)+1],["mask",(k%64)+1]];},
+  "26":function(k){return [["glyph",(k%6)+1],["of 5",(k%5)+1],["of 2880",(k%2880)+1]];}
 };
 
 const grid=document.getElementById("grid"), ui={};
