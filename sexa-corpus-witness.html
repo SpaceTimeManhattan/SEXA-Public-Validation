@@ -111,11 +111,25 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
   <p class="flash">WITNESS RECORD. From a sixth-grade reader of the identities to a doctoral researcher: a public, dated witness of this recursive admissibility stack. Γ before energy. MEAP is the mechanical / aerospace loop: admit, score, hold the twin, step. This page is not a unified-field certificate and not a finished laboratory program. n = k/60. σ = 60^n.</p>
   <p class="salute">DARPA Absolute Adversarial Vanquishment Protocol (A.V.A.P.), Notice ID HR001122S0004. Journal of Advances in Mathematics 9880 states the recursive soil-bearing architecture for synthetic land mass and tactical gravity-well supply. Salute: Col. Paul J. Calhoun, USAF — DARPA TTO Program Manager (Jun 2020–Jul 2023); Deputy Commander, Air Force Test Center, Edwards AFB (Jul 2025–present). Salute: Dr. Ben Schrag — NSF SBIR/STTR Program Director and Policy Liaison (not NSF Director).</p>
       <div class="labvid">
-    <video id="institute" controls playsinline webkit-playsinline preload="metadata" aria-label="SEXA Institute intro, revision 13">
+    <video id="institute" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="SEXA Institute intro, revision 13">
       <source src="https://witness.sexatech.com/sexa-institute-intro-rev13.mp4" type="video/mp4"/>
     </video>
-    <div class="cap">SEXA Institute intro · rev 13 · press play for sound</div>
+    <div class="cap">SEXA Institute intro · rev 13 · autoplay loop</div>
   </div>
+<script>
+(function(){
+  var v=document.getElementById("institute");
+  if(!v) return;
+  v.muted=true; v.loop=true; v.playsInline=true; v.autoplay=true;
+  function kick(){
+    try{ if(!isFinite(v.duration)||v.currentTime>=v.duration-0.05) v.currentTime=0; }catch(e){}
+    var p=v.play(); if(p&&p.catch) p.catch(function(){});
+  }
+  v.addEventListener("ended", function(){ v.currentTime=0; kick(); });
+  v.addEventListener("error", function(){ setTimeout(kick, 500); });
+  kick();
+})();
+</script>
 <div class="uftdiag">
     <img alt="" src="https://witness.sexatech.com/sexa-uft-diagram.jpg"/>
     <div class="cap">SEXA energy functional and 5-D dual-field partition — recursive admissibility map</div>
