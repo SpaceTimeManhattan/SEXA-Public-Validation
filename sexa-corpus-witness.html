@@ -36,6 +36,15 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
 .wfull{grid-template-columns:1fr}
 @media(max-width:640px){.wrow{grid-template-columns:1fr;gap:2px}}
 
+.roster{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0 8px}
+@media(min-width:860px){.roster{grid-template-columns:1fr 1.25fr 1fr;align-items:stretch}}
+.roster .col{background:#121821;border:1px solid #d4b483;border-radius:16px;padding:18px 14px 16px;text-align:center}
+.roster h3{margin:0 0 12px;font-size:clamp(26px,4.6vw,40px);letter-spacing:.08em;color:#e0b44a;font-weight:800;line-height:1.05}
+.roster .author h3{color:#3de0c5}
+.roster .guides h3{color:#f4f7fb}
+.roster .nm{font-size:clamp(20px,2.8vw,28px);font-weight:750;line-height:1.2;margin:10px 0 0;color:#f4f7fb}
+.roster .pl{font-size:clamp(14px,2vw,18px);color:#d5e0ea;line-height:1.3;margin-top:2px}
+.roster .oid{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:#9aafc0;margin-top:2px}
 .labvid{margin:14px 0 4px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#05070a}
 .labvid video{display:block;width:100%;height:auto;max-height:none;aspect-ratio:16/9;object-fit:contain;background:#05070a}
 .labvid .cap{font-size:12px;color:var(--mute);text-align:center;padding:8px 10px 10px;line-height:1.4}
@@ -130,6 +139,38 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
   <p class="mama">This is SEXA — a recursive admissibility architecture. A state is admitted or it is killed, a twin is held, the next state is stepped. Unified field theory was the old prize; it is not the claim on this page. SEXA is Earth’s first research program to run a public, dated witness of this recursive admissibility stack. SEXA Institute of Technology and Interdomain Galactic Advisors, Bronx, New York. Any Known Object Advanced Aerospace &amp; Terraforming LLC and SEXA Mathematical Sciences Pacific LLC, Sacramento. Author Jered McClain. Root equation born 17 November 2024, Mendel Gottesman Library, Yeshiva University, Manhattan.</p>
   <p class="flash">WITNESS RECORD. From a sixth-grade reader of the identities to a doctoral researcher: a public, dated witness of this recursive admissibility stack. Γ before energy. MEAP is the mechanical / aerospace loop: admit, score, hold the twin, step. This page is not a unified-field certificate and not a finished laboratory program. n = k/60. σ = 60^n.</p>
   <p class="salute">DARPA Absolute Adversarial Vanquishment Protocol (A.V.A.P.), Notice ID HR001122S0004. Journal of Advances in Mathematics 9880 states the recursive soil-bearing architecture for synthetic land mass and tactical gravity-well supply. Salute: Col. Paul J. Calhoun, USAF — DARPA TTO Program Manager (Jun 2020–Jul 2023); Deputy Commander, Air Force Test Center, Edwards AFB (Jul 2025–present). Salute: Dr. Ben Schrag — NSF SBIR/STTR Program Director and Policy Liaison (not NSF Director).</p>
+  <div class="roster" id="roster">
+    <div class="col author">
+      <h3>AUTHOR</h3>
+      <div class="nm">Jered McClain</div>
+      <div class="pl">Bronx, New York</div>
+      <div class="oid">ORCID 0009-0005-6185-3749</div>
+    </div>
+    <div class="col advisors">
+      <h3>ADVISORS</h3>
+      <div class="nm">Erydir Ceisiwr</div>
+      <div class="pl">Gower, South Wales</div>
+      <div class="oid">ORCID 0009-0004-4577-5253</div>
+      <div class="nm">Jess Leffler</div>
+      <div class="pl">New Port Richey, Florida</div>
+      <div class="oid">ORCID 0009-0005-3761-836X</div>
+      <div class="nm">Jonathan McDaniel</div>
+      <div class="pl">Carthage, Texas</div>
+      <div class="oid">ORCID 0009-0004-1239-6855</div>
+    </div>
+    <div class="col guides">
+      <h3>REALITY GUIDES</h3>
+      <div class="nm">Jered McClain</div>
+      <div class="pl">Bronx, New York</div>
+      <div class="nm">Erydir Ceisiwr</div>
+      <div class="pl">Gower, South Wales</div>
+      <div class="nm">Jess Leffler</div>
+      <div class="pl">New Port Richey, Florida</div>
+      <div class="nm">Jonathan McDaniel</div>
+      <div class="pl">Carthage, Texas</div>
+    </div>
+  </div>
+
       <div class="labvid">
     <video id="institute" autoplay loop playsinline webkit-playsinline controls preload="auto" aria-label="SEXA Institute intro, revision 14, sound on">
       <source src="https://witness.sexatech.com/sexa-institute-intro-rev14.mp4" type="video/mp4"/>
@@ -283,13 +324,7 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
   <div class="sched" id="schedule">
     <h2>SPEAKING AND CONFERENCE SCHEDULE</h2>
     <p class="when">VLSIE spoken in Melbourne · then the program · status is the filing state</p>
-    <div class="authors">
-      <span class="who">AUTHORS AND ADVISORS</span>
-      <div>Jered McClain · Bronx, New York, USA · ORCID 0009-0005-6185-3749</div>
-      <div>Erydir Ceisiwr · Gower, South Wales, United Kingdom · ORCID 0009-0004-4577-5253</div>
-      <div>Jess Leffler · New Port Richey, Florida, USA · ORCID 0009-0005-3761-836X</div>
-      <div>Jonathan McDaniel · Carthage, Texas, USA · ORCID 0009-0004-1239-6855</div>
-    </div>
+
     <div class="row"><div class="flag" title="Australia"><svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-label="Australia"><rect width="60" height="40" fill="#012169"/><g clip-path="url(#aucv)"><rect width="30" height="20" fill="#012169"/><path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="5"/><path d="M0 0L30 20M30 0L0 20" stroke="#C8102E" stroke-width="2.4"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="8"/><path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="4"/></g><clipPath id="aucv"><rect width="30" height="20"/></clipPath><polygon points="15,26 16.1,29.2 19.5,29.2 16.8,31.2 17.8,34.4 15,32.4 12.2,34.4 13.2,31.2 10.5,29.2 13.9,29.2" fill="#fff"/><circle cx="46" cy="10" r="1.5" fill="#fff"/><circle cx="40" cy="16" r="1.2" fill="#fff"/><circle cx="48" cy="20" r="1.2" fill="#fff"/><circle cx="42" cy="26" r="1.2" fill="#fff"/><circle cx="50" cy="30" r="1.5" fill="#fff"/></svg></div><div><b>VLSIE 2026 · SPOKE</b><div class="when-date">15–16 August 2026</div><div class="meta-line">7th International Conference on VLSI & Embedded Systems · Melbourne, Australia · CS & IT ISSN 2231-5403 · DOI 10.5121/csit.2026.1601503</div><span class="st yes">SPOKE</span><div class="impact">Supercomputing</div><div class="paper">Hardware-verifiable recursive computational architecture. Spoken in Melbourne.</div></div></div>
     <div class="row"><div class="flag" title="Virtual"><svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-label="Virtual"><rect width="60" height="40" fill="#0b1c2c"/><circle cx="30" cy="20" r="12" fill="none" stroke="#d4b483" stroke-width="1.4"/><ellipse cx="30" cy="20" rx="6" ry="12" fill="none" stroke="#d4b483" stroke-width="1"/><path d="M18 20h24M22 12h16M22 28h16" stroke="#d4b483" stroke-width="1"/></svg></div><div><b>1 · MEAP 2026</b><div class="when-date">30–31 October 2026</div><div class="meta-line">9th International Conference on Mechanical Engineering & Applications · Virtual · proceedings in IJMECH, ISSN 2200-5854</div><span class="st">CAMERA-READY</span><div class="impact">Aerospace</div><div class="paper">Hardware-Verifiable Recursive Admissibility for Autonomous Aerospace and Mechanical Systems</div></div></div>
     <div class="row"><div class="flag" title="Australia"><svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-label="Australia"><rect width="60" height="40" fill="#012169"/><g clip-path="url(#auc)"><rect width="30" height="20" fill="#012169"/><path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="5"/><path d="M0 0L30 20M30 0L0 20" stroke="#C8102E" stroke-width="2.4"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="8"/><path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="4"/></g><clipPath id="auc"><rect width="30" height="20"/></clipPath><polygon points="15,26 16.1,29.2 19.5,29.2 16.8,31.2 17.8,34.4 15,32.4 12.2,34.4 13.2,31.2 10.5,29.2 13.9,29.2" fill="#fff"/><circle cx="46" cy="10" r="1.5" fill="#fff"/><circle cx="40" cy="16" r="1.2" fill="#fff"/><circle cx="48" cy="20" r="1.2" fill="#fff"/><circle cx="42" cy="26" r="1.2" fill="#fff"/><circle cx="50" cy="30" r="1.5" fill="#fff"/></svg></div><div><b>2 · ISTECH 2026</b><div class="when-date">14–15 November 2026</div><div class="meta-line">4th International Conference on Information Science and Techniques · with MATHCS 2026 · Melbourne, Australia · hybrid</div><span class="st">CAMERA-READY</span><div class="paper">Hardware-Verifiable Recursive Information Admissibility for AI and Information Systems</div></div></div>
