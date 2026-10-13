@@ -91,6 +91,26 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
 .row .st.wait{background:#8aa0b3}
 .row .st.yes{background:var(--cyan)}
 .row .paper{font-size:12px;color:var(--mute);margin-top:4px;line-height:1.35}
+.contact{margin:28px auto 8px;max-width:720px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 16px 20px}
+.contact h2{margin:0;text-align:center;font-size:clamp(20px,4.4vw,28px);color:var(--gold);letter-spacing:.03em;line-height:1.25}
+.contact .role{text-align:center;color:#d5e0ea;font-size:15px;line-height:1.45;margin:6px 0 0}
+.contact .reply{text-align:center;color:var(--cyan);font-size:14px;margin:8px 0 0}
+.contact .disc{margin:14px 0 4px;padding:10px 12px;border:1px solid #c9a227;color:#e8d48a;font-size:13px;line-height:1.45}
+.rtype{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0 4px}
+.rtype label{display:block;position:relative;background:#0b1016;border:1px solid var(--line);border-radius:12px;padding:14px 10px;cursor:pointer;text-align:center;font-size:14px;line-height:1.3}
+.rtype input{position:absolute;opacity:0;width:1px;height:1px}
+.rtype label.on{border-color:var(--cyan);color:var(--cyan)}
+.contact label.f{display:block;font-size:12px;letter-spacing:.04em;color:var(--mute);margin:12px 0 4px}
+.contact input[type=text],.contact input[type=email],.contact input[type=tel],.contact select,.contact textarea{width:100%;background:#0b1016;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:12px;font-family:var(--font);font-size:16px}
+.contact textarea{min-height:130px;resize:vertical}
+.paid{display:none}
+.paid.show{display:block}
+.check{display:flex;gap:10px;align-items:flex-start;margin:14px 0;font-size:14px;line-height:1.45;color:#d5e0ea}
+.check input{margin-top:3px;width:18px;height:18px;flex:none}
+.contact button{display:block;width:100%;margin:6px 0 12px;padding:16px 18px;border:0;border-radius:14px;color:#041016;background:var(--cyan);font-weight:700;letter-spacing:.08em;font-size:15px;font-family:var(--font);cursor:pointer}
+.contact .fallback{text-align:center;color:var(--mute);font-size:13px;line-height:1.45}
+.contact .fallback a{color:var(--cyan)}
+@media(max-width:640px){.rtype{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -256,7 +276,80 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
     <div class="row"><div class="flag" title="Manuscript"><svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-label="Manuscript"><rect width="60" height="40" fill="#101820"/><rect x="14" y="6" width="32" height="28" rx="1" fill="#d4b483"/><rect x="18" y="11" width="24" height="2" fill="#101820"/><rect x="18" y="16" width="24" height="2" fill="#101820"/><rect x="18" y="21" width="16" height="2" fill="#101820"/></svg></div><div><b>The Γ-Spine Fold Theorem</b><div class="when-date">Manuscript (2026)</div><div class="meta-line">Withdrawn from IJPLA. Revised version in preparation for TYPES 2027.</div><span class="st wait">WITHDRAWN · IN PREPARATION</span><div class="paper">The Γ-Spine Fold Theorem: manuscript (2026). Withdrawn from IJPLA; revised version in preparation for TYPES 2027.</div></div></div>
   </div>
   <div class="grid" id="grid"></div>
+  <section class="contact" id="contact">
+    <h2>Attn: Liat Moshe</h2>
+    <p class="role">Chief Financial Officer · Systems Administrator</p>
+    <p class="role">Paid Advisory Liaison · start-ups to Fortune 500</p>
+    <p class="reply">We respond within 24 hours.</p>
+    <p class="disc">Do not email proposed patents, schematics, or any proprietary, prioritized or unpublished technology ideas. All messages, including those sent through this form, are reviewed by our legal advisory team.</p>
+    <form id="liatForm" action="https://formsubmit.co/liat@sexatech.com" method="POST">
+      <input type="hidden" name="_subject" id="mailSubject" value="SEXA: General Enquiry">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="rtype" role="radiogroup" aria-label="Request type">
+        <label class="on"><input type="radio" name="request_type" value="General Enquiry" checked required> General Enquiry</label>
+        <label><input type="radio" name="request_type" value="Paid Advisory Request"> Paid Advisory Request</label>
+      </div>
+      <div class="paid" id="paidBlock">
+        <label class="f" for="company_size">Company size</label>
+        <select id="company_size" name="company_size">
+          <option value="">Select</option>
+          <option>Start-up</option>
+          <option>SMB</option>
+          <option>Enterprise</option>
+          <option>Fortune 500</option>
+        </select>
+        <label class="f" for="area_of_interest">Area of interest</label>
+        <input id="area_of_interest" type="text" name="area_of_interest" autocomplete="off">
+        <label class="f" for="preferred_timeline">Preferred timeline</label>
+        <select id="preferred_timeline" name="preferred_timeline">
+          <option value="">Select</option>
+          <option>ASAP</option>
+          <option>1-3 months</option>
+          <option>3-6 months</option>
+          <option>Exploring</option>
+        </select>
+      </div>
+      <label class="f" for="cname">Name</label>
+      <input id="cname" type="text" name="name" required autocomplete="name">
+      <label class="f" for="cemail">Email</label>
+      <input id="cemail" type="email" name="email" required autocomplete="email">
+      <label class="f" for="corg">Organization</label>
+      <input id="corg" type="text" name="organization" autocomplete="organization">
+      <label class="f" for="cphone">Phone</label>
+      <input id="cphone" type="tel" name="phone" autocomplete="tel">
+      <label class="f" for="csubject">Subject</label>
+      <input id="csubject" type="text" name="Subject" required>
+      <label class="f" for="cmessage">Message</label>
+      <textarea id="cmessage" name="message" required></textarea>
+      <label class="check"><input type="checkbox" name="confirmation" value="I confirm this message contains no patents, schematics or proprietary technology ideas." required> I confirm this message contains no patents, schematics or proprietary technology ideas.</label>
+      <button type="submit">Send message</button>
+      <p class="fallback">Prefer email? Write to <a href="mailto:liat@sexatech.com">liat@sexatech.com</a></p>
+    </form>
+  </section>
 </div>
+<script>
+(function(){
+  var form=document.getElementById("liatForm");
+  if(!form) return;
+  var subj=document.getElementById("mailSubject");
+  var paid=document.getElementById("paidBlock");
+  function sync(){
+    var picked=form.querySelector('input[name="request_type"]:checked');
+    var on=picked&&picked.value==="Paid Advisory Request";
+    subj.value=on?"SEXA: Paid Advisory Request":"SEXA: General Enquiry";
+    paid.classList.toggle("show", !!on);
+    paid.querySelectorAll("select,input").forEach(function(el){ el.required=!!on; });
+    form.querySelectorAll(".rtype label").forEach(function(lab){
+      var inp=lab.querySelector("input");
+      lab.classList.toggle("on", !!(inp&&inp.checked));
+    });
+  }
+  form.addEventListener("change", sync);
+  sync();
+})();
+</script>
 <script>
 const START_SEXA = Date.parse("2024-11-17T12:00:00-05:00");
 const START_SR   = Date.parse("1905-06-30T00:00:00-05:00");
