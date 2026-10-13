@@ -131,19 +131,42 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
   <p class="flash">WITNESS RECORD. From a sixth-grade reader of the identities to a doctoral researcher: a public, dated witness of this recursive admissibility stack. Γ before energy. MEAP is the mechanical / aerospace loop: admit, score, hold the twin, step. This page is not a unified-field certificate and not a finished laboratory program. n = k/60. σ = 60^n.</p>
   <p class="salute">DARPA Absolute Adversarial Vanquishment Protocol (A.V.A.P.), Notice ID HR001122S0004. Journal of Advances in Mathematics 9880 states the recursive soil-bearing architecture for synthetic land mass and tactical gravity-well supply. Salute: Col. Paul J. Calhoun, USAF — DARPA TTO Program Manager (Jun 2020–Jul 2023); Deputy Commander, Air Force Test Center, Edwards AFB (Jul 2025–present). Salute: Dr. Ben Schrag — NSF SBIR/STTR Program Director and Policy Liaison (not NSF Director).</p>
       <div class="labvid">
-    <video id="institute" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="SEXA Institute intro, revision 13">
-      <source src="https://witness.sexatech.com/sexa-institute-intro-rev13.mp4" type="video/mp4"/>
+    <video id="institute" autoplay loop playsinline webkit-playsinline controls preload="auto" aria-label="SEXA Institute intro, revision 14, sound on">
+      <source src="https://witness.sexatech.com/sexa-institute-intro-rev14.mp4" type="video/mp4"/>
     </video>
-    <div class="cap">SEXA Institute intro · rev 13 · autoplay loop</div>
+    <div class="cap">SEXA Institute intro · rev 14 · autoplay · sound on · loop</div>
   </div>
 <script>
 (function(){
   var v=document.getElementById("institute");
   if(!v) return;
-  v.muted=true; v.loop=true; v.playsInline=true; v.autoplay=true;
+  v.loop=true; v.playsInline=true; v.autoplay=true; v.controls=true; v.volume=1; v.muted=false;
+  function armTap(){
+    function on(){
+      v.muted=false; v.volume=1;
+      var p=v.play(); if(p&&p.catch) p.catch(function(){});
+      document.removeEventListener("pointerdown", on, true);
+      document.removeEventListener("keydown", on, true);
+      document.removeEventListener("touchstart", on, true);
+    }
+    document.addEventListener("pointerdown", on, true);
+    document.addEventListener("keydown", on, true);
+    document.addEventListener("touchstart", on, true);
+  }
   function kick(){
-    try{ if(!isFinite(v.duration)||v.currentTime>=v.duration-0.05) v.currentTime=0; }catch(e){}
-    var p=v.play(); if(p&&p.catch) p.catch(function(){});
+    try{ if(isFinite(v.duration) && v.currentTime>=v.duration-0.05) v.currentTime=0; }catch(e){}
+    v.muted=false; v.volume=1;
+    var p=v.play();
+    if(p&&p.catch) p.catch(function(){
+      v.muted=true;
+      var q=v.play();
+      if(q&&q.then) q.then(function(){
+        v.muted=false; v.volume=1;
+        var r=v.play();
+        if(r&&r.catch) r.catch(function(){ v.muted=true; armTap(); });
+      }).catch(function(){ armTap(); });
+      else armTap();
+    });
   }
   v.addEventListener("ended", function(){ v.currentTime=0; kick(); });
   v.addEventListener("error", function(){ setTimeout(kick, 500); });
