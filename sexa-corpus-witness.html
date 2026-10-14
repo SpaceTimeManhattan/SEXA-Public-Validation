@@ -36,16 +36,15 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
 .wfull{grid-template-columns:1fr}
 @media(max-width:640px){.wrow{grid-template-columns:1fr;gap:2px}}
 
-.roster{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0 8px}
-@media(min-width:860px){.roster{grid-template-columns:1fr 1.25fr 1fr;align-items:stretch}}
-.roster .col{background:#121821;border:1px solid #d4b483;border-radius:16px;padding:18px 14px 16px;text-align:center}
-.roster h3{margin:0 0 12px;font-size:clamp(26px,4.6vw,40px);letter-spacing:.08em;color:#e0b44a;font-weight:800;line-height:1.05}
-.roster .author h3{color:#3de0c5}
-.roster .guides h3{color:#f4f7fb}
-.roster .nm{font-size:clamp(20px,2.8vw,28px);font-weight:750;line-height:1.2;margin:10px 0 0;color:#f4f7fb}
-.roster .pl{font-size:clamp(14px,2vw,18px);color:#d5e0ea;line-height:1.3;margin-top:2px}
+.roster{display:flex;flex-direction:column;gap:10px;margin:18px auto 8px;max-width:720px}
+.roster h3{margin:0 0 10px;text-align:center;font-size:clamp(26px,4.6vw,40px);letter-spacing:.08em;color:#e0b44a;font-weight:800;line-height:1.05}
+.roster .person{background:#121821;border:1px solid #d4b483;border-radius:16px;padding:16px 16px 14px;text-align:center}
+.roster .role{font-size:clamp(18px,3.2vw,26px);font-weight:800;letter-spacing:.04em;color:#3de0c5;line-height:1.2}
+.roster .nm{font-size:clamp(22px,3.4vw,32px);font-weight:750;line-height:1.2;margin:8px 0 0;color:#f4f7fb}
+.roster .pl{font-size:clamp(15px,2.2vw,20px);color:#d5e0ea;line-height:1.3;margin-top:4px}
 .roster .cty{font-size:clamp(16px,2.2vw,22px);font-weight:750;color:#e0b44a;letter-spacing:.04em;line-height:1.2;margin-top:2px}
-.roster .oid{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:#9aafc0;margin-top:2px}
+.roster .oid{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:#9aafc0;margin-top:4px}
+.roster .more{text-align:center;color:#d5e0ea;font-size:clamp(15px,2.2vw,18px);margin:4px 0 0}
 .labvid{margin:14px 0 4px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#05070a}
 .labvid video{display:block;width:100%;height:auto;max-height:none;aspect-ratio:16/9;object-fit:contain;background:#05070a}
 .labvid .cap{font-size:12px;color:var(--mute);text-align:center;padding:8px 10px 10px;line-height:1.4}
@@ -141,42 +140,34 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
   <p class="flash">WITNESS RECORD. From a sixth-grade reader of the identities to a doctoral researcher: a public, dated witness of this recursive admissibility stack. Γ before energy. MEAP is the mechanical / aerospace loop: admit, score, hold the twin, step. This page is not a unified-field certificate and not a finished laboratory program. n = k/60. σ = 60^n.</p>
   <p class="salute">DARPA Absolute Adversarial Vanquishment Protocol (A.V.A.P.), Notice ID HR001122S0004. Journal of Advances in Mathematics 9880 states the recursive soil-bearing architecture for synthetic land mass and tactical gravity-well supply. Salute: Col. Paul J. Calhoun, USAF — DARPA TTO Program Manager (Jun 2020–Jul 2023); Deputy Commander, Air Force Test Center, Edwards AFB (Jul 2025–present). Salute: Dr. Ben Schrag — NSF SBIR/STTR Program Director and Policy Liaison (not NSF Director).</p>
   <div class="roster" id="roster">
-    <div class="col author">
-      <h3>AUTHOR</h3>
+    <h3>ADVISORY BOARD</h3>
+    <div class="person">
+      <div class="role">Author Advisor Reality Guide</div>
       <div class="nm">Jered McClain</div>
       <div class="pl">Bronx, New York</div>
       <div class="cty">United States</div>
       <div class="oid">ORCID 0009-0005-6185-3749</div>
     </div>
-    <div class="col advisors">
-      <h3>ADVISORS</h3>
+    <div class="person">
+      <div class="role">Author Advisor Reality Guide</div>
       <div class="nm">Erydir Ceisiwr</div>
       <div class="pl">Gower, South Wales</div>
       <div class="cty">United Kingdom</div>
       <div class="oid">ORCID 0009-0004-4577-5253</div>
+    </div>
+    <div class="person">
+      <div class="role">Author Advisor Reality Guide</div>
       <div class="nm">Jess Leffler</div>
       <div class="pl">New Port Richey, Florida</div>
       <div class="cty">United States</div>
       <div class="oid">ORCID 0009-0005-3761-836X</div>
+    </div>
+    <div class="person">
+      <div class="role">Author Advisor Reality Guide</div>
       <div class="nm">Jonathan McDaniel</div>
       <div class="pl">Carthage, Texas</div>
       <div class="cty">United States</div>
       <div class="oid">ORCID 0009-0004-1239-6855</div>
-    </div>
-    <div class="col guides">
-      <h3>REALITY GUIDES</h3>
-      <div class="nm">Jered McClain</div>
-      <div class="pl">Bronx, New York</div>
-      <div class="cty">United States</div>
-      <div class="nm">Erydir Ceisiwr</div>
-      <div class="pl">Gower, South Wales</div>
-      <div class="cty">United Kingdom</div>
-      <div class="nm">Jess Leffler</div>
-      <div class="pl">New Port Richey, Florida</div>
-      <div class="cty">United States</div>
-      <div class="nm">Jonathan McDaniel</div>
-      <div class="pl">Carthage, Texas</div>
-      <div class="cty">United States</div>
     </div>
   </div>
 
