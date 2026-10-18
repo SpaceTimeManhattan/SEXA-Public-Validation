@@ -320,12 +320,19 @@ model-viewer{display:block;width:100%;height:420px;background:#05070a;border-rad
 (function(){
   var v=document.getElementById("vesper-loop");
   if(!v) return;
-  v.muted=true; v.loop=true; v.playsInline=true;
+  v.muted=true; v.loop=true; v.playsInline=true; v.autoplay=true;
+  v.setAttribute("loop","");
   function kick(){
-    try{ if(isFinite(v.duration)&&v.currentTime>=v.duration-0.05) v.currentTime=0; }catch(e){}
+    try{ if(v.ended || (isFinite(v.duration) && v.currentTime >= v.duration - 0.12)) v.currentTime = 0; }catch(e){}
     var p=v.play(); if(p&&p.catch) p.catch(function(){});
   }
-  v.addEventListener("ended", function(){ v.currentTime=0; kick(); });
+  v.addEventListener("ended", kick);
+  v.addEventListener("pause", function(){
+    if(v.ended || (isFinite(v.duration) && v.currentTime >= v.duration - 0.2)) kick();
+  });
+  setInterval(function(){
+    if(v.ended || (isFinite(v.duration) && v.duration > 0 && v.currentTime >= v.duration - 0.12)) kick();
+  }, 200);
   kick();
 })();
 </script>
