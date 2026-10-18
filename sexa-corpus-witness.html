@@ -48,6 +48,22 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
 .labvid{margin:14px 0 4px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#05070a}
 .labvid video{display:block;width:100%;height:auto;max-height:none;aspect-ratio:16/9;object-fit:contain;background:#05070a}
 .labvid .cap{font-size:12px;color:var(--mute);text-align:center;padding:8px 10px 10px;line-height:1.4}
+.vesper{margin:14px 0 8px;border:1px solid var(--line);border-radius:16px;background:#0c1018;padding:12px 12px 14px}
+.vesper h3{margin:0;text-align:center;color:var(--gold);letter-spacing:.16em;font-size:clamp(22px,4vw,30px)}
+.vesper .sub{text-align:center;color:var(--mute);font-size:12px;letter-spacing:.12em;margin:4px 0 10px}
+.vgrid{display:grid;grid-template-columns:1fr;gap:8px;margin-top:10px}
+@media(min-width:800px){.vgrid{grid-template-columns:1fr 1fr}}
+.vbox{background:#0b1016;border:1px solid #243044;border-radius:12px;padding:10px 12px}
+.vbox h4{margin:0 0 8px;font-size:12px;letter-spacing:.12em;color:var(--gold)}
+.vbox p,.vbox li{font-family:var(--mono);font-size:12px;color:#d5e0ea;line-height:1.45;margin:0 0 4px}
+.vbox ol,.vbox ul{margin:0;padding-left:18px}
+.vhit{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;text-align:center;margin-top:8px}
+.vhit span{display:block;font-size:11px;letter-spacing:.08em;color:var(--mute)}
+.vhit b{display:block;font-family:var(--mono);font-size:clamp(18px,4vw,26px);color:var(--cyan);margin-top:4px}
+.vfail{text-align:center;color:#e8d48a;font-size:14px;line-height:1.4;margin:10px 0 0}
+.vsmall{text-align:center;color:var(--mute);font-size:12px;margin:6px 0 0}
+model-viewer{display:block;width:100%;height:420px;background:#05070a;border-radius:12px;margin-top:8px}
+
 .klbl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--gold);text-align:center}
 .k{font-family:var(--mono);font-size:clamp(36px,10vw,64px);color:var(--cyan);text-align:center;margin:8px 0;font-weight:700}
 .k2{font-family:var(--mono);font-size:clamp(16px,4vw,22px);color:#8aa0b3;text-align:center;margin:4px 0}
@@ -214,6 +230,107 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
   kick();
 })();
 </script>
+<div class="vesper" id="vesper">
+  <h3>VESPER</h3>
+  <div class="sub">GRAVITY PIECE-SHUFFLE SEARCH ENGINE</div>
+  <div class="labvid">
+    <video id="vesper-loop" autoplay muted loop playsinline webkit-playsinline controls preload="auto" aria-label="VESPER gravity piece-shuffle search engine, schematic loop">
+      <source src="https://witness.sexatech.com/engine_sexa_loop.mp4" type="video/mp4"/>
+    </video>
+    <div class="cap">Schematic visualization. Not a measured result. The counts below are the end frame of this loop.</div>
+  </div>
+  <div class="vgrid">
+    <div class="vbox">
+      <h4>COUNTS</h4>
+      <p>SIMULATED 11,100,000,000</p>
+      <p>arrangements actually evaluated</p>
+      <p>COVERED 7.900 × 10<sup>17</sup></p>
+      <p>ruled out by exact pruning</p>
+      <p>Two counts, kept separate, never mixed, per family run. SIMULATED is the honest count.</p>
+    </div>
+    <div class="vbox">
+      <h4>HITS AFTER EXACT TESTS</h4>
+      <div class="vhit">
+        <div><span>SEXA</span><b>61,776</b></div>
+        <div><span>CTRL_B</span><b>61,776</b></div>
+        <div><span>CTRL_A</span><b>0</b></div>
+      </div>
+      <p class="vfail">NOT FLAGGED. SEXA only ties CTRL_B. Gravity is not solved.</p>
+    </div>
+    <div class="vbox">
+      <h4>GATES AND TESTS</h4>
+      <p>GATE ORDER (search.c tests). Every arrangement must pass.</p>
+      <ol>
+        <li>pol_label</li>
+        <li>exact_consistency</li>
+        <li>nonzero_coupling</li>
+        <li>exact_speed</li>
+        <li>cassini</li>
+        <li>dipole</li>
+      </ol>
+      <ul>
+        <li>down leg = 60<sup>−3</sup></li>
+        <li>return leg closes exactly</li>
+        <li>kappa within 1% of 15</li>
+        <li>admission, U_a, speed</li>
+        <li>then beat both controls</li>
+      </ul>
+    </div>
+    <div class="vbox">
+      <h4>FACE SYMBOLS</h4>
+      <ul>
+        <li>Π° — Bearden factor B2, gravity term</li>
+        <li>κ — return-ratio, input ×15 (reported)</li>
+        <li>R_neg — negative resistor, returns energy</li>
+        <li>ε = 60<sup>−3</sup> — down leg D_down</li>
+        <li>A(ε) — admissibility form (OPEN)</li>
+        <li>ℓ_a — length scale, 60<sup>k</sup> (OPEN)</li>
+        <li>U_a — scale, 60<sup>−u</sup> (OPEN)</li>
+        <li>A_th — admission threshold (OPEN)</li>
+        <li>‖O(ε)‖ — orbit norm (OPEN)</li>
+        <li>C<sub>−2</sub> — m<sup>−2</sup> unit carrier (OPEN)</li>
+        <li>v_launch — launch speed, input c (OPEN)</li>
+        <li>G_model — G_* F, mapping to G (OPEN)</li>
+      </ul>
+    </div>
+    <div class="vbox">
+      <h4>PIECE COLOURS</h4>
+      <ul>
+        <li>constants K_i (60, 720, 2880, 12, …)</li>
+        <li>Empire Wave piece (73 options)</li>
+        <li>A(ε) forms (27)</li>
+        <li>gate form and placement</li>
+        <li>ℓ_a and U_a scales</li>
+      </ul>
+      <p>Colour map is a legend, not a measurement.</p>
+    </div>
+    <div class="vbox">
+      <h4>DEPTH LADDER AND OUTER RING</h4>
+      <p>M2880 > D9 … D3 > D2 > D1</p>
+      <p>Each step down thins by 60<sup>−1</sup>.</p>
+      <p>OUTER RING: 60 beads, 60<sup>−t</sup> steps.</p>
+      <p>RETURN R2: D_up = D_down<sup>−1</sup></p>
+    </div>
+  </div>
+  <p class="vsmall">Schematic visualization; not a measured result. This block is not a corpus paper and not a public clock.</p>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <model-viewer src="https://witness.sexatech.com/engine_sexa.glb" alt="VESPER engine solid" auto-rotate camera-controls shadow-intensity="1" exposure="1"></model-viewer>
+  
+<script>
+(function(){
+  var v=document.getElementById("vesper-loop");
+  if(!v) return;
+  v.muted=true; v.loop=true; v.playsInline=true;
+  function kick(){
+    try{ if(isFinite(v.duration)&&v.currentTime>=v.duration-0.05) v.currentTime=0; }catch(e){}
+    var p=v.play(); if(p&&p.catch) p.catch(function(){});
+  }
+  v.addEventListener("ended", function(){ v.currentTime=0; kick(); });
+  kick();
+})();
+</script>
+<p class="vsmall"><a href="https://witness.sexatech.com/engine_sexa.glb" style="color:#3de0c5">engine_sexa.glb</a> · solid of the same schematic</p>
+</div>
 <div class="uftdiag">
     <img alt="" src="https://witness.sexatech.com/sexa-uft-diagram.jpg"/>
     <div class="cap">SEXA energy functional and 5-D dual-field partition — recursive admissibility map</div>
