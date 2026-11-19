@@ -188,7 +188,7 @@ model-viewer{display:block;width:100%;height:420px;background:#05070a;border-rad
   </div>
 
       <div class="labvid">
-    <video id="institute" autoplay muted loop playsinline webkit-playsinline controls preload="auto" aria-label="SEXA Institute intro, revision 15, British voice, autoplay, loop">
+    <video id="institute" muted loop playsinline webkit-playsinline controls preload="metadata" aria-label="SEXA Institute intro, revision 15, British voice, loop">
       <source src="https://witness.sexatech.com/sexa-institute-intro-rev15.mp4" type="video/mp4"/>
     </video>
     <div class="cap">SEXA Institute intro · rev 15 · British voice · autoplay · loop · sound on when the browser allows it</div>
@@ -387,7 +387,7 @@ model-viewer{display:block;width:100%;height:420px;background:#05070a;border-rad
 (function(){
   var v=document.getElementById("institute");
   if(!v) return;
-  v.loop=true; v.playsInline=true; v.autoplay=true; v.controls=true; v.volume=1; v.muted=true;
+  v.loop=true; v.playsInline=true;  v.controls=true; v.volume=1; v.muted=true;
   function armTap(){
     function on(){
       v.muted=false; v.volume=1;
@@ -411,19 +411,13 @@ model-viewer{display:block;width:100%;height:420px;background:#05070a;border-rad
     }).catch(function(){ armTap(); });
     else armTap();
   }
-  v.addEventListener("ended", function(){ v.currentTime=0; kick(); });
-  v.addEventListener("error", function(){ setTimeout(kick, 500); });
-  if("IntersectionObserver" in window){
-    new IntersectionObserver(function(ents){
-      ents.forEach(function(en){ if(en.isIntersecting && v.paused) kick(); });
-    }, {threshold:0.2}).observe(v);
-  }
-  document.addEventListener("visibilitychange", function(){ if(!document.hidden && v.paused) kick(); });
-  kick();
+  function vis(el){var r=el.getBoundingClientRect();return r.width>0&&r.height>0&&r.bottom>0&&r.right>0&&r.top<(window.innerHeight||document.documentElement.clientHeight);}
+  v.addEventListener("ended", function(){ v.currentTime=0; if(vis(v)) kick(); });
+  v.addEventListener("error", function(){ setTimeout(function(){ if(vis(v)) kick(); }, 500); });
 })();
 </script>
 <div class="labvid">
-  <video id="integrand" autoplay muted loop playsinline webkit-playsinline controls preload="auto" aria-label="SEXA integrand challenge, no sound">
+  <video id="integrand" muted loop playsinline webkit-playsinline controls preload="metadata" aria-label="SEXA integrand challenge, no sound">
     <source src="https://witness.sexatech.com/integral-challenge-v4.mp4" type="video/mp4"/>
   </video>
   <div class="cap">Integrand challenge · autoplay · loop · no sound</div>
@@ -432,22 +426,17 @@ model-viewer{display:block;width:100%;height:420px;background:#05070a;border-rad
 (function(){
   var v=document.getElementById("integrand");
   if(!v) return;
-  v.muted=true; v.defaultMuted=true; v.volume=0; v.loop=true; v.playsInline=true; v.autoplay=true;
+  v.muted=true; v.defaultMuted=true; v.volume=0; v.loop=true; v.playsInline=true; 
   function kick(){
     v.muted=true; v.volume=0;
     try{ if(isFinite(v.duration) && v.currentTime>=v.duration-0.05) v.currentTime=0; }catch(e){}
     var p=v.play();
-    if(p&&p.catch) p.catch(function(){ setTimeout(kick, 500); });
+    if(p&&p.catch) p.catch(function(){ setTimeout(function(){ if(vis(v)) kick(); }, 500); });
   }
   v.addEventListener("volumechange", function(){ if(!v.muted || v.volume>0){ v.muted=true; v.volume=0; } });
-  v.addEventListener("ended", function(){ v.currentTime=0; kick(); });
-  v.addEventListener("error", function(){ setTimeout(kick, 800); });
-  if("IntersectionObserver" in window){
-    new IntersectionObserver(function(ents){
-      ents.forEach(function(en){ if(en.isIntersecting && v.paused) kick(); });
-    }, {threshold:0.15}).observe(v);
-  }
-  kick();
+  function vis(el){var r=el.getBoundingClientRect();return r.width>0&&r.height>0&&r.bottom>0&&r.right>0&&r.top<(window.innerHeight||document.documentElement.clientHeight);}
+  v.addEventListener("ended", function(){ v.currentTime=0; if(vis(v)) kick(); });
+  v.addEventListener("error", function(){ setTimeout(function(){ if(vis(v)) kick(); }, 800); });
 })();
 </script>
 <div class="vesper" id="vesper">
@@ -721,7 +710,7 @@ model-viewer{display:block;width:100%;height:420px;background:#05070a;border-rad
 <div class="sm-panel"><p>MESSENGER orbited Mercury 2011–2015. BepiColombo (ESA + JAXA) enters orbit 21 Nov 2026. SEXA Math proposes keeping belt-puncture telemetry — before, during, after — and reading it with six HEXAD channels. Discarding it as contamination is what we call <strong>The Trash Telemetry Fallacy</strong>. Gravity is not claimed solved; <a href="#sm-scoreboard">6.75 / 19</a> is headway (max credit 0.5, 2 FAIL).</p><a class="sm-btn sm-p" href="https://sexamath.si/animation.html">Play the animation</a></div>
 <div class="sm-panel" style="border-style:dashed"><h3>Coming: daily SEXA telemetry desk</h3><p class="sm-mu">Log in daily, view satellite telemetry readings, and run SEXA alongside them in real time. Not built yet.</p>
 <!-- STUB: future daily-login telemetry dashboard (auth, telemetry feeds, live SEXA runner). Nothing implemented. --></div></div><div class="sm-sec" id="sm-advisor"><h2><small>08 · Advisor</small>Senior UFS Advisor — Before SEXA Math</h2>
-<div style="border:1px solid var(--gold);border-radius:14px;overflow:hidden;box-shadow:0 0 40px rgba(0,229,255,.18);background:#000"><video controls preload="metadata" poster="https://sexamath.si/assets/video/ufs_senior_advisor_pre_sexamath_poster.jpg" style="width:100%;display:block;aspect-ratio:16/9"><source src="https://sexamath.si/assets/video/ufs_senior_advisor_pre_sexamath.mp4" type="video/mp4">Your browser can't play this video. <a href="https://sexamath.si/assets/video/ufs_senior_advisor_pre_sexamath.mp4">Download the MP4</a>.</video></div>
+<div style="border:1px solid var(--gold);border-radius:14px;overflow:hidden;box-shadow:0 0 40px rgba(0,229,255,.18);background:#000"><video playsinline muted controls preload="metadata" poster="https://sexamath.si/assets/video/ufs_senior_advisor_pre_sexamath_poster.jpg" style="width:100%;display:block;aspect-ratio:16/9"><source src="https://sexamath.si/assets/video/ufs_senior_advisor_pre_sexamath.mp4" type="video/mp4">Your browser can't play this video. <a href="https://sexamath.si/assets/video/ufs_senior_advisor_pre_sexamath.mp4">Download the MP4</a>.</video></div>
 <p class="sm-mu" style="text-align:center">Generated as a response from a senior UFS advisor from before McClain wrote SEXA Math. SEXAMATH.si is the research portal for up-to-date telemetry.</p></div><div class="sm-sec" id="sm-dissertation"><h2><small>09 · Dissertation</small>CCT/SEXA: The Architecture of Recursive Admissibility, Books I–XIV</h2>
 <div class="sm-panel"><p class="sm-mu">As a result of creating SEXA Math in late 2024, Jered's advisors told him he could collect hundreds of honorary PhDs. Instead, he chose the non-honorary doctoral route and began to build and write the dissertation itself, over several years, and more is still to come, including finance and medicine. The schools and PhD programs will be announced in spring 2027.</p>
 <p><a class="sm-btn sm-p" href="https://sexamath.si/assets/pdf/McClain_Dissertation_Books_I-XIV.pdf" target="_blank" rel="noopener">Open full PDF (95 MB)</a><a class="sm-btn" href="https://sexamath.si/#dissertation" target="_blank" rel="noopener">PDF viewer with page-matched table of contents</a></p>
@@ -949,4 +938,17 @@ paint(); setInterval(paint,80);
 })();
 </script>
 
-</body></html>
+<script>
+/*viewport-video-play*/
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var vids=document.querySelectorAll("video");
+  function go(v){if(reduce)return;var p=v.play();if(p&&p.catch)p.catch(function(){});}
+  if("IntersectionObserver"in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting)go(e.target);else e.target.pause();});
+    },{threshold:0.35});
+    vids.forEach(function(v){io.observe(v);});
+  }
+})();
+</script></body></html>

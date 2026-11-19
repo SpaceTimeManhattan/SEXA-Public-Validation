@@ -81,7 +81,7 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
   <p class="flash">WITNESS RECORD. From a sixth-grade reader of the identities to a doctoral researcher: a public, dated witness of this recursive admissibility stack. Γ before energy. MEAP is the mechanical / aerospace loop: admit, score, hold the twin, step. This page is not a unified-field certificate and not a finished laboratory program. n = k/60. σ = 60^n.</p>
   <p class="salute">DARPA Absolute Adversarial Vanquishment Protocol (A.V.A.P.), Notice ID HR001122S0004. Journal of Advances in Mathematics 9880 states the recursive soil-bearing architecture for synthetic land mass and tactical gravity-well supply. Salute: Col. Paul J. Calhoun, USAF — DARPA TTO Program Manager (Jun 2020–Jul 2023); Deputy Commander, Air Force Test Center, Edwards AFB (Jul 2025–present). Salute: Dr. Ben Schrag — NSF SBIR/STTR Program Director and Policy Liaison (not NSF Director).</p>
       <div class="labvid">
-    <video autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="SEXA unified energy functional hologram">
+    <video muted loop playsinline webkit-playsinline preload="metadata" aria-label="SEXA unified energy functional hologram">
       <source src="https://witness.sexatech.com/sexa-hologram-touch.mp4" type="video/mp4"/>
     </video>
     <div class="cap">SEXA energy functional · hologram loop</div>
@@ -91,13 +91,13 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
     <div class="cap">SEXA energy functional and 5-D dual-field partition — recursive admissibility map</div>
   </div>
 <div class="labvid">
-    <video autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="Cookie Tush avatar with SEXA unified energy functional hologram">
+    <video muted loop playsinline webkit-playsinline preload="metadata" aria-label="Cookie Tush avatar with SEXA unified energy functional hologram">
       <source src="https://witness.sexatech.com/cookie-tush-lab.mp4" type="video/mp4"/>
     </video>
     <div class="cap">Cookie Tush lab loop · SEXA recursive admissibility · public clock below</div>
   </div>
   <div class="labvid">
-    <video autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="ICMMAP 2026 nine-dimensional recursive-admissibility energy functional, submitted">
+    <video muted loop playsinline webkit-playsinline preload="metadata" aria-label="ICMMAP 2026 nine-dimensional recursive-admissibility energy functional, submitted">
       <source src="ICMMAP2026_SREF-EX9D.mp4" type="video/mp4"/>
     </video>
     <div class="cap">ICMMAP-2026 · Nuuk, Greenland · 19–20 December 2026 · nine-dimensional recursive-admissibility energy functional · submitted, not accepted</div>
@@ -105,13 +105,14 @@ h1{font-size:clamp(22px,6vw,34px);text-align:center;line-height:1.2}
 <script>
 document.querySelectorAll("video").forEach(function(v){
   v.muted=true; v.loop=true; v.playsInline=true;
+  function vis(el){var r=el.getBoundingClientRect();return r.width>0&&r.height>0&&r.bottom>0&&r.right>0&&r.top<(window.innerHeight||document.documentElement.clientHeight);}
   function kick(){
+    if(!vis(v)) return;
     try{ if(!isFinite(v.duration)||v.currentTime>=v.duration-0.05) v.currentTime=0; }catch(e){}
     var p=v.play(); if(p&&p.catch) p.catch(function(){});
   }
   v.addEventListener("ended", function(){ v.currentTime=0; kick(); });
   v.addEventListener("error", function(){ setTimeout(kick, 500); });
-  kick();
 });
 </script>
 
@@ -306,4 +307,17 @@ paint(); setInterval(paint,80);
 })();
 </script>
 
-</body></html>
+<script>
+/*viewport-video-play*/
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var vids=document.querySelectorAll("video");
+  function go(v){if(reduce)return;var p=v.play();if(p&&p.catch)p.catch(function(){});}
+  if("IntersectionObserver"in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting)go(e.target);else e.target.pause();});
+    },{threshold:0.35});
+    vids.forEach(function(v){io.observe(v);});
+  }
+})();
+</script></body></html>
